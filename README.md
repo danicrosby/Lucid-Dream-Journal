@@ -30,17 +30,17 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 
 ### User Story & Functionality
 
-User must create an account to access the app.
-User must sign in/ authenticated and enter a passcode to view their dream cards.
-User is able document each time they have a dream by logging into the app and tapping the add button.
-User can see a previous dream by clicking the dream card in the history feed.
-User can edit dream text by clicking the edit button on the dream card.
-User can delete dreams by clicking the delete button on the dream card.
-User can tag dreams from a list of icons after they log text of their dream.
-User can edit tagging for a previous dream card.
-User can navigate to the education page to learn more about what their dreams mean.
-Dream data and info will be grabbed via API or coded with JSON data and keywords.
-Once dream is submitted, user can view data collected in the stats view page.
+- User must create an account to access the app.
+- User must sign in/ authenticated and enter a passcode to view their dream cards.
+- User is able document each time they have a dream by logging into the app and tapping the add button.
+- User can see a previous dream by clicking the dream card in the history feed.
+- User can edit dream text by clicking the edit button on the dream card.
+- User can delete dreams by clicking the delete button on the dream card.
+- User can tag dreams from a list of icons after they log text of their dream.
+- User can edit tagging for a previous dream card.
+- User can navigate to the education page to learn more about what their dreams mean.
+- Dream data and info will be grabbed via API or coded with JSON data and keywords.
+- Once dream is submitted, user can view data collected in the stats view page.
 
 
 ## Contributors
