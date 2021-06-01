@@ -22,11 +22,6 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 
 <img width="574" alt="Screen Shot 2021-06-01 at 4 13 44 PM" src="https://user-images.githubusercontent.com/68397076/120391219-580d2f80-c2f4-11eb-9c16-345431c90fa5.png">
 
-
-<img width="559" alt="Screen Shot 2021-06-01 at 4 14 10 PM" src="https://user-images.githubusercontent.com/68397076/120391289-68250f00-c2f4-11eb-93db-4540378b116c.png">
-
-<img width="792" alt="Screen Shot 2021-06-01 at 4 14 24 PM" src="https://user-images.githubusercontent.com/68397076/120391308-707d4a00-c2f4-11eb-81e9-719acee83d84.png">
-
 <img width="726" alt="Screen Shot 2021-06-01 at 4 15 24 PM" src="https://user-images.githubusercontent.com/68397076/120391400-94409000-c2f4-11eb-83ab-9298a8f1bae9.png">
 
 
