@@ -15,20 +15,20 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 - [ERD](https://lucid.app/lucidchart/invitations/accept/inv_c84e44bb-74b0-4a5b-962e-fe80afb7bb74?viewport_loc=79%2C-1113%2C2767%2C1495%2C0_0)
 - [Project Board](https://github.com/danicrosby/LUCID-Front-End-Capstone/projects)
 
-### Project Screenshot
+### Welcome Page
 
 <img width="558" alt="Screen Shot 2021-06-01 at 4 21 22 PM" src="https://user-images.githubusercontent.com/68397076/120391973-6b6cca80-c2f5-11eb-8822-2c3eb46bd7ed.png">
 
-### Project Screenshot
+### Logged Dreams
 <img width="538" alt="Screen Shot 2021-06-01 at 4 13 09 PM" src="https://user-images.githubusercontent.com/68397076/120391171-44fa5f80-c2f4-11eb-904f-b530745a298a.png">
 
-### Project Screenshot
+### Education, Stat & Overview Planning
 <img width="818" alt="Screen Shot 2021-06-01 at 4 18 30 PM" src="https://user-images.githubusercontent.com/68397076/120391689-044f1600-c2f5-11eb-9e5d-cebc11218c6a.png">
 
-### Project Screenshot
+### Entry Log Field
 <img width="574" alt="Screen Shot 2021-06-01 at 4 13 44 PM" src="https://user-images.githubusercontent.com/68397076/120391219-580d2f80-c2f4-11eb-9c16-345431c90fa5.png">
 
-### Project Screenshot
+### Mock Design of History | Entries
 <img width="726" alt="Screen Shot 2021-06-01 at 4 15 24 PM" src="https://user-images.githubusercontent.com/68397076/120391400-94409000-c2f4-11eb-83ab-9298a8f1bae9.png">
 
 
