@@ -1,5 +1,5 @@
 
-# LUCID | A Dream Journal for Adults ![Netlify Status](https://api.netlify.com/api/v1/badges/7faacd10-cfbd-44ae-845c-c0483042b443/deploy-status)](https://app.netlify.com/sites/lucid-front-end-capstone/deploys)
+# LUCID | A Dream Journal for Adults ![Netlify Status](https://api.netlify.com/api/v1/badges/7faacd10-cfbd-44ae-845c-c0483042b443/deploy-status)]
 
 I plan to build an application that allows people to log their dreams and mood. The primary user  of the application will be anyone over the age of 13, the secondary will be parents of the children under 18.
 
