@@ -2,9 +2,9 @@
 
 I plan to build an application that allows people to log their dreams and mood. The primary user  of the application will be anyone over the age of 13, the secondary will be parents of the children under 18.
 
-When a individual logs in the the app, they will be prompted to add a new dream. When they click on the "add" button they will be taken to a page where they can record their dream in detail. Once they submit the log they will be taken to a page where they can choose from a variety of tags to SPECIFY?? Objects, mood, colors that occurred in the dream they just logged. When they click the "done" button, key words are stored and populated in a stats page where the individual is presented with documentation about what the psychology of that word means and the interpretation is stored for later use.
+When a individual logs in the the app, they will be prompted to add a new dream. When they click on the "add" button they will be taken to a page where they can record their dream in detail. Once they submit the log they will be taken to a page where they can choose from a variety of tags including objects, mood, colors that occurred in the dream they just logged. When they click the "done" button, key words are stored and populated in a stats page where the individual is presented with documentation about what the psychology of that word means and the interpretation is stored for later use.
 
-Personally, I want to use this to practice using REACT…. I need more practice using functions and api's. This project will have multiple aspects but will be simple and straightforward. My goal is to have clear, clean UI and target simplicity above all things. It will reinforce the knowledge I've taken from our previous assignment and challenge me to make those challenges more efficient.
+Personally, I want to use this to practice using REACT. This project will have multiple aspects but will be simple and straightforward. My goal is to have clear, clean UI and target simplicity above all things. It will reinforce the knowledge I've taken from our previous assignment and challenge me to make those challenges more efficient.
 
 
 ## Relevant Links
@@ -50,7 +50,8 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 
 ### Stretch Goals for LUCID
 
-- [ ]
+- [ ] For user to see web chart of mood tracked over time
+- [ ] Reminders to log dream
 
 ## Contributors
 [Dani Crosby](https://github.com/danicrosby)
