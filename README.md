@@ -12,7 +12,7 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 - [Personal-Bio](https://dani-crosby-bio-react.netlify.app/)
 - [Deployed Site](https://app.netlify.com/sites/lucid-front-end-capstone/settings/general)
 - [Wireframe](https://lucid.app/lucidchart/1bd7f100-cdf6-4852-97dc-1588f7c5c4d5/edit?beaconFlowId=E0B53EF0B688490E&page=~LKHoN1zVXCp#)
-- [ERD](https://lucid.app/lucidchart/invitations/accept/inv_c84e44bb-74b0-4a5b-962e-fe80afb7bb74?viewport_loc=79%2C-1113%2C2767%2C1495%2C0_0)
+- [ERD](https://lucid.app/lucidchart/invitations/accept/inv_90e68e05-9d74-46d1-9f9d-9ede26a9b70c?viewport_loc=-265%2C-1258%2C4971%2C2384%2C0_0)
 - [Project Board](https://github.com/danicrosby/LUCID-Front-End-Capstone/projects)
 
 ### User Story & Full CRUD Functionality
