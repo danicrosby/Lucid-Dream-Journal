@@ -52,6 +52,8 @@ Personally, I want to use this to practice using REACT. This project will have m
 
 - [ ] For user to see web chart of mood tracked over time
 - [ ] Reminders to log dream
+- [ ] Made for mobile, but fully responsive design
+- [ ] Able to share dreams (export) to another user
 
 ## Contributors
 [Dani Crosby](https://github.com/danicrosby)
