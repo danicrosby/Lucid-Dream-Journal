@@ -46,7 +46,9 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 <img width="726" alt="Screen Shot 2021-06-01 at 4 15 24 PM" src="https://user-images.githubusercontent.com/68397076/120391400-94409000-c2f4-11eb-83ab-9298a8f1bae9.png">
 
 
-## Stretch Goals for LUCID
+### Stretch Goals for LUCID
+
+- [ ]
 
 ## Contributors
 [Dani Crosby](https://github.com/danicrosby)
