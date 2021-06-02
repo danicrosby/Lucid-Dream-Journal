@@ -15,6 +15,20 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 - [ERD](https://lucid.app/lucidchart/invitations/accept/inv_c84e44bb-74b0-4a5b-962e-fe80afb7bb74?viewport_loc=79%2C-1113%2C2767%2C1495%2C0_0)
 - [Project Board](https://github.com/danicrosby/LUCID-Front-End-Capstone/projects)
 
+### User Story & Full CRUD Functionality
+
+- User must create an account to access the app.
+- User must sign-in and get AUTHENTICATED to view their dream cards.
+- User is able CREATE and document each time they have a dream by logging into the app and tapping the add button.
+- User can READ previous dreams by clicking the dream card in the history feed.
+- User can EDIT dream text by clicking the edit button on the dream card.
+- User can DELETE dreams by clicking the delete button on the dream card.
+- User can tag dreams from a list of icons after they log text of their dream.
+- User can EDIT and UPDATE tagging for a previous dream card.
+- User can navigate to the education page to learn more about what their dreams mean.
+- Dream data and info will be grabbed via API or coded with JSON data and keywords.
+- Once dream is submitted, user can view data collected in the stats view page.
+
 ### Welcome Page
 
 <img width="558" alt="Screen Shot 2021-06-01 at 4 21 22 PM" src="https://user-images.githubusercontent.com/68397076/120391973-6b6cca80-c2f5-11eb-8822-2c3eb46bd7ed.png">
@@ -32,20 +46,7 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 <img width="726" alt="Screen Shot 2021-06-01 at 4 15 24 PM" src="https://user-images.githubusercontent.com/68397076/120391400-94409000-c2f4-11eb-83ab-9298a8f1bae9.png">
 
 
-### User Story & Functionality
-
-- User must create an account to access the app.
-- User must sign in/ authenticated and enter a passcode to view their dream cards.
-- User is able document each time they have a dream by logging into the app and tapping the add button.
-- User can see a previous dream by clicking the dream card in the history feed.
-- User can edit dream text by clicking the edit button on the dream card.
-- User can delete dreams by clicking the delete button on the dream card.
-- User can tag dreams from a list of icons after they log text of their dream.
-- User can edit tagging for a previous dream card.
-- User can navigate to the education page to learn more about what their dreams mean.
-- Dream data and info will be grabbed via API or coded with JSON data and keywords.
-- Once dream is submitted, user can view data collected in the stats view page.
-
+## Stretch Goals for LUCID
 
 ## Contributors
-- [Dani Crosby](https://github.com/danicrosby)
+[Dani Crosby](https://github.com/danicrosby)
