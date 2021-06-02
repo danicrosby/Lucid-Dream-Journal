@@ -1,4 +1,3 @@
-
 # LUCID | A Dream Journal for Adults ![Netlify Status](https://api.netlify.com/api/v1/badges/7faacd10-cfbd-44ae-845c-c0483042b443/deploy-status)]
 
 I plan to build an application that allows people to log their dreams and mood. The primary user  of the application will be anyone over the age of 13, the secondary will be parents of the children under 18.
@@ -44,6 +43,9 @@ Personally, I want to use this to practice using REACT…. I need more practice 
 
 ### Mock Design of History | Entries
 <img width="726" alt="Screen Shot 2021-06-01 at 4 15 24 PM" src="https://user-images.githubusercontent.com/68397076/120391400-94409000-c2f4-11eb-83ab-9298a8f1bae9.png">
+
+![Screen Shot 2021-06-01 at 8 39 10 PM](https://user-images.githubusercontent.com/68397076/120410858-6de11b80-c319-11eb-8531-b834ca147999.png)
+
 
 
 ### Stretch Goals for LUCID
