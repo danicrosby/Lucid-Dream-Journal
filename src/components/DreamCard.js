@@ -24,7 +24,7 @@ const DreamCard = ({
   firebaseKey,
   name,
   entry,
-  logDate,
+  date,
   setDreams
 }) => {
   const [editing, setEditing] = useState(false);
@@ -61,7 +61,7 @@ const DreamCard = ({
               </Row>
               <Row><div className="hr">___________________________________________________</div></Row>
               <Row>
-                <CardText>{logDate}</CardText>
+                <CardText className="date">{date} fix date</CardText>
               </Row>
             </Card>
             <div>
@@ -69,7 +69,7 @@ const DreamCard = ({
                 <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
               </Button>
               <UncontrolledPopover trigger="click" placement="bottom" target="PopoverClick">
-                <PopoverHeader>Title</PopoverHeader>
+                <PopoverHeader>{name}</PopoverHeader>
                 <PopoverBody>
                   <div className="card-link-wrapper">
                     <Button color="transparent" onClick={() => handleClick('view')}>
@@ -94,7 +94,7 @@ const DreamCard = ({
               firebaseKey={firebaseKey}
               name={name}
               entry={entry}
-              logDate={logDate}
+              date={date}
             />
           }
         </Col>
@@ -109,7 +109,7 @@ DreamCard.propTypes = {
   firebaseKey: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   entry: PropTypes.string.isRequired,
-  logDate: PropTypes.any.isRequired,
+  date: PropTypes.string,
   setDreams: PropTypes.func
 };
 

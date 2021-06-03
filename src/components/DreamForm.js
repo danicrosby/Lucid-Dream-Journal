@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import {
-  Button,
-  Form,
-  FormGroup,
-  Label,
-  Input
+  Button, Form, FormGroup, Label,
+  Input, Card, CardHeader, Container,
+  CardFooter, CardBody, CardTitle,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -15,13 +13,13 @@ const DreamForm = ({
   setDreams,
   name,
   entry,
-  logDate,
+  date,
   firebaseKey
 }) => {
   const [dream, setDream] = useState({
     name: name || '',
     entry: entry || '',
-    logDate: logDate || '',
+    date: date || '',
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
@@ -30,6 +28,7 @@ const DreamForm = ({
     setDream((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
+      firebaseKey: ''
     }));
   };
 
@@ -46,55 +45,61 @@ const DreamForm = ({
       setDream({
         name: '',
         entry: '',
-        logDate: '',
+        date: '',
         firebaseKey: null
       });
     }
   };
 
   return (
-    <div className='dream-form'>
-      <Form id='addDreamForm' autoComplete='off' onSubmit={handleSubmit}>
-        <h2>{formTitle}</h2>
-        <FormGroup>
-          <Label for="name"></Label>
-          <Input
-            name='name'
-            id='name'
-            value={dream.name}
-            type='text'
-            placeholder='Enter a dream Name'
-            onChange={handleInputChange}
-          />
-        </FormGroup>
+    <Container className="dream-form-container">
+      <Card className="add-dream-card">
+        <CardHeader><h2>{formTitle}</h2></CardHeader>
+        <CardBody className="add-dream-card-body">
+          <CardTitle tag="h5">Special Title Treatment</CardTitle>
+          <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
+          <FormGroup>
+            <Label for="name"></Label>
+            <Input
+              name='name'
+              id='name'
+              value={dream.name}
+              type='text'
+              placeholder='Enter Dream Title'
+              onChange={handleInputChange}
+            />
+          </FormGroup>
 
-        <FormGroup>
-          <Label for="entry"></Label>
-          <Input
-            name='entry'
-            id='entry'
-            value={dream.entry}
-            type='text'
-            placeholder='Enter a entry Name'
-            onChange={handleInputChange}
-          />
-        </FormGroup>
+          <FormGroup>
+            <Label for="entry"></Label>
+            <Input
+              name='entry'
+              id='entry'
+              value={dream.entry}
+              type='text'
+              placeholder='Dream Description'
+              onChange={handleInputChange}
+            />
+          </FormGroup>
 
-        <FormGroup>
-          <Label for="logDate"></Label>
-          <Input
-            name='logDate'
-            id='logDate'
-            value={dream.logDate}
-            type='text'
-            placeholder='Enter a dream date'
-            onChange={handleInputChange}
-          />
-        </FormGroup>
+          <FormGroup>
+            <Label for="date"></Label>
+            <Input
+              name='date'
+              id='date'
+              value={dream.date}
+              type='text'
+              placeholder='Enter Dream Date'
+              onChange={handleInputChange}
+            />
+          </FormGroup>
 
-        <Button type='submit'>Submit</Button>
-      </Form>
-    </div>
+          <Button className="add-btn-submit float-right" type='submit'>Submit</Button>
+        </Form>
+        </CardBody>
+        <CardFooter>Footer</CardFooter>
+      </Card>
+    </Container>
   );
 };
 
@@ -103,7 +108,7 @@ DreamForm.propTypes = {
   setDreams: PropTypes.func,
   name: PropTypes.string,
   entry: PropTypes.string,
-  logDate: PropTypes.string,
+  date: PropTypes.string,
   firebaseKey: PropTypes.string
 };
 
