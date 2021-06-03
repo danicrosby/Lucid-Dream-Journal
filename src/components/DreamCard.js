@@ -9,12 +9,11 @@ import {
   Card,
   CardTitle,
   Container,
-  Row,
-  Col,
   CardText,
   UncontrolledPopover,
   PopoverHeader,
-  PopoverBody
+  PopoverBody,
+  CardBody,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteDream } from '../helpers/data/DreamData';
@@ -48,23 +47,19 @@ const DreamCard = ({
   };
 
   return (
-    <Container className="card-container">
-      <Row>
-        <Col sm="12" md={{ size: 6, offset: 3 }}>
-          <Card className="card-grey">
-            <Card className="card-white">
-              <Row>
-                <div className="top-text">
-                  <CardTitle>{name}</CardTitle>
-                  <div><i className="material-icons dream-type-icon"> cloud </i></div>
-                </div>
-              </Row>
-              <Row><div className="hr">___________________________________________________</div></Row>
-              <Row>
-                <CardText className="date">{date} fix date</CardText>
-              </Row>
-            </Card>
-            <div>
+
+    <Container className="dream-card-container">
+      <Card>
+        <CardBody className="card-grey">
+          <CardBody className="card-white">
+            <div className="top-text">
+            <CardTitle>{name}</CardTitle>
+            <div><i className="material-icons dream-type-icon"> cloud </i></div>
+            </div>
+            <CardText className="hr">___________________________________________________</CardText>
+            <CardText className="date">{date}</CardText>
+          </CardBody>
+          <div>
               <Button color="transparent" id="PopoverClick" type="button">
                 <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
               </Button>
@@ -86,8 +81,9 @@ const DreamCard = ({
                 </PopoverBody>
               </UncontrolledPopover>
             </div>
-          </Card>
-          {
+        </CardBody>
+      </Card>
+      {
             editing && <DreamForm
               formTitle='Edit Dream'
               setDreams={setDreams}
@@ -97,8 +93,6 @@ const DreamCard = ({
               date={date}
             />
           }
-        </Col>
-      </Row>
 
     </Container>
 
