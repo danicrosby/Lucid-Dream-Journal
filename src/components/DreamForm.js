@@ -8,17 +8,17 @@ import {
   Input
 } from 'reactstrap';
 import PropTypes from 'prop-types';
-import { addStudent, updateStudent } from '../helpers/data/StudentData';
+import { addDream, updateDream } from '../helpers/data/DreamData';
 
-const StudentForm = ({
+const DreamForm = ({
   formTitle,
-  setStudents,
+  setDreams,
   name,
   teacher,
   grade,
   firebaseKey
 }) => {
-  const [student, setStudent] = useState({
+  const [dream, setDream] = useState({
     name: name || '',
     teacher: teacher || '',
     grade: grade || 0,
@@ -27,7 +27,7 @@ const StudentForm = ({
   const history = useHistory();
 
   const handleInputChange = (e) => {
-    setStudent((prevState) => ({
+    setDream((prevState) => ({
       ...prevState,
       [e.target.name]:
         e.target.name === 'grade' ? Number(e.target.value) : e.target.value,
@@ -36,15 +36,15 @@ const StudentForm = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (student.firebaseKey) {
-      updateStudent(student).then(setStudents);
+    if (dream.firebaseKey) {
+      updateDream(dream).then(setDreams);
     } else {
-      addStudent(student).then((response) => {
-        setStudents(response);
-        history.push('/students');
+      addDream(dream).then((response) => {
+        setDreams(response);
+        history.push('/dreams');
       });
 
-      setStudent({
+      setDream({
         name: '',
         teacher: '',
         grade: 0,
@@ -54,17 +54,17 @@ const StudentForm = ({
   };
 
   return (
-    <div className='student-form'>
-      <Form id='addStudentForm' autoComplete='off' onSubmit={handleSubmit}>
+    <div className='dream-form'>
+      <Form id='addDreamForm' autoComplete='off' onSubmit={handleSubmit}>
         <h2>{formTitle}</h2>
         <FormGroup>
           <Label for="name">Name:</Label>
           <Input
             name='name'
             id='name'
-            value={student.name}
+            value={dream.name}
             type='text'
-            placeholder='Enter a Student Name'
+            placeholder='Enter a dream Name'
             onChange={handleInputChange}
           />
         </FormGroup>
@@ -74,7 +74,7 @@ const StudentForm = ({
           <Input
             name='teacher'
             id='teacher'
-            value={student.teacher}
+            value={dream.teacher}
             type='text'
             placeholder='Enter a Teacher Name'
             onChange={handleInputChange}
@@ -86,7 +86,7 @@ const StudentForm = ({
           <Input
             name='grade'
             id='grade'
-            value={student.grade}
+            value={dream.grade}
             type='number'
             placeholder='Enter a Grade'
             onChange={handleInputChange}
@@ -99,13 +99,13 @@ const StudentForm = ({
   );
 };
 
-StudentForm.propTypes = {
+DreamForm.propTypes = {
   formTitle: PropTypes.string.isRequired,
-  setStudents: PropTypes.func,
+  setDreams: PropTypes.func,
   name: PropTypes.string,
   teacher: PropTypes.string,
   grade: PropTypes.number,
   firebaseKey: PropTypes.string
 };
 
-export default StudentForm;
+export default DreamForm;

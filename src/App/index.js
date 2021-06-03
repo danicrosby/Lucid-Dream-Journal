@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import firebase from 'firebase';
 import NavBar from '../components/NavBar';
-import { getStudents } from '../helpers/data/StudentData';
+import { getDreams } from '../helpers/data/DreamData';
 import Routes from '../helpers/Routes';
 
 function App() {
-  const [students, setStudents] = useState([]);
+  const [dreams, setDreams] = useState([]);
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    getStudents().then(setStudents);
+    getDreams().then(setDreams);
   }, []);
 
   useEffect(() => {
@@ -33,8 +33,8 @@ function App() {
     <>
       <NavBar user={user} />
       <Routes
-        students={students}
-        setStudents={setStudents}
+        dreams={dreams}
+        setDreams={setDreams}
       />
     </>
   );

@@ -1,0 +1,165 @@
+{
+  "catergories" : {
+    "-Mb36MQePaj21Es7vbC7" : {
+      "firebaseKey" : "-Mb36MQePaj21Es7vbC7",
+      "name" : "Dream Type"
+    },
+    "-Mb378K6jTQ1Bo2nYEpz" : {
+      "firebaseKey" : "-Mb378K6jTQ1Bo2nYEpz",
+      "name" : "Emotion"
+    },
+    "-Mb37XdLFvGDXoayYu40" : {
+      "firebaseKey" : "-Mb37XdLFvGDXoayYu40",
+      "name" : "People"
+    },
+    "-Mb37g0eBS9jvaAd024A" : {
+      "firebaseKey" : "-Mb37g0eBS9jvaAd024A",
+      "name" : "Places"
+    },
+    "-Mb37nwHy-aCKfBh5m9E" : {
+      "firebaseKey" : "-Mb37nwHy-aCKfBh5m9E",
+      "name" : "Things"
+    },
+    "-Mb37zSAZ5gPzyTHv7UQ" : {
+      "firebaseKey" : "-Mb37zSAZ5gPzyTHv7UQ",
+      "name" : "Mood Color"
+    },
+    "-Mb38gviHYVW5iM9lCqY" : {
+      "firebaseKey" : "-Mb38gviHYVW5iM9lCqY",
+      "image" : "URL"
+    }
+  },
+  "dream_tag" : {
+    "-Mb3MxiZ6csJqDNC-Ok8" : {
+      "firebaseKey" : "-Mb3MxiZ6csJqDNC-Ok8"
+    }
+  },
+  "dreams" : {
+    "-Mb3JwOl8b3CH8hX4coZ" : {
+      "entry" : "this is a dream entry description",
+      "firebaseKey" : "-Mb3JwOl8b3CH8hX4coZ",
+      "title" : "Nightmare Dream Title",
+      "uid" : "xyz123"
+    },
+    "-Mb3K3Xry0qdNqAwvcUO" : {
+      "entry" : "this is a dream entry description",
+      "firebaseKey" : "-Mb3K3Xry0qdNqAwvcUO",
+      "title" : "Lucid Dream Title",
+      "uid" : "xyz123"
+    },
+    "-Mb3KBjo7MX5EnIIyb0a" : {
+      "entry" : "this is a dream entry description",
+      "firebaseKey" : "-Mb3KBjo7MX5EnIIyb0a",
+      "title" : "Good Dream Title",
+      "uid" : "xyz123"
+    },
+    "-Mb3KLsfzsBeM1Zz6mdg" : {
+      "entry" : "this is a dream entry description",
+      "firebaseKey" : "-Mb3KLsfzsBeM1Zz6mdg",
+      "title" : "Another Nightmare Dream Title",
+      "uid" : "xyz123"
+    },
+    "-Mb3KUEvC6H3Jkz9Pe8o" : {
+      "entry" : "this is a dream entry description",
+      "firebaseKey" : "-Mb3KUEvC6H3Jkz9Pe8o",
+      "title" : "Another Lucid Dream Title",
+      "uid" : "xyz123"
+    },
+    "-Mb3KamSVmRZWMSIWsNc" : {
+      "entry" : "this is a dream entry description",
+      "firebaseKey" : "-Mb3KamSVmRZWMSIWsNc",
+      "title" : "Another Good Dream Title",
+      "uid" : "xyz123"
+    }
+  },
+  "interpretations" : {
+    "-MbDxT7vcTMfpEbXlsF3" : {
+      "firerbaseKey" : "-MbDxT7vcTMfpEbXlsF3",
+      "interpretation" : "To see a tiger in your dream represents power and your ability to exert it in various situations. The dream may also indicate that you need to take more of a leadership role. To dream that you are attacked by a tiger refers to the emotions that you have repressed because you were afraid of confronting them.",
+      "name" : "Tiger"
+    },
+    "-MbDxd2c-MMRJhdF2NP8" : {
+      "firebaseKey" : "-MbDxd2c-MMRJhdF2NP8",
+      "interpretation" : "To see a fence in your dream signifies an obstacle or barrier that may be standing on your path. You may feel confined and restricted in expressing yourself. Are you feeling fenced in some situation or confined in some relationship? Alternatively, the fence symbolizes your need for privacy. You are trying to shut off the rest of the world. If there is a hole in the fence, then the hole is encouragement that you can overcome and conquer whatever obstacles may be in your way. It may also mean that your privacy is being compromised.",
+      "name" : "Fence"
+    },
+    "-MbDxmb-JB3F7rOysOVy" : {
+      "firebaseKey" : "-MbDxmb-JB3F7rOysOVy"
+    },
+    "-MbDxybD3gHzps5MgfQA" : {
+      "firebaseKey" : "-MbDxybD3gHzps5MgfQA"
+    },
+    "-MbDy9cl4FFG1p1uPvvF" : {
+      "firebaseKey" : "-MbDy9cl4FFG1p1uPvvF"
+    }
+  },
+  "tags" : {
+    "-Mb3BvC-tTKs5RLVM-DO" : {
+      "firebaseKey" : "-Mb3BvC-tTKs5RLVM-DO",
+      "interpretation" : "A lucid dream is a type of dream where the dreamer becomes aware that they are dreaming. During a lucid dream, the dreamer may gain some amount of control over the dream characters, narrative, and environment.",
+      "name" : "lucid"
+    },
+    "-Mb3C6dOz1EMMTJ48MiX" : {
+      "firebaseKey" : "-Mb3C6dOz1EMMTJ48MiX",
+      "interpretation" : "A nightmare, also called a bad dream is an unpleasant dream that can cause a strong emotional response from the mind, typically fear but also despair, anxiety or great sadness. However, psychological nomenclature differentiates between nightmares and bad dreams; specifically, people remain asleep during bad dreams, whereas nightmares can awaken individuals. The dream may contain situations of discomfort, psychological or physical terror, or panic. After a nightmare, a person will often awaken in a state of distress and may be unable to return to sleep for a short period of time.[2] Recurrent nightmares may require medical help, as they can interfere with sleeping patterns and cause insomnia.",
+      "name" : "nightmare"
+    },
+    "-Mb3D-exsOIMpH5UTcr0" : {
+      "firebaseKey" : "-Mb3D-exsOIMpH5UTcr0",
+      "interpretation" : "Recurring dreams are dreams that repeat more than once. They often have themes such as confrontations, being chased, or falling. You can have neutral recurring dreams or recurring nightmares. If you have recurring nightmares, it may be due to an underlying mental health condition, substance use, or certain medication.",
+      "name" : "recurring"
+    },
+    "-Mb3DULsYsIM7-KcqkB5" : {
+      "firebaseKey" : "-Mb3DULsYsIM7-KcqkB5",
+      "interpretation" : "A premonition is a vision, a gut feeling, or another experience that grants you knowledge of things that haven’t happened yet.  These experiences can be hard to recognize since you won’t realize you had one of these dreams or visions until the event actually happens.",
+      "name" : "premonition"
+    },
+    "-Mb3DjcxRseJxtfb6O-A" : {
+      "firebaseKey" : "-Mb3DjcxRseJxtfb6O-A",
+      "name" : "sad"
+    },
+    "-Mb3EQO98seuLHH4XSGJ" : {
+      "firebaseKey" : "-Mb3EQO98seuLHH4XSGJ",
+      "name" : "neutral"
+    },
+    "-Mb3EZhGc9dY-Pr7-y67" : {
+      "firebaseKey" : "-Mb3EZhGc9dY-Pr7-y67",
+      "interpretation" : "Black symbolizes the unknown, the unconscious, danger, mystery, darkness, death, mourning, rejection, hate or malice. The color invites you to delve deeper in your unconscious in order to gain a better understanding of yourself. It also signifies a lack of love and lack of support. More positively, black represents potential and possibilities. It is like a clean or blank slate.",
+      "name" : "black"
+    },
+    "-Mb3EhncfOcCUiJa6VXJ" : {
+      "firebaseKey" : "-Mb3EhncfOcCUiJa6VXJ",
+      "interpretation" : "Blue represents truth, wisdom, heaven, eternity, devotion, tranquility, loyalty and openness. Perhaps you are expressing a desire to get away. The presence of this color in your dream may symbolize your spiritual guide and your optimism of the future. You have clarity of mind. Alternatively, the color blue may also be a metaphor for \"being blue\" and feeling sad. ",
+      "name" : "blue"
+    },
+    "-Mb3EqbT0WczsZGOGss3" : {
+      "firebaseKey" : "-Mb3EqbT0WczsZGOGss3",
+      "interpretation" : "Green signifies a positive change, good health, growth, fertility, healing, hope, vigor, vitality, peace, and serenity. The appearance of the color may also be a way of telling you to \"go ahead\".  Alternatively, green is a metaphor for a lack of experience in some task.  ",
+      "name" : "green"
+    },
+    "-Mb3GPY3A9y8g8bm3Ws1" : {
+      "firebaseKey" : "-Mb3GPY3A9y8g8bm3Ws1",
+      "name" : "Person1"
+    },
+    "-Mb3GZAwkSSjjZTY7wwe" : {
+      "firebaseKey" : "-Mb3GZAwkSSjjZTY7wwe",
+      "name" : "Person2"
+    },
+    "-Mb3Gq5WrY6vV9PIVwud" : {
+      "firebaseKey" : "-Mb3Gq5WrY6vV9PIVwud",
+      "name" : "Person3"
+    },
+    "-Mb3H8iyLn8Kae-V8k58" : {
+      "firebaeKey" : "-Mb3H8iyLn8Kae-V8k58",
+      "name" : "Thing1"
+    },
+    "-Mb3HLvRlKyQIqhSVrv9" : {
+      "firebaseKey" : "-Mb3HLvRlKyQIqhSVrv9",
+      "name" : "Thing2"
+    },
+    "-Mb3HUkYYVAjmm5wfsMm" : {
+      "firebaseKey" : "-Mb3HUkYYVAjmm5wfsMm",
+      "name" : "Thing3"
+    }
+  }
+}

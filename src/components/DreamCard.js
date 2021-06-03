@@ -7,15 +7,15 @@ import {
   CardTitle
 } from 'reactstrap';
 import PropTypes from 'prop-types';
-import { deleteStudent } from '../helpers/data/StudentData';
-import StudentForm from './StudentForm';
+import { deleteDream } from '../helpers/data/DreamData';
+import DreamForm from './DreamForm';
 
-const StudentCard = ({
+const DreamCard = ({
   firebaseKey,
   name,
   grade,
   teacher,
-  setStudents
+  setDreams
 }) => {
   const [editing, setEditing] = useState(false);
   const history = useHistory();
@@ -23,14 +23,14 @@ const StudentCard = ({
   const handleClick = (type) => {
     switch (type) {
       case 'delete':
-        deleteStudent(firebaseKey)
-          .then(setStudents);
+        deleteDream(firebaseKey)
+          .then(setDreams);
         break;
       case 'edit':
         setEditing((prevState) => !prevState);
         break;
       case 'view':
-        history.push(`/students/${firebaseKey}`);
+        history.push(`/dreams/${firebaseKey}`);
         break;
       default:
         console.warn('nothing selected');
@@ -42,15 +42,15 @@ const StudentCard = ({
       <CardTitle tag="h5">{name}</CardTitle>
       <CardText>Grade: {grade}</CardText>
       <CardText>Teacher: {teacher}</CardText>
-      <Button color="warning" onClick={() => handleClick('view')}>View Student</Button>
-      <Button color="danger" onClick={() => handleClick('delete')}>Delete Student</Button>
+      <Button color="warning" onClick={() => handleClick('view')}>View Dream</Button>
+      <Button color="danger" onClick={() => handleClick('delete')}>Delete Dream</Button>
       <Button color="info" onClick={() => handleClick('edit')}>
-        {editing ? 'Close Form' : 'Edit Student'}
+        {editing ? 'Close Form' : 'Edit Dream'}
       </Button>
       {
-        editing && <StudentForm
-          formTitle='Edit Student'
-          setStudents={setStudents}
+        editing && <DreamForm
+          formTitle='Edit Dream'
+          setDreams={setDreams}
           firebaseKey={firebaseKey}
           name={name}
           grade={grade}
@@ -61,12 +61,12 @@ const StudentCard = ({
   );
 };
 
-StudentCard.propTypes = {
+DreamCard.propTypes = {
   firebaseKey: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   teacher: PropTypes.string.isRequired,
   grade: PropTypes.number.isRequired,
-  setStudents: PropTypes.func
+  setDreams: PropTypes.func
 };
 
-export default StudentCard;
+export default DreamCard;
