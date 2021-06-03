@@ -52,21 +52,16 @@ const DreamCard = ({
     <Container className="card-container">
       <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }}>
-
           <Card className="card-grey">
-
             <Card body className="card-white">
-
               <Row>
                 <div className="top-text">
                   <CardTitle tag="h5">{name}</CardTitle>
                   <div><i className="material-icons dream-type-icon"> cloud </i></div>
                 </div>
               </Row>
-
               <Row><div>_______________________________________________</div></Row>
             </Card>
-
             <Button color="transparent" onClick={toggle} style={{ marginBottom: '1rem' }}>
               <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
             <Collapse isOpen={isOpen}>
@@ -80,8 +75,8 @@ const DreamCard = ({
                     <Button color="transparent" onClick={() => handleClick('delete')}>
                       <Fab disabled aria-label="delete"><DeleteIcon /></Fab>
                     </Button>
-                    <Button color="transparent float-right" style={{ marginBottom: '1rem' }} onClick={() => handleClick('edit')}>
-                     <Fab disabled aria-label="edit"><EditIcon /></Fab>
+                    <Button color="transparent" style={{ marginBottom: '1rem' }} onClick={() => handleClick('edit')}>
+                      <Fab disabled aria-label="edit"><EditIcon /></Fab>
                     </Button>
                     {
                       editing && <DreamForm
@@ -97,7 +92,6 @@ const DreamCard = ({
               </Card>
             </Collapse>
           </Card>
-
         </Col>
       </Row>
     </Container>
