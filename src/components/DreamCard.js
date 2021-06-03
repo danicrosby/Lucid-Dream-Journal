@@ -65,7 +65,6 @@ const DreamCard = ({
                   <Card>
                     <CardBody>
                       <CardText>{entry}</CardText>
-                      <CardText>ADD TAGS HERE</CardText>
                       <div className="card-link-wrapper">
                       <Button color="transparent" onClick={() => handleClick('view')}>View</Button>
                       <Button color="transparent" onClick={() => handleClick('delete')}>Delete</Button>
