@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import VisibilityIcon from '@material-ui/icons/Visibility';
+import EditIcon from '@material-ui/icons/Edit';
+import DeleteIcon from '@material-ui/icons/Delete';
+import Fab from '@material-ui/core/Fab';
 import {
-  Button, Card, CardTitle, Container, Row,
-  Col, Collapse, CardBody, CardText
+  Button,
+  Card,
+  CardTitle,
+  Container,
+  Row,
+  Col,
+  Collapse,
+  CardBody,
+  CardText,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteDream } from '../helpers/data/DreamData';
@@ -54,36 +65,37 @@ const DreamCard = ({
               </Row>
 
               <Row><div>_______________________________________________</div></Row>
-
-              <div>
-                <Button color="transparent float-right" style={{ marginBottom: '1rem' }} onClick={() => handleClick('edit')}>
-                  {editing ? 'Done' : 'Edit'}
-                </Button>
-                {
-                  editing && <DreamForm
-                    formTitle='Edit Dream'
-                    setDreams={setDreams}
-                    firebaseKey={firebaseKey}
-                    name={name}
-                    entry={entry}
-                  />
-                }
-
-              </div>
             </Card>
+
             <Button color="transparent" onClick={toggle} style={{ marginBottom: '1rem' }}>
-                  <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
-                <Collapse isOpen={isOpen}>
-                  <Card>
-                    <CardBody>
-                      <CardText>{entry}</CardText>
-                      <div className="card-link-wrapper">
-                        <Button color="transparent" onClick={() => handleClick('view')}>View</Button>
-                        <Button color="transparent" onClick={() => handleClick('delete')}>Delete</Button>
-                      </div>
-                    </CardBody>
-                  </Card>
-                </Collapse>
+              <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
+            <Collapse isOpen={isOpen}>
+              <Card>
+                <CardBody>
+                  <CardText>{entry}</CardText>
+                  <div className="card-link-wrapper">
+                    <Button color="transparent" onClick={() => handleClick('view')}>
+                      <Fab disabled aria-label="visibility"><VisibilityIcon /></Fab>
+                    </Button>
+                    <Button color="transparent" onClick={() => handleClick('delete')}>
+                      <Fab disabled aria-label="delete"><DeleteIcon /></Fab>
+                    </Button>
+                    <Button color="transparent float-right" style={{ marginBottom: '1rem' }} onClick={() => handleClick('edit')}>
+                     <Fab disabled aria-label="edit"><EditIcon /></Fab>
+                    </Button>
+                    {
+                      editing && <DreamForm
+                        formTitle='Edit Dream'
+                        setDreams={setDreams}
+                        firebaseKey={firebaseKey}
+                        name={name}
+                        entry={entry}
+                      />
+                    }
+                  </div>
+                </CardBody>
+              </Card>
+            </Collapse>
           </Card>
 
         </Col>
