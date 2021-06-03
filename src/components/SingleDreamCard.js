@@ -23,7 +23,7 @@ export default function SingleDreamCard({ dream }) {
               </div>
               </Row>
               <Row><div>_______________________________________________</div></Row>
-              <Row><div className="date">november 11, 2011</div></Row>
+              <Row><div className="logDate">{dream.logDate}</div></Row>
               <Row><CardText></CardText>{ dream.entry }</Row>
               <Row><CardText></CardText></Row>
               <Row><CardText></CardText></Row>
