@@ -1,15 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import {
-  Button,
-  Card,
-  CardTitle,
-  Container,
-  Row,
-  Col,
-  Collapse,
-  CardBody,
-  CardText
+  Button, Card, CardTitle, Container, Row,
+  Col, Collapse, CardBody, CardText
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteDream } from '../helpers/data/DreamData';
@@ -22,8 +15,8 @@ const DreamCard = ({
   setDreams
 }) => {
   const [editing, setEditing] = useState(false);
-  const history = useHistory();
   const [isOpen, setIsOpen] = useState(false);
+  const history = useHistory();
 
   const toggle = () => setIsOpen(!isOpen);
 
@@ -57,8 +50,20 @@ const DreamCard = ({
               </Row>
               <Row><div>_______________________________________________</div></Row>
               <Row><div className="date">november 11, 2011</div></Row>
-              <Row><div></div></Row>
               <div>
+                <Button color="transparent" style={{ marginBottom: '1rem' }} onClick={() => handleClick('edit')}>
+                  {editing ? 'Done' : 'Edit'}
+                </Button>
+                {
+                  editing && <DreamForm
+                    formTitle='Edit Dream'
+                    setDreams={setDreams}
+                    firebaseKey={firebaseKey}
+                    name={name}
+                    entry={entry}
+                  />
+                }
+                           </div>
                 <Button color="transparent" onClick={toggle} style={{ marginBottom: '1rem' }}>
                   <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
                 <Collapse isOpen={isOpen}>
@@ -66,25 +71,12 @@ const DreamCard = ({
                     <CardBody>
                       <CardText>{entry}</CardText>
                       <div className="card-link-wrapper">
-                      <Button color="transparent" onClick={() => handleClick('view')}>View</Button>
-                      <Button color="transparent" onClick={() => handleClick('delete')}>Delete</Button>
-                      <Button color="transparent" onClick={() => handleClick('edit')}>
-                        {editing ? 'Close Form' : 'Edit'}
-                      </Button>
-                      {
-                        editing && <DreamForm
-                          formTitle='Edit Dream'
-                          setDreams={setDreams}
-                          firebaseKey={firebaseKey}
-                          name={name}
-                          entry={entry}
-                        />
-                      }
+                        <Button color="transparent" onClick={() => handleClick('view')}>View</Button>
+                        <Button color="transparent" onClick={() => handleClick('delete')}>Delete</Button>
                       </div>
                     </CardBody>
                   </Card>
                 </Collapse>
-              </div>
             </Card>
           </Card>
         </Col>

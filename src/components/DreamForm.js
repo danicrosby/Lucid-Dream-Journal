@@ -27,8 +27,7 @@ const DreamForm = ({
   const handleInputChange = (e) => {
     setDream((prevState) => ({
       ...prevState,
-      [e.target.name]:
-        e.target.name === e.target.value,
+      [e.target.name]: e.target.value,
     }));
   };
 

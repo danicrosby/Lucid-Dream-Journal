@@ -11,7 +11,7 @@ import {
 
 export default function SingleDreamCard({ dream }) {
   return (
-    <div className="">
+    <div className="single-dream-content">
       <Container className="card-container">
       <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }}>
