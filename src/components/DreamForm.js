@@ -5,7 +5,7 @@ import {
   Form,
   FormGroup,
   Label,
-  Input
+  Input,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -15,13 +15,13 @@ const DreamForm = ({
   setDreams,
   name,
   entry,
-  logDate,
+  date,
   firebaseKey
 }) => {
   const [dream, setDream] = useState({
     name: name || '',
     entry: entry || '',
-    logDate: logDate || '',
+    date: date || '',
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
@@ -30,6 +30,7 @@ const DreamForm = ({
     setDream((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
+      firebaseKey: ''
     }));
   };
 
@@ -46,7 +47,7 @@ const DreamForm = ({
       setDream({
         name: '',
         entry: '',
-        logDate: '',
+        date: '',
         firebaseKey: null
       });
     }
@@ -81,11 +82,11 @@ const DreamForm = ({
         </FormGroup>
 
         <FormGroup>
-          <Label for="logDate"></Label>
+          <Label for="date"></Label>
           <Input
-            name='logDate'
-            id='logDate'
-            value={dream.logDate}
+            name='date'
+            id='date'
+            value={dream.date}
             type='text'
             placeholder='Enter a dream date'
             onChange={handleInputChange}
@@ -103,7 +104,7 @@ DreamForm.propTypes = {
   setDreams: PropTypes.func,
   name: PropTypes.string,
   entry: PropTypes.string,
-  logDate: PropTypes.string,
+  date: PropTypes.string,
   firebaseKey: PropTypes.string
 };
 
