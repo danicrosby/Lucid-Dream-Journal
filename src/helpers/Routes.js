@@ -1,29 +1,29 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import AddStudent from '../views/AddStudent';
-import Home from '../views/Home';
-import Students from '../views/Students';
-import SingleStudent from '../views/SingleStudent';
+import addDream from '../views/AddDream';
+import Welcome from '../views/Welcome';
+import Dreams from '../views/Dreams';
+import SingleDream from '../views/SingleDream';
 import NotFound from '../views/NotFound';
 
-export default function Routes({ students, setStudents }) {
+export default function Routes({ dreams, setDreams }) {
   return (
     <div>
       <Switch>
-        <Route exact path='/' component={Home} />
+        <Route exact path='/' component={Welcome} />
         <Route
           exact
-          path='/students'
-          component={() => <Students students={students} setStudents={setStudents} />}
+          path='/dreams'
+          component={() => <Dreams dreams={dreams} setDreams={setDreams} />}
         />
         <Route
-          path='/students/:firebaseKey'
-          component={SingleStudent}
+          path='/dreams/:firebaseKey'
+          component={SingleDream}
         />
         <Route
-          path='/add-student'
-          component={() => <AddStudent setStudents={setStudents} />}
+          path='/add-dream'
+          component={() => <addDream setDreams={setDreams} />}
         />
         <Route path='*' component={NotFound} />
       </Switch>
@@ -32,6 +32,6 @@ export default function Routes({ students, setStudents }) {
 }
 
 Routes.propTypes = {
-  students: PropTypes.array.isRequired,
-  setStudents: PropTypes.func.isRequired
+  dreams: PropTypes.array.isRequired,
+  setDreams: PropTypes.func.isRequired
 };

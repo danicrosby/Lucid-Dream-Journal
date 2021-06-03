@@ -1,17 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function SingleStudentCard({ children, student }) {
+export default function SingleDreamCard({ children, dream }) {
   return (
     <div>
-      <h1>Student: {student.name }</h1>
+      <h1>Dreams: {dream.name }</h1>
         {children}
       <footer>Footer</footer>
     </div>
   );
 }
 
-SingleStudentCard.propTypes = {
+SingleDreamCard.propTypes = {
   children: PropTypes.any,
-  student: PropTypes.object
+  dream: PropTypes.object
 };

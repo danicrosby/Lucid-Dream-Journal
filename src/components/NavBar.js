@@ -19,10 +19,10 @@ const NavBar = ({ user }) => {
   const authenticated = () => (
     <>
       <NavItem>
-        <Link className="nav-link" to="/add-student">Add Student</Link>
+        <Link className="nav-link" to="/add-dream">Add Dream</Link>
       </NavItem>
       <NavItem>
-        <Link className="nav-link" to="/students">Student Cards</Link>
+        <Link className="nav-link" to="/dreams">Dream Cards</Link>
       </NavItem>
     </>
   );
@@ -33,15 +33,15 @@ const NavBar = ({ user }) => {
         <Link className="navbar-brand" to="/">NavBar</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
+          <Nav className="ml-auto" navbar>
             { user && authenticated()}
             {
               user !== null
               && <NavItem>
                 {
                   user
-                    ? <Button color='danger' onClick={signOutUser}>Sign Out</Button>
-                    : <Button color='info' onClick={signInUser}>Sign In</Button>
+                    ? <Button color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
+                    : <Button color='light' onClick={signInUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
                 }
               </NavItem>
             }
