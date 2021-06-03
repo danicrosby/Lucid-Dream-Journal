@@ -16,8 +16,7 @@ export default function SingleDream() {
     <div>
       <SingleDreamCard dream={dream}>
         <h2>{dream.name}</h2>
-        <h3>{dream.teacher}</h3>
-        <h3>{dream.grade}</h3>
+        <h3>{dream.entry}</h3>
       </SingleDreamCard>
     </div>
   );

@@ -14,14 +14,12 @@ const DreamForm = ({
   formTitle,
   setDreams,
   name,
-  teacher,
-  grade,
+  entry,
   firebaseKey
 }) => {
   const [dream, setDream] = useState({
     name: name || '',
-    teacher: teacher || '',
-    grade: grade || 0,
+    entry: entry || '',
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
@@ -29,8 +27,7 @@ const DreamForm = ({
   const handleInputChange = (e) => {
     setDream((prevState) => ({
       ...prevState,
-      [e.target.name]:
-        e.target.name === 'grade' ? Number(e.target.value) : e.target.value,
+      [e.target.name]: e.target.value,
     }));
   };
 
@@ -46,8 +43,7 @@ const DreamForm = ({
 
       setDream({
         name: '',
-        teacher: '',
-        grade: 0,
+        entry: '',
         firebaseKey: null
       });
     }
@@ -70,25 +66,13 @@ const DreamForm = ({
         </FormGroup>
 
         <FormGroup>
-          <Label for="teacher">Teacher:</Label>
+          <Label for="entry">entry:</Label>
           <Input
-            name='teacher'
-            id='teacher'
-            value={dream.teacher}
+            name='entry'
+            id='entry'
+            value={dream.entry}
             type='text'
-            placeholder='Enter a Teacher Name'
-            onChange={handleInputChange}
-          />
-        </FormGroup>
-
-        <FormGroup>
-          <Label for="grade">Grade:</Label>
-          <Input
-            name='grade'
-            id='grade'
-            value={dream.grade}
-            type='number'
-            placeholder='Enter a Grade'
+            placeholder='Enter a entry Name'
             onChange={handleInputChange}
           />
         </FormGroup>
@@ -103,8 +87,7 @@ DreamForm.propTypes = {
   formTitle: PropTypes.string.isRequired,
   setDreams: PropTypes.func,
   name: PropTypes.string,
-  teacher: PropTypes.string,
-  grade: PropTypes.number,
+  entry: PropTypes.string,
   firebaseKey: PropTypes.string
 };
 
