@@ -59,7 +59,8 @@ const DreamCard = ({
               <Row><div className="date">november 11, 2011</div></Row>
               <Row><div></div></Row>
               <div>
-                <Button color="transparent" onClick={toggle} style={{ marginBottom: '1rem' }}><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
+                <Button color="transparent" onClick={toggle} style={{ marginBottom: '1rem' }}>
+                  <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
                 <Collapse isOpen={isOpen}>
                   <Card>
                     <CardBody>
@@ -89,7 +90,6 @@ const DreamCard = ({
           </Card>
         </Col>
       </Row>
-
     </Container>
   );
 };
