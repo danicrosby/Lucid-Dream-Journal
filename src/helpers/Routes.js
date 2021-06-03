@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import addDream from '../views/AddDream';
+import AddDream from '../views/AddDream';
 import Welcome from '../views/Welcome';
 import Dreams from '../views/Dreams';
 import SingleDream from '../views/SingleDream';
@@ -23,7 +23,7 @@ export default function Routes({ dreams, setDreams }) {
         />
         <Route
           path='/add-dream'
-          component={() => <addDream setDreams={setDreams} />}
+          component={() => <AddDream setDreams={setDreams} />}
         />
         <Route path='*' component={NotFound} />
       </Switch>
