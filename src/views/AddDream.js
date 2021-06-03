@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import DreamForm from '../components/DreamForm';
 
-function addDream({ setDreams }) {
+function AddDream({ setDreams }) {
   return (
     <div>
       <DreamForm
@@ -13,8 +13,8 @@ function addDream({ setDreams }) {
   );
 }
 
-addDream.propTypes = {
+AddDream.propTypes = {
   setDreams: PropTypes.func.isRequired
 };
 
-export default addDream;
+export default AddDream;

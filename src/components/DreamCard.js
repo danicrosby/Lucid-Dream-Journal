@@ -24,6 +24,7 @@ const DreamCard = ({
   firebaseKey,
   name,
   entry,
+  logDate,
   setDreams
 }) => {
   const [editing, setEditing] = useState(false);
@@ -51,49 +52,51 @@ const DreamCard = ({
       <Row>
         <Col sm="12" md={{ size: 6, offset: 3 }}>
           <Card className="card-grey">
-            <Card body className="card-white">
+            <Card className="card-white">
               <Row>
                 <div className="top-text">
-                  <CardTitle tag="h5">{name}</CardTitle>
+                  <CardTitle>{name}</CardTitle>
                   <div><i className="material-icons dream-type-icon"> cloud </i></div>
                 </div>
               </Row>
-              <Row><div>_______________________________________________</div></Row>
+              <Row><div className="hr">___________________________________________________</div></Row>
               <Row>
-                <CardText>november 11, 2011</CardText>
+                <CardText>{logDate}</CardText>
               </Row>
             </Card>
             <div>
-              <Button id="PopoverClick" type="button">
+              <Button color="transparent" id="PopoverClick" type="button">
                 <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
               </Button>
               <UncontrolledPopover trigger="click" placement="bottom" target="PopoverClick">
                 <PopoverHeader>Title</PopoverHeader>
                 <PopoverBody>
                   <div className="card-link-wrapper">
-                  <Button color="transparent" onClick={() => handleClick('view')}>
+                    <Button color="transparent" onClick={() => handleClick('view')}>
                       <Fab disabled aria-label="visibility"><VisibilityIcon /></Fab>
+                    </Button>
+
+                    <Button color="transparent" onClick={() => handleClick('edit')}>
+                      <Fab disabled aria-label="edit"><EditIcon /></Fab>
                     </Button>
                     <Button color="transparent" onClick={() => handleClick('delete')}>
                       <Fab disabled aria-label="delete"><DeleteIcon /></Fab>
                     </Button>
-                    <Button color="transparent" style={{ marginBottom: '1rem' }} onClick={() => handleClick('edit')}>
-                      <Fab disabled aria-label="edit"><EditIcon /></Fab>
-                    </Button>
-                    {
-                      editing && <DreamForm
-                        formTitle='Edit Dream'
-                        setDreams={setDreams}
-                        firebaseKey={firebaseKey}
-                        name={name}
-                        entry={entry}
-                      />
-                    }
                   </div>
                 </PopoverBody>
               </UncontrolledPopover>
             </div>
           </Card>
+          {
+            editing && <DreamForm
+              formTitle='Edit Dream'
+              setDreams={setDreams}
+              firebaseKey={firebaseKey}
+              name={name}
+              entry={entry}
+              logDate={logDate}
+            />
+          }
         </Col>
       </Row>
 
@@ -106,6 +109,7 @@ DreamCard.propTypes = {
   firebaseKey: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   entry: PropTypes.string.isRequired,
+  logDate: PropTypes.any.isRequired,
   setDreams: PropTypes.func
 };
 
