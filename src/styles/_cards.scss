@@ -1,13 +1,141 @@
-.card-container {
+// header {
+//   display: flex;
+//   flex-flow: column wrap;
+//   justify-content: center;
+//   border: 1px solid lightgrey;
+//   height: 5em;
+//   width: 34em;
+//   padding-top: 1em;
+//   padding-bottom: 1em;
+//   margin-top: 1em;
+//   margin-left: 0em;
+//   border-bottom: 0em;
+//   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+// }
+
+// .header-icon-cloud-container {
+//   display: flex;
+//   justify-content: flex-start;
+// }
+
+// .header-top-text {
+//   display: flex;
+//   justify-content: center;
+// }
+
+// #header-cloud {
+//   margin-left: -5em;
+//   font-size: 2em;
+//   opacity: .9;
+//   transition: opacity 1s ease-in-out 1s;
+// }
+
+// #header-cloud:hover {
+//   color: darkorchid;
+//   opacity: 1;
+// }
+
+// .header-title {
+//   font-size: 30px;
+//   font-family: 'Sacramento', cursive;
+//   margin-left: 0em;
+//   font-weight: bolder;
+// }
+
+// .header-date {
+//   text-align: center;
+//   font-size: 10px;
+//   font-family: 'Almarai', sans-serif;
+//   margin-left: 0em;
+// }
+
+// .main-section-container {
+//   border: 1px solid lightgrey;
+//   padding-left: 2em;
+//   padding-right: 2em;
+//   padding-bottom: 3em;
+
+// }
+
+#add-button {
   display: flex;
-  flex-flow: row wrap;
+  justify-content: center;
+  font-size: 3em;
+  margin-top: .3em;
+  margin-bottom: .4em;
+  color: darkorchid;
+}
 
-  .card {
-    width: 300px;
-    margin: 5px;
-  }
+.card-grey {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background-color: rgb(222, 222, 222);
+  width: 30em;
+  height: 10.8em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
 
-  .card-body {
-    flex: none;
-  }
+.card-white {
+  background-color: white;
+  height: 7em;
+  width: 28em;
+  margin: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.top-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2em;
+  width: 28em;
+  margin-top: 1em;
+  margin-bottom: 0;
+}
+
+.dream-type {
+  margin-left: 1.5em;
+  font-size: 18px;
+  font-family: 'Almarai', sans-serif;
+
+}
+
+.dream-type-icon {
+  margin-right: 1.5em;
+  font-size: 1em;
+}
+
+// hr {
+//   width: 24em;
+// }
+
+.date {
+  margin-left: 3em;
+  font-family: 'Almarai', sans-serif;
+  font-size: .7em;
+}
+
+#expand-arrow {
+  font-size: 1.4em;
+  font-weight: bolder;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5em;
+}
+
+.card-link-wrapper {
+  display: flex;
+  justify-content: center;
 }

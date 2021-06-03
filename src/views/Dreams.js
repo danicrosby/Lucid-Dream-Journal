@@ -11,8 +11,7 @@ function Dreams({ dreams, setDreams }) {
             key={dreamInfo.firebaseKey}
             firebaseKey={dreamInfo.firebaseKey}
             name={dreamInfo.name}
-            teacher={dreamInfo.teacher}
-            grade={Number(dreamInfo.grade)}
+            entry={dreamInfo.entry}
             setDreams={setDreams}
           />
         ))}
