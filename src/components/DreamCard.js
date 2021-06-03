@@ -11,9 +11,10 @@ import {
   Container,
   Row,
   Col,
-  Collapse,
-  CardBody,
   CardText,
+  UncontrolledPopover,
+  PopoverHeader,
+  PopoverBody
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteDream } from '../helpers/data/DreamData';
@@ -26,10 +27,7 @@ const DreamCard = ({
   setDreams
 }) => {
   const [editing, setEditing] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   const history = useHistory();
-
-  const toggle = () => setIsOpen(!isOpen);
 
   const handleClick = (type) => {
     switch (type) {
@@ -61,12 +59,17 @@ const DreamCard = ({
                 </div>
               </Row>
               <Row><div>_______________________________________________</div></Row>
+              <Row>
+                <CardText>november 11, 2011</CardText>
+              </Row>
             </Card>
-            <Button color="transparent" onClick={toggle} style={{ marginBottom: '1rem' }}>
-              <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
-            <Collapse isOpen={isOpen}>
-              <Card>
-                <CardBody>
+            <div>
+              <Button id="PopoverFocus" type="button">
+                <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
+              </Button>
+              <UncontrolledPopover trigger="focus" placement="bottom" target="PopoverFocus">
+                <PopoverHeader>Title</PopoverHeader>
+                <PopoverBody>
                   <CardText>{entry}</CardText>
                   <div className="card-link-wrapper">
                     <Button color="transparent" onClick={() => handleClick('view')}>
@@ -88,13 +91,15 @@ const DreamCard = ({
                       />
                     }
                   </div>
-                </CardBody>
-              </Card>
-            </Collapse>
+                </PopoverBody>
+              </UncontrolledPopover>
+            </div>
           </Card>
         </Col>
       </Row>
+
     </Container>
+
   );
 };
 
