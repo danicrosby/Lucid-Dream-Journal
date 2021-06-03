@@ -64,15 +64,14 @@ const DreamCard = ({
               </Row>
             </Card>
             <div>
-              <Button id="PopoverFocus" type="button">
+              <Button id="PopoverClick" type="button">
                 <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
               </Button>
-              <UncontrolledPopover trigger="focus" placement="bottom" target="PopoverFocus">
+              <UncontrolledPopover trigger="click" placement="bottom" target="PopoverClick">
                 <PopoverHeader>Title</PopoverHeader>
                 <PopoverBody>
-                  <CardText>{entry}</CardText>
                   <div className="card-link-wrapper">
-                    <Button color="transparent" onClick={() => handleClick('view')}>
+                  <Button color="transparent" onClick={() => handleClick('view')}>
                       <Fab disabled aria-label="visibility"><VisibilityIcon /></Fab>
                     </Button>
                     <Button color="transparent" onClick={() => handleClick('delete')}>
