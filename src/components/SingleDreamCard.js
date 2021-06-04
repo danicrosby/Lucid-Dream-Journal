@@ -7,7 +7,6 @@ import {
   CardHeader,
   CardText,
   CardBody,
-  Button,
   CardFooter
 } from 'reactstrap';
 
@@ -19,8 +18,7 @@ export default function SingleDreamCard({ dream }) {
         <CardBody>
           <CardTitle tag="h5">{dream.name}</CardTitle>
           <CardText>{dream.entry}</CardText>
-          <CardText>{dream.entry}</CardText>
-          <Button>Go somewhere</Button>
+          <CardText>{dream.date}</CardText>
         </CardBody>
         <CardFooter>Footer</CardFooter>
       </Card>

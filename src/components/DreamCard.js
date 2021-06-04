@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import VisibilityIcon from '@material-ui/icons/Visibility';
+import Fab from '@material-ui/core/Fab';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
-import Fab from '@material-ui/core/Fab';
+import VisibilityIcon from '@material-ui/icons/Visibility';
 import {
-  Button,
   Card,
   CardTitle,
   Container,
   CardText,
-  UncontrolledPopover,
-  PopoverHeader,
-  PopoverBody,
   CardBody,
+  Button, UncontrolledPopover, PopoverHeader, PopoverBody
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteDream } from '../helpers/data/DreamData';
@@ -49,50 +46,45 @@ const DreamCard = ({
   return (
 
     <Container className="dream-card-container">
+      <div>
       <Card>
-        <CardBody className="card-grey">
-          <CardBody className="card-white">
-            <div className="top-text">
-            <CardTitle>{name}</CardTitle>
-            <div><i className="material-icons dream-type-icon"> cloud </i></div>
-            </div>
-            <CardText className="hr">___________________________________________________</CardText>
-            <CardText className="date">{date}</CardText>
-          </CardBody>
-          <div>
-              <Button color="transparent" id="PopoverClick" type="button">
-                <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
-              </Button>
-              <UncontrolledPopover trigger="click" placement="bottom" target="PopoverClick">
-                <PopoverHeader>{name}</PopoverHeader>
-                <PopoverBody>
-                  <div className="card-link-wrapper">
-                    <Button color="transparent" onClick={() => handleClick('view')}>
-                      <Fab disabled aria-label="visibility"><VisibilityIcon /></Fab>
-                    </Button>
+        <CardBody>
 
-                    <Button color="transparent" onClick={() => handleClick('edit')}>
-                      <Fab disabled aria-label="edit"><EditIcon /></Fab>
-                    </Button>
-                    <Button color="transparent" onClick={() => handleClick('delete')}>
-                      <Fab disabled aria-label="delete"><DeleteIcon /></Fab>
-                    </Button>
-                  </div>
-                </PopoverBody>
-              </UncontrolledPopover>
-            </div>
+          <div className="top-text">
+            <CardTitle>{name}</CardTitle>
+            <i className="material-icons dream-type-icon"> cloud </i>
+          </div>
+
+          <CardText className="hr">___________________________________________________</CardText>
+          <CardText className="date">{date}</CardText>
+
         </CardBody>
+        <div>
+          <Button color="transparent" id="PopoverClick" type="button"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
+          {' '}
+          <UncontrolledPopover trigger="click" placement="bottom" target="PopoverClick">
+            <PopoverHeader>Edit Dream</PopoverHeader>
+            <PopoverBody>
+              <div className="card-link-wrapper">
+                <Fab className="fab-icons" onClick={() => handleClick('view')}><VisibilityIcon /></Fab>
+                <Fab className="fab-icons" onClick={() => handleClick('edit')}><EditIcon /></Fab>
+                <Fab className="fab-icons" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
+              </div>
+            </PopoverBody>
+          </UncontrolledPopover>
+        </div>
       </Card>
+      </div>
       {
-            editing && <DreamForm
-              formTitle='Edit Dream'
-              setDreams={setDreams}
-              firebaseKey={firebaseKey}
-              name={name}
-              entry={entry}
-              date={date}
-            />
-          }
+        editing && <DreamForm
+          formTitle='Edit Dream'
+          setDreams={setDreams}
+          firebaseKey={firebaseKey}
+          name={name}
+          entry={entry}
+          date={date}
+        />
+      }
 
     </Container>
 
