@@ -1,16 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { Container } from 'reactstrap';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import DreamCard from '../components/DreamCard';
 
 function Dreams({ dreams, setDreams }) {
   return (
-    <>
-      <Link className="nav-link" to="/add-dream">
-        <Fab className="fab-add-btn"><AddIcon /></Fab>
-      </Link>
+    <Container className="recorded-dream-container">
+      <Link className="nav-link add-dream-btn-link mx-auto" to="/add-dream"><Fab className="fab-add-btn"><AddIcon /></Fab></Link>
       <div className="card-container">
         {dreams.map((dreamInfo) => (
           <DreamCard
@@ -22,7 +21,7 @@ function Dreams({ dreams, setDreams }) {
           />
         ))}
       </div>
-    </>
+      </Container>
   );
 }
 

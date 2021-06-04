@@ -14,13 +14,13 @@ export default function SingleDreamCard({ dream }) {
   return (
     <Container className="card-container mx-auto">
       <Card>
-        <CardHeader>Header</CardHeader>
+        <CardHeader>Dream Interpretation</CardHeader>
         <CardBody>
           <CardTitle tag="h5">{dream.name}</CardTitle>
           <CardText>{dream.entry}</CardText>
           <CardText>{dream.date}</CardText>
         </CardBody>
-        <CardFooter>Footer</CardFooter>
+        <CardFooter>More</CardFooter>
       </Card>
     </Container>
   );

@@ -46,7 +46,7 @@ const DreamCard = ({
   };
 
   return (
-    <div className="dream-card-container">
+    <>
       <Card className="dream-card">
         <CardBody className="dream-card-body">
 
@@ -81,7 +81,7 @@ const DreamCard = ({
           date={date}
         />
       }
-    </div>
+    </>
   );
 };
 

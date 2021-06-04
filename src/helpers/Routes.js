@@ -3,7 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import AddDream from '../views/AddFormView';
 import Welcome from '../views/WelcomeView';
-import Dreams from '../views/DreamCollectionView';
+import Dreams from '../views/DreamsView';
 import SingleDream from '../views/SingleCardView';
 
 export default function Routes({ dreams, setDreams }) {
