@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import Fab from '@material-ui/core/Fab';
+import CheckIcon from '@material-ui/icons/Check';
 import {
-  Button, Form, FormGroup,
-  Input, Card, CardHeader, Container,
-  CardFooter, CardBody,
+  Form,
+  FormGroup,
+  Input,
+  Card,
+  CardHeader,
+  Container,
+  CardBody,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -55,7 +61,7 @@ const DreamForm = ({
 
           <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
 
-          <FormGroup>
+            <FormGroup>
               <Input
                 name='name'
                 id='name'
@@ -76,11 +82,9 @@ const DreamForm = ({
                 onChange={handleInputChange}
               />
             </FormGroup>
-
-            <Button className="add-btn-submit float-right" type='submit'>Submit</Button>
+            <Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab>
           </Form>
         </CardBody>
-        <CardFooter>Footer</CardFooter>
       </Card>
     </Container>
   );
