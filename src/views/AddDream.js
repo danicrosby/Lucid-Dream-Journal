@@ -4,12 +4,10 @@ import DreamForm from '../components/DreamForm';
 
 function AddDream({ setDreams }) {
   return (
-    <div>
       <DreamForm
         formTitle='Add Dream'
         setDreams={setDreams}
       />
-    </div>
   );
 }
 

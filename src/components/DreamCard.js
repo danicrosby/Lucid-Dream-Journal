@@ -7,10 +7,12 @@ import VisibilityIcon from '@material-ui/icons/Visibility';
 import {
   Card,
   CardTitle,
-  Container,
   CardText,
   CardBody,
-  Button, UncontrolledPopover, PopoverHeader, PopoverBody
+  Button,
+  UncontrolledPopover,
+  PopoverHeader,
+  PopoverBody
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { deleteDream } from '../helpers/data/DreamData';
@@ -43,37 +45,31 @@ const DreamCard = ({
   };
 
   return (
-
-    <Container className="dream-card-container">
-      <div>
-      <Card>
-        <CardBody>
+    <>
+      <Card className="dream-card">
+        <CardBody className="dream-card-body">
 
           <div className="top-text">
             <CardTitle>{name}</CardTitle>
             <i className="material-icons dream-type-icon"> cloud </i>
           </div>
 
-          <CardText className="hr">___________________________________________________</CardText>
+          <CardText className="hr">_____________________________________________________________</CardText>
           <CardText className="date">november 11, 2011</CardText>
-
         </CardBody>
         <div>
-          <Button color="transparent" id="PopoverClick" type="button"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
-          {' '}
-          <UncontrolledPopover trigger="click" placement="bottom" target="PopoverClick">
+          <Button className="PopoverClick-btn" color="transparent" id="PopoverClick" type="button"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
+          <UncontrolledPopover className="popover-card" trigger="click" placement="bottom" target="PopoverClick">
             <PopoverHeader>Edit Dream</PopoverHeader>
-            <PopoverBody>
-              <div className="card-link-wrapper">
-                <Fab className="fab-icons" onClick={() => handleClick('view')}><VisibilityIcon /></Fab>
-                <Fab className="fab-icons" onClick={() => handleClick('edit')}><EditIcon /></Fab>
-                <Fab className="fab-icons" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
-              </div>
+            <PopoverBody className="popover-body">
+              <Fab className="fab-icons m-1" onClick={() => handleClick('view')}><VisibilityIcon /></Fab>
+              <Fab className="fab-icons m-1 mr-1 ml-1" onClick={() => handleClick('edit')}><EditIcon /></Fab>
+              <Fab className="fab-icons m-1" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
             </PopoverBody>
           </UncontrolledPopover>
         </div>
       </Card>
-      </div>
+
       {
         editing && <DreamForm
           formTitle='Edit Dream'
@@ -83,9 +79,7 @@ const DreamCard = ({
           entry={entry}
         />
       }
-
-    </Container>
-
+    </>
   );
 };
 

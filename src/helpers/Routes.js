@@ -5,7 +5,6 @@ import AddDream from '../views/AddDream';
 import Welcome from '../views/Welcome';
 import Dreams from '../views/Dreams';
 import SingleDream from '../views/SingleDream';
-import NotFound from '../views/NotFound';
 
 export default function Routes({ dreams, setDreams }) {
   return (
@@ -25,7 +24,6 @@ export default function Routes({ dreams, setDreams }) {
           path='/add-dream'
           component={() => <AddDream setDreams={setDreams} />}
         />
-        <Route path='*' component={NotFound} />
       </Switch>
     </div>
   );

@@ -12,7 +12,7 @@ import {
 
 export default function SingleDreamCard({ dream }) {
   return (
-    <Container className="card-container">
+    <Container className="card-container mx-auto">
       <Card>
         <CardHeader>Header</CardHeader>
         <CardBody>
