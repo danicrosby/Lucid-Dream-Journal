@@ -1,17 +1,16 @@
-.card-container {
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-}
+// .card-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   border: 2px solid red;
+// }
 
 .dream-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   background-color: lightgrey;
   height: 14em;
   width: 40em;
   padding: 1em;
+  margin: 1em;
 }
 
 .dream-card-body {
@@ -50,3 +49,29 @@ a {
 .fab-icons {
   margin: 2em;
 }
+
+.dream-form-container {
+  display: flex; 
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+.add-dream-card {
+  width: 40em;
+  margin: 5em;
+}
+
+.add-dream-card-body {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.record-dream-texarea {
+  height: 20em;
+}
+
+

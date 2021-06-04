@@ -19,11 +19,13 @@ const DreamForm = ({
   setDreams,
   name,
   entry,
+  date,
   firebaseKey
 }) => {
   const [dream, setDream] = useState({
     name: name || '',
     entry: entry || '',
+    date: date || '',
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
@@ -48,6 +50,7 @@ const DreamForm = ({
       setDream({
         name: '',
         entry: '',
+        date: '',
         firebaseKey: null
       });
     }
@@ -82,6 +85,18 @@ const DreamForm = ({
                 onChange={handleInputChange}
               />
             </FormGroup>
+
+            <FormGroup>
+              <Input
+                name='date'
+                id='date'
+                value={dream.date}
+                type='text'
+                placeholder='Dream Date'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
             <Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab>
           </Form>
         </CardBody>
@@ -95,6 +110,7 @@ DreamForm.propTypes = {
   setDreams: PropTypes.func,
   name: PropTypes.string,
   entry: PropTypes.string,
+  date: PropTypes.string,
   firebaseKey: PropTypes.string
 };
 

@@ -22,6 +22,7 @@ const DreamCard = ({
   firebaseKey,
   name,
   entry,
+  date,
   setDreams
 }) => {
   const [editing, setEditing] = useState(false);
@@ -45,7 +46,7 @@ const DreamCard = ({
   };
 
   return (
-    <>
+    <div className="dream-card-container">
       <Card className="dream-card">
         <CardBody className="dream-card-body">
 
@@ -55,7 +56,7 @@ const DreamCard = ({
           </div>
 
           <CardText className="hr">_____________________________________________________________</CardText>
-          <CardText className="date">november 11, 2011</CardText>
+          <CardText className="date">{date}november 11, 2011</CardText>
         </CardBody>
         <div>
           <Button className="PopoverClick-btn" color="transparent" id="PopoverClick" type="button"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
@@ -77,16 +78,18 @@ const DreamCard = ({
           firebaseKey={firebaseKey}
           name={name}
           entry={entry}
+          date={date}
         />
       }
-    </>
+    </div>
   );
 };
 
 DreamCard.propTypes = {
   firebaseKey: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  entry: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  entry: PropTypes.string,
+  date: PropTypes.string,
   setDreams: PropTypes.func
 };
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Welcome() {
   return (
-    <div className="welcome-page">
+    <div className="welcome-page-view">
       <div className="welcome-page-content">
           <div className="welcome-title"><h1>welcome</h1></div>
 
