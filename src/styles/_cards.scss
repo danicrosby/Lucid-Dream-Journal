@@ -1,0 +1,54 @@
+.dream-card {
+  background-color: lightgrey;
+  height: 14em;
+  width: 40em;
+  padding: 1em;
+  margin: 1em;
+}
+
+.dream-card-body {
+  background-color: white;
+  height: 8em;
+  padding: 2em;
+}
+
+.top-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dream-type-icon {
+  margin-right: 1.5em;
+  font-size: 2em;
+}
+
+.hr {
+  text-align: center;
+  margin-top: -1em;
+  margin-right: 1em;
+  font-weight: lighter;
+}
+
+.date {
+  font-family: 'Almarai', sans-serif;
+  font-size: .8em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.add-dream-card {
+  width: 40em;
+  margin: 5em;
+}
+
+.add-dream-card-body {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.record-dream-texarea {
+  height: 20em;
+}

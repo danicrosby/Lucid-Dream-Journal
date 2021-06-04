@@ -27,7 +27,7 @@ const deleteDream = (firebaseKey) => new Promise((resolve, reject) => {
 });
 
 const updateDream = (dream) => new Promise((resolve, reject) => {
-  axios.put(`${dbUrl}/dreams/${dream.firebaseKey}.json`, dream)
+  axios.patch(`${dbUrl}/dreams/${dream.firebaseKey}.json`, dream)
     .then(() => getDreams().then(resolve))
     .catch((error) => reject(error));
 });

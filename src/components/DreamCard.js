@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import VisibilityIcon from '@material-ui/icons/Visibility';
+import Fab from '@material-ui/core/Fab';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
-import Fab from '@material-ui/core/Fab';
+import VisibilityIcon from '@material-ui/icons/Visibility';
 import {
-  Button,
   Card,
   CardTitle,
-  Container,
-  Row,
-  Col,
   CardText,
+  CardBody,
+  Button,
   UncontrolledPopover,
   PopoverHeader,
   PopoverBody
@@ -48,67 +46,49 @@ const DreamCard = ({
   };
 
   return (
-    <Container className="card-container">
-      <Row>
-        <Col sm="12" md={{ size: 6, offset: 3 }}>
-          <Card className="card-grey">
-            <Card className="card-white">
-              <Row>
-                <div className="top-text">
-                  <CardTitle>{name}</CardTitle>
-                  <div><i className="material-icons dream-type-icon"> cloud </i></div>
-                </div>
-              </Row>
-              <Row><div className="hr">___________________________________________________</div></Row>
-              <Row>
-                <CardText className="date">{date} fix date</CardText>
-              </Row>
-            </Card>
-            <div>
-              <Button color="transparent" id="PopoverClick" type="button">
-                <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
-              </Button>
-              <UncontrolledPopover trigger="click" placement="bottom" target="PopoverClick">
-                <PopoverHeader>{name}</PopoverHeader>
-                <PopoverBody>
-                  <div className="card-link-wrapper">
-                    <Button color="transparent" onClick={() => handleClick('view')}>
-                      <Fab disabled aria-label="visibility"><VisibilityIcon /></Fab>
-                    </Button>
+    <>
+      <Card className="dream-card">
+        <CardBody className="dream-card-body">
 
-                    <Button color="transparent" onClick={() => handleClick('edit')}>
-                      <Fab disabled aria-label="edit"><EditIcon /></Fab>
-                    </Button>
-                    <Button color="transparent" onClick={() => handleClick('delete')}>
-                      <Fab disabled aria-label="delete"><DeleteIcon /></Fab>
-                    </Button>
-                  </div>
-                </PopoverBody>
-              </UncontrolledPopover>
-            </div>
-          </Card>
-          {
-            editing && <DreamForm
-              formTitle='Edit Dream'
-              setDreams={setDreams}
-              firebaseKey={firebaseKey}
-              name={name}
-              entry={entry}
-              date={date}
-            />
-          }
-        </Col>
-      </Row>
+          <div className="top-text">
+            <CardTitle>{name}</CardTitle>
+            <i className="material-icons dream-type-icon"> cloud </i>
+          </div>
 
-    </Container>
+          <CardText className="hr">_____________________________________________________________</CardText>
+          <CardText className="date">{date}november 11, 2011</CardText>
+        </CardBody>
+        <div>
+          <Button className="PopoverClick-btn" color="transparent" id="PopoverClick" type="button"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
+          <UncontrolledPopover className="popover-card" trigger="click" placement="bottom" target="PopoverClick">
+            <PopoverHeader>Edit Dream</PopoverHeader>
+            <PopoverBody className="popover-body">
+              <Fab className="fab-icons m-1" onClick={() => handleClick('view')}><VisibilityIcon /></Fab>
+              <Fab className="fab-icons m-1 mr-1 ml-1" onClick={() => handleClick('edit')}><EditIcon /></Fab>
+              <Fab className="fab-icons m-1" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
+            </PopoverBody>
+          </UncontrolledPopover>
+        </div>
+      </Card>
 
+      {
+        editing && <DreamForm
+          formTitle='Edit Dream'
+          setDreams={setDreams}
+          firebaseKey={firebaseKey}
+          name={name}
+          entry={entry}
+          date={date}
+        />
+      }
+    </>
   );
 };
 
 DreamCard.propTypes = {
   firebaseKey: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  entry: PropTypes.string.isRequired,
+  name: PropTypes.string,
+  entry: PropTypes.string,
   date: PropTypes.string,
   setDreams: PropTypes.func
 };

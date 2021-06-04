@@ -4,36 +4,25 @@ import {
   Card,
   CardTitle,
   Container,
-  Row,
-  Col,
-  CardText
+  CardHeader,
+  CardText,
+  CardBody,
+  CardFooter
 } from 'reactstrap';
 
 export default function SingleDreamCard({ dream }) {
   return (
-    <div className="single-dream-content">
-      <Container className="card-container">
-      <Row>
-        <Col sm="12" md={{ size: 6, offset: 3 }}>
-          <Card className="card-grey">
-            <Card body className="card-white">
-              <Row><div className="top-text">
-                <CardTitle tag="h5">{ dream.name }</CardTitle>
-                <div><i className="material-icons dream-type-icon"> cloud </i></div>
-              </div>
-              </Row>
-              <Row><div>_______________________________________________</div></Row>
-              <Row><div className="date">{dream.date}</div></Row>
-              <Row><CardText></CardText>{ dream.entry }</Row>
-              <Row><CardText></CardText></Row>
-              <Row><CardText></CardText></Row>
-              <Row><CardText></CardText></Row>
-            </Card>
-          </Card>
-        </Col>
-      </Row>
+    <Container className="card-container mx-auto">
+      <Card>
+        <CardHeader>Dream Interpretation</CardHeader>
+        <CardBody>
+          <CardTitle tag="h5">{dream.name}</CardTitle>
+          <CardText>{dream.entry}</CardText>
+          <CardText>{dream.date}</CardText>
+        </CardBody>
+        <CardFooter>More</CardFooter>
+      </Card>
     </Container>
-    </div>
   );
 }
 

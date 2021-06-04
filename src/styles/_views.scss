@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: hotpink;
+}
+
+#root {
+  background-color: orange;
+}
+
+.single-card-view {
+  background-color: purple;
+  height: 100vmin;
+  width: 100vmin;
+}
+
+.welcome-page-view {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  height: 100vmin;
+  width: 100vmin;
+}
+
+.recorded-dream-container {
+  border: 1px solid grey;
+}
