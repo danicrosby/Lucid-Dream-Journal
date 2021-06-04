@@ -18,7 +18,6 @@ export default function SingleDreamCard({ dream }) {
         <CardBody>
           <CardTitle tag="h5">{dream.name}</CardTitle>
           <CardText>{dream.entry}</CardText>
-          <CardText>{dream.date}</CardText>
         </CardBody>
         <CardFooter>Footer</CardFooter>
       </Card>

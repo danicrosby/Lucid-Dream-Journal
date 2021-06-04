@@ -20,7 +20,6 @@ const DreamCard = ({
   firebaseKey,
   name,
   entry,
-  date,
   setDreams
 }) => {
   const [editing, setEditing] = useState(false);
@@ -56,7 +55,7 @@ const DreamCard = ({
           </div>
 
           <CardText className="hr">___________________________________________________</CardText>
-          <CardText className="date">{date}</CardText>
+          <CardText className="date">november 11, 2011</CardText>
 
         </CardBody>
         <div>
@@ -82,7 +81,6 @@ const DreamCard = ({
           firebaseKey={firebaseKey}
           name={name}
           entry={entry}
-          date={date}
         />
       }
 
@@ -95,7 +93,6 @@ DreamCard.propTypes = {
   firebaseKey: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   entry: PropTypes.string.isRequired,
-  date: PropTypes.string,
   setDreams: PropTypes.func
 };
 
