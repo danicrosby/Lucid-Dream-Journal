@@ -19,6 +19,7 @@ function Dreams({ dreams, setDreams }) {
             name={dreamInfo.name}
             entry={dreamInfo.entry}
             date={dreamInfo.date}
+            type={dreamInfo.type}
             setDreams={setDreams}
           />
         ))}
