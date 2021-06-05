@@ -8,22 +8,16 @@ import {
   Button,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
-import { deleteDream } from '../helpers/data/DreamData';
 
 const DreamCard = ({
   firebaseKey,
   name,
   date,
-  setDreams
 }) => {
   const history = useHistory();
 
   const handleClick = (type) => {
     switch (type) {
-      case 'delete':
-        deleteDream(firebaseKey)
-          .then(setDreams);
-        break;
       case 'view':
         history.push(`/dreams/${firebaseKey}`);
         break;
@@ -36,20 +30,16 @@ const DreamCard = ({
     <>
       <Card className="dream-card">
         <CardBody className="dream-card-body">
-
           <div className="top-text">
             <CardTitle>{name}</CardTitle>
             <i className="material-icons dream-type-icon"> cloud </i>
           </div>
-
           <CardText className="hr">_____________________________________________________________</CardText>
           <CardText className="date">{date}</CardText>
         </CardBody>
-
         <Button color="transparent" className="fab-icons m-1" onClick={() => handleClick('view')}>
           <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
         </Button>
-
       </Card>
     </>
   );
@@ -60,7 +50,6 @@ DreamCard.propTypes = {
   name: PropTypes.string,
   entry: PropTypes.string,
   date: PropTypes.string,
-  setDreams: PropTypes.func
 };
 
 export default DreamCard;

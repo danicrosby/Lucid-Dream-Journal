@@ -21,6 +21,7 @@ export default function SingleDreamCard({ dream, setDreams }) {
   const handleClick = (type) => {
     switch (type) {
       case 'delete':
+        console.warn(dream.firebaseKey);
         deleteDream(dream.firebaseKey)
           .then(setDreams);
         break;
@@ -54,7 +55,7 @@ export default function SingleDreamCard({ dream, setDreams }) {
       {
         editing && <DreamForm
           formTitle='Edit Dream'
-          setDreams={dream.setDreams}
+          setDreams={setDreams}
           firebaseKey={dream.firebaseKey}
           name={dream.name}
           entry={dream.entry}
@@ -66,9 +67,7 @@ export default function SingleDreamCard({ dream, setDreams }) {
 }
 
 SingleDreamCard.propTypes = {
+  firebaseKey: PropTypes.string,
   dream: PropTypes.object,
-  name: PropTypes.string,
-  entry: PropTypes.string,
-  date: PropTypes.string,
-  setDreams: PropTypes.func
+  setDreams: PropTypes.object
 };
