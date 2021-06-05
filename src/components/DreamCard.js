@@ -52,9 +52,9 @@ const DreamCard = ({
           </div>
 
           <CardText className="hr">_____________________________________________________________</CardText>
-          <CardText className="date">{date}november 11, 2011</CardText>
+          <CardText className="date">{date}</CardText>
         </CardBody>
-        <div>
+        <div className="card-footer">
               <Button className="fab-icons m-1" onClick={() => handleClick('view')}><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Button>
               <Fab className="fab-icons m-1 mr-1 ml-1" onClick={() => handleClick('edit')}><EditIcon /></Fab>
               <Fab className="fab-icons m-1" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>

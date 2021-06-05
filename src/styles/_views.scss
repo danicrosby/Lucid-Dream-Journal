@@ -14,7 +14,6 @@ body {
 
 .single-card-view {
   background-color: purple;
-  height: 100vmin;
   width: 69vmin;}
 
 .welcome-page-view {
@@ -35,6 +34,11 @@ body {
 }
 
 .footer {
+  display: flex; 
+  justify-content: center;
+}
+
+.card-footer {
   display: flex; 
   justify-content: center;
 }
