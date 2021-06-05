@@ -20,6 +20,11 @@ function Dreams({ dreams, setDreams }) {
             entry={dreamInfo.entry}
             date={dreamInfo.date}
             type={dreamInfo.type}
+            emotion={dreamInfo.emotion}
+            people={dreamInfo.people}
+            place={dreamInfo.place}
+            thing={dreamInfo.thing}
+            color={dreamInfo.color}
             setDreams={setDreams}
           />
         ))}

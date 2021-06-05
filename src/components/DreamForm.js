@@ -21,6 +21,11 @@ const DreamForm = ({
   entry,
   date,
   type,
+  emotion,
+  people,
+  place,
+  thing,
+  color,
   firebaseKey
 }) => {
   const [dream, setDream] = useState({
@@ -28,6 +33,11 @@ const DreamForm = ({
     entry: entry || '',
     date: date || '',
     type: type || '',
+    emotion: emotion || '',
+    people: people || '',
+    place: place || '',
+    thing: thing || '',
+    color: color || '',
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
@@ -53,6 +63,11 @@ const DreamForm = ({
         name: '',
         entry: '',
         date: '',
+        emotion: '',
+        people: '',
+        place: '',
+        thing: '',
+        color: '',
         firebaseKey: null
       });
     }
@@ -125,6 +140,11 @@ DreamForm.propTypes = {
   entry: PropTypes.string,
   date: PropTypes.string,
   type: PropTypes.string,
+  emotion: PropTypes.string,
+  people: PropTypes.string,
+  place: PropTypes.string,
+  thing: PropTypes.string,
+  color: PropTypes.string,
   firebaseKey: PropTypes.string
 };
 
