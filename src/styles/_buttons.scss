@@ -1,9 +1,10 @@
 .sign-in-out-btn {
   color: black;
   opacity: .9;
+  font-size: 3em;
   animation-name: colors;
-  animation-delay: .3s;
-  animation-duration: 7s;
+  animation-delay: .2s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
   animation-direction:alternate-reverse;
 }
@@ -24,3 +25,11 @@ a {
 .add-btn-submit {
   text-align: center;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2.5em;
+}
+
+

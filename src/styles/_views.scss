@@ -1,27 +1,49 @@
 body {
+  // background-color: hotpink;
   display: flex;
   justify-content: center;
-  background-color: hotpink;
 }
 
 #root {
-  background-color: orange;
-}
-
-.single-card-view {
-  background-color: purple;
-  height: 100vmin;
-  width: 100vmin;
-}
-
-.welcome-page-view {
+  // background-color: orange;
   display: flex;
   justify-content: center;
-  background-color: blue;
-  height: 100vmin;
-  width: 100vmin;
+  flex-direction: column;
+  width: 69vmin;
 }
 
-.recorded-dream-container {
-  border: 1px solid grey;
+// .single-card-view {
+//   background-color: purple;
+// }
+
+.welcome-page-view {
+  // background-color: blue;
+  display: flex;
+  justify-content: center;
+  height: 100vmin;
+  width: 69vmin;}
+
+// .recorded-dream-container {
+//   background-color:grey;
+// }
+
+.navBar {
+  width: 69vmin;
+  height: 8em;
+}
+
+.footer {
+  display: flex; 
+  justify-content: center;
+}
+
+.card-footer {
+  display: flex; 
+  justify-content: center;
+}
+
+.dream-form-container {
+  // background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
 }

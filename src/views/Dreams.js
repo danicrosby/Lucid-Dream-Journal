@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
+import Footer from '../components/Footer';
 import DreamCard from '../components/DreamCard';
 
 function Dreams({ dreams, setDreams }) {
   return (
     <Container className="recorded-dream-container">
-      <Link className="nav-link add-dream-btn-link mx-auto" to="/add-dream"><Fab className="fab-add-btn"><AddIcon /></Fab></Link>
+      <Link className="nav-link add-dream-btn-link" to="/add-dream"><Fab className="fab-add-btn"><AddIcon /></Fab></Link>
       <div className="card-container">
         {dreams.map((dreamInfo) => (
           <DreamCard
@@ -17,10 +18,18 @@ function Dreams({ dreams, setDreams }) {
             firebaseKey={dreamInfo.firebaseKey}
             name={dreamInfo.name}
             entry={dreamInfo.entry}
+            date={dreamInfo.date}
+            type={dreamInfo.type}
+            emotion={dreamInfo.emotion}
+            people={dreamInfo.people}
+            place={dreamInfo.place}
+            thing={dreamInfo.thing}
+            color={dreamInfo.color}
             setDreams={setDreams}
           />
         ))}
       </div>
+      <Footer />
       </Container>
   );
 }

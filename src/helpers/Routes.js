@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import AddDream from '../views/AddFormView';
-import Welcome from '../views/WelcomeView';
-import Dreams from '../views/DreamsView';
-import SingleDream from '../views/SingleCardView';
+import AddDream from '../views/AddDream';
+import Welcome from '../views/Welcome';
+import Dreams from '../views/Dreams';
+import SingleDream from '../views/SingleDream';
 
 export default function Routes({ dreams, setDreams }) {
   return (
@@ -18,7 +18,7 @@ export default function Routes({ dreams, setDreams }) {
         />
         <Route
           path='/dreams/:firebaseKey'
-          component={SingleDream}
+          component={() => <SingleDream dreams={dreams} setDreams={setDreams} />}
         />
         <Route
           path='/add-dream'
@@ -33,3 +33,5 @@ Routes.propTypes = {
   dreams: PropTypes.array.isRequired,
   setDreams: PropTypes.func.isRequired
 };
+
+// I want to redirect when delete single card. Card is deleting but page breaks becuase it's not there

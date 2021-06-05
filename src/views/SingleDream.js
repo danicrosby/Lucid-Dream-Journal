@@ -14,10 +14,10 @@ export default function SingleDream() {
 
   return (
     <div className="single-card-view">
-      <SingleDreamCard dream={dream}>
-        <h2>{dream.name}</h2>
-        <h3>{dream.entry}</h3>
-      </SingleDreamCard>
+      <SingleDreamCard
+        dream={dream}
+        />
+
     </div>
   );
 }
