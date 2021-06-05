@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 import {
   Card,
   Container,
@@ -18,8 +17,10 @@ export default function SingleDreamCard({ dream }) {
   return (
     <Container className="dream-form-container">
       <Card className="add-dream-card">
-      <CardHeader><h2>{dream.name}</h2></CardHeader>
-      <CardText>{dream.date}</CardText>
+      <CardHeader>
+        <h2>{dream.name}</h2>
+        <center>{dream.date}</center>
+      </CardHeader>
         <CardBody className="add-dream-card-body">
           <h5>Dream Story</h5>
           <CardText>{dream.entry}</CardText>
@@ -27,9 +28,9 @@ export default function SingleDreamCard({ dream }) {
           <h5>Interpretation</h5>
         </CardBody>
         <CardFooter className="card-footer">
-        <Fab className="fab-add-btn m-1"><CheckIcon /><Link className="nav-link add-dream-btn-link" to="/dreams"></Link></Fab>
-        <Fab className="fab-icons m-1 mr-1 ml-1"><EditIcon /></Fab>
-        <Fab className="fab-icons m-1"><DeleteIcon /></Fab>
+        <a href="/dreams"><Fab className="fab-icons"><CheckIcon /></Fab></a>
+        <Fab className="fab-icons mr-3 ml-3"><EditIcon /></Fab>
+        <Fab className="fab-icons"><DeleteIcon /></Fab>
         </CardFooter>
       </Card>
     </Container>
