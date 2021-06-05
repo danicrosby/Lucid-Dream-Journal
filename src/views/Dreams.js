@@ -10,7 +10,7 @@ import DreamCard from '../components/DreamCard';
 function Dreams({ dreams, setDreams }) {
   return (
     <Container className="recorded-dream-container">
-      <Link className="nav-link add-dream-btn-link mx-auto" to="/add-dream"><Fab className="fab-add-btn"><AddIcon /></Fab></Link>
+      <Link className="nav-link add-dream-btn-link" to="/add-dream"><Fab className="fab-add-btn"><AddIcon /></Fab></Link>
       <div className="card-container">
         {dreams.map((dreamInfo) => (
           <DreamCard
@@ -18,6 +18,7 @@ function Dreams({ dreams, setDreams }) {
             firebaseKey={dreamInfo.firebaseKey}
             name={dreamInfo.name}
             entry={dreamInfo.entry}
+            date={dreamInfo.date}
             setDreams={setDreams}
           />
         ))}

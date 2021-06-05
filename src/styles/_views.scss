@@ -1,27 +1,40 @@
 body {
+  background-color: hotpink;
   display: flex;
   justify-content: center;
-  background-color: hotpink;
 }
 
 #root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: orange;
+  width: 69vmin;
 }
 
 .single-card-view {
   background-color: purple;
   height: 100vmin;
-  width: 100vmin;
-}
+  width: 69vmin;}
 
 .welcome-page-view {
+  background-color: blue;
   display: flex;
   justify-content: center;
-  background-color: blue;
   height: 100vmin;
-  width: 100vmin;
-}
+  width: 69vmin;}
 
 .recorded-dream-container {
-  border: 1px solid grey;
+  background-color:grey;
+}
+
+.navBar {
+  width: 69vmin;
+  height: 8em;
+  border: 1px solid green;
+}
+
+.footer {
+  display: flex; 
+  justify-content: center;
 }
