@@ -58,7 +58,7 @@ const DreamForm = ({
 
   return (
     <Container className="dream-form-container">
-      <Card className="add-dream-card">
+      <Card className="add-dream-form">
         <CardHeader><h2>{formTitle}</h2></CardHeader>
         <CardBody className="add-dream-card-body">
 

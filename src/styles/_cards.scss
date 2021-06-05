@@ -1,7 +1,7 @@
 .dream-card {
   background-color: lightgrey;
   height: 14em;
-  width: 40em;
+  width: 95%;
   padding: 1em;
   margin: 1em;
 }
@@ -38,17 +38,19 @@ h2 {
   text-align: center;
 }
 
-.add-dream-card {
-  width: 50em;
-  margin: 5em;
+.add-dream-form {
+  display: flex; 
+  justify-content: center;
+  margin-top: 2em;
 }
 
 .add-dream-card-body {
   display: flex; 
   justify-content: center;
   flex-direction: column;
+  width: 95%;
 }
 
 .record-dream-texarea {
-  height: 20em;
+  height: 40em;
 }
