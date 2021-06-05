@@ -43,7 +43,8 @@ export default function SingleDreamCard({ dream, setDreams }) {
         <CardBody className="add-dream-card-body">
         <h5>Overview</h5>
           <CardText className="intro">Hello, Dani. It looks like you had a {dream.type} dream on {dream.date} that made you feel {dream.emotion}.
-          You dreamt of {dream.person}, the setting was in {dream.place}. You remembered a few objects, more specifically a {dream.thing}.
+          You dreamt of {dream.people}, the setting was in {dream.place}. You remembered a few objects, more specifically a {dream.thing}.
+          The overall abmience of this {dream.type} dream was {dream.color}.
           Does this sound accurate?
           </CardText>
           <h5>Recorded Dream Story</h5>
@@ -52,9 +53,10 @@ export default function SingleDreamCard({ dream, setDreams }) {
           <h5>Keywords</h5>
           <span>{dream.type}</span>
           <span>{dream.emotion}</span>
-          <span>{dream.person}</span>
+          <span>{dream.people}</span>
           <span>{dream.place}</span>
           <span>{dream.thing}</span>
+          <span>{dream.color}</span>
           </CardText>
           <h5>Interpretation</h5>
         </CardBody>
@@ -72,6 +74,12 @@ export default function SingleDreamCard({ dream, setDreams }) {
           name={dream.name}
           entry={dream.entry}
           date={dream.date}
+          type={dream.type}
+          emotion={dream.emotion}
+          people={dream.people}
+          place={dream.place}
+          thing={dream.thing}
+          color={dream.color}
         />
       }
     </Container>

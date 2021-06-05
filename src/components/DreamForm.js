@@ -139,11 +139,11 @@ const DreamForm = ({
 
             <FormGroup>
               <Input
-                name='person'
-                id='person'
-                value={dream.person}
+                name='people'
+                id='people'
+                value={dream.people}
                 type='text'
-                placeholder='Person'
+                placeholder='People'
                 onChange={handleInputChange}
               />
             </FormGroup>
