@@ -12,20 +12,12 @@ body {
   width: 69vmin;
 }
 
-// .single-card-view {
-//   background-color: purple;
-// }
-
 .welcome-page-view {
   // background-color: blue;
   display: flex;
   justify-content: center;
   height: 100vmin;
   width: 69vmin;}
-
-// .recorded-dream-container {
-//   background-color:grey;
-// }
 
 .navBar {
   width: 69vmin;
@@ -43,7 +35,11 @@ body {
 }
 
 .dream-form-container {
-  // background-color: lightgreen;
+  display: flex;
+  flex-direction: column;
+}
+
+.keyword-bucket {
   display: flex;
   flex-direction: column;
 }
