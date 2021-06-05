@@ -34,7 +34,6 @@ const DreamCard = ({
             <CardTitle>{name}</CardTitle>
             <i className="material-icons dream-type-icon"> cloud </i>
           </div>
-          <CardText className="hr">_____________________________________________________________</CardText>
           <CardText className="date">{date}</CardText>
         </CardBody>
         <Button color="transparent" className="fab-icons m-1" onClick={() => handleClick('view')}>

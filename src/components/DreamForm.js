@@ -83,11 +83,12 @@ const DreamForm = ({
 
             <FormGroup>
               <Input
+                className="input-text"
                 name='name'
                 id='name'
                 value={dream.name}
                 type='text'
-                placeholder='Enter Dream Title'
+                placeholder='Dream Title'
                 onChange={handleInputChange}
               />
             </FormGroup>
@@ -98,7 +99,7 @@ const DreamForm = ({
                 id='entry'
                 value={dream.entry}
                 type='textarea'
-                placeholder='Dream Description'
+                placeholder='What was your dream about...'
                 onChange={handleInputChange}
               />
             </FormGroup>
@@ -109,7 +110,7 @@ const DreamForm = ({
                 id='date'
                 value={dream.date}
                 type='text'
-                placeholder='Dream Date'
+                placeholder='Date'
                 onChange={handleInputChange}
               />
             </FormGroup>
@@ -121,6 +122,50 @@ const DreamForm = ({
                 value={dream.type}
                 type='text'
                 placeholder='Dream Type'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                name='emotion'
+                id='emotion'
+                value={dream.emotion}
+                type='text'
+                placeholder='Emotion'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                name='person'
+                id='person'
+                value={dream.person}
+                type='text'
+                placeholder='Person'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                name='place'
+                id='place'
+                value={dream.place}
+                type='text'
+                placeholder='Place'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Input
+                name='thing'
+                id='thing'
+                value={dream.thing}
+                type='text'
+                placeholder='Thing'
                 onChange={handleInputChange}
               />
             </FormGroup>
