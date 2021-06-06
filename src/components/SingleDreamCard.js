@@ -59,12 +59,14 @@ export default function SingleDreamCard({ dream, setDreams }) {
           <span>{dream.color}</span>
           </CardText>
           <h5>Interpretation</h5>
-          <CardText>To dream of a {dream.thing} indicates {dream.interpretation}
+          <CardText>To dream of a {dream.thing} indicates
+          ARRAY IN JSON Javascript Object
+          Key: VAlue
           </CardText>
         </CardBody>
         <CardFooter className="card-footer">
-          <a href="/dreams"><Fab className="fab-icons"><CheckIcon /></Fab></a>
-          <Fab className="fab-icons mr-3 ml-3" onClick={() => handleClick('edit')}><EditIcon /></Fab>
+          <Fab className="fab-icons" onClick={() => handleClick('edit')}><EditIcon /></Fab>
+          <a href="/dreams"><Fab className="fab-icons mr-3 ml-3"><CheckIcon /></Fab></a>
           <Fab className="fab-icons" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
         </CardFooter>
       </Card>
