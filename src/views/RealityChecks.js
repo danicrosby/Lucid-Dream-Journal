@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   Card,
-  CardText,
   CardTitle,
   CardBody
 } from 'reactstrap';
@@ -15,14 +14,7 @@ function RealityChecks() {
           <CardTitle>Reality Checks</CardTitle>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
-        <h5>FIX CARD LAYOUT</h5>
-        <CardText>paragraph about reality checks</CardText>
-        <h5>Palm Checks</h5>
-        <CardText>paragraph about reality checks</CardText>
-        <h5>Interation</h5>
-        <CardText>paragraph about reality checks</CardText>
-        <h5>Interation</h5>
-        <CardText>paragraph about reality checks</CardText>
+        <h5>Reality Info Here</h5>
       </CardBody>
       <center>
         <Link
