@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   Card,
   CardTitle,
@@ -19,9 +20,7 @@ function Education() {
         </div>
         <CardText className="date">daily reality checkins</CardText>
       </CardBody>
-      <Button color="transparent" className="fab-icons expand-arrow-btn m-1">
-        <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
-      </Button>
+      <Link className="nav-link" to="/reality-checks"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
     </Card>
 
     <Card className="dream-card">
