@@ -59,6 +59,8 @@ export default function SingleDreamCard({ dream, setDreams }) {
           <span>{dream.color}</span>
           </CardText>
           <h5>Interpretation</h5>
+          <CardText>To dream of a {dream.thing} indicates {dream.interpretation}
+          </CardText>
         </CardBody>
         <CardFooter className="card-footer">
           <a href="/dreams"><Fab className="fab-icons"><CheckIcon /></Fab></a>

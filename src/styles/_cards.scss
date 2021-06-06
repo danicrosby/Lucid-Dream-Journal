@@ -5,7 +5,6 @@
   padding: 1em;
   margin: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .dream-card-body {
@@ -13,7 +12,6 @@
   height: 8em;
   padding: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 }
 
 .top-text {
@@ -21,6 +19,11 @@
   justify-content: space-between;
   border-bottom: 1px solid grey;
   margin-bottom: 1em;
+}
+
+.card-footer {
+  display: flex; 
+  justify-content: center;
 }
 
 .dream-type-icon {
@@ -42,17 +45,4 @@
 
 h2 {
   text-align: center;
-}
-
-.add-dream-form {
-  display: flex; 
-  justify-content: center;
-  margin-top: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.add-dream-card-body {
-  display: flex; 
-  justify-content: center;
-  flex-direction: column;
 }
