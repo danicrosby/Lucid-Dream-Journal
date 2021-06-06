@@ -10,7 +10,7 @@ import DreamCard from '../components/DreamCard';
 function Dreams({ dreams, setDreams }) {
   return (
     <Container className="recorded-dream-container">
-      <Link className="nav-link add-dream-btn-link" to="/add-dream"><Fab className="fab-add-btn"><AddIcon /></Fab></Link>
+      <center><Link className="nav-link add-dream-btn-link mr-5 mt-2" to="/add-dream"><Fab className="fab-add-btn add-icon-btn"><AddIcon /></Fab></Link></center>
       <div className="card-container">
         {dreams.map((dreamInfo) => (
           <DreamCard

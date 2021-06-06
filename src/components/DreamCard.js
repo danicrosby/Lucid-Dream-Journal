@@ -36,7 +36,7 @@ const DreamCard = ({
           </div>
           <CardText className="date">{date}</CardText>
         </CardBody>
-        <Button color="transparent" className="fab-icons m-1" onClick={() => handleClick('view')}>
+        <Button color="transparent" className="fab-icons expand-arrow-btn m-1" onClick={() => handleClick('view')}>
           <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
         </Button>
       </Card>
