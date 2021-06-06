@@ -5,7 +5,6 @@ import {
   CardTitle,
   CardText,
   CardBody,
-  Button,
   Container
 } from 'reactstrap';
 
@@ -31,9 +30,7 @@ function Education() {
         </div>
         <CardText className="date">learn how to lucid dream everynight</CardText>
       </CardBody>
-      <Button color="transparent" className="fab-icons expand-arrow-btn m-1">
-        <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
-      </Button>
+      <Link className="nav-link" to="/techniques"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
     </Card>
 
     <Card className="dream-card">
@@ -44,9 +41,7 @@ function Education() {
         </div>
         <CardText className="date">find tranquil calming music</CardText>
       </CardBody>
-      <Button color="transparent" className="fab-icons expand-arrow-btn m-1">
-        <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
-      </Button>
+      <Link className="nav-link" to="/calming"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
     </Card>
   </Container>
   );

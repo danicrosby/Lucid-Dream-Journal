@@ -7,21 +7,21 @@ import {
   CardBody
 } from 'reactstrap';
 
-function RealityChecks() {
+function Techniques() {
   return (
 <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-          <CardTitle>Reality Checks</CardTitle>
+          <CardTitle>Dream Techniques</CardTitle>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
         <h5>FIX CARD LAYOU</h5>
         <CardText>paragraph about reality checks</CardText>
-        <h5>Palm Checks</h5>
+        <h5>Tech Checks</h5>
         <CardText>paragraph about reality checks</CardText>
-        <h5>Interation</h5>
+        <h5>Technique </h5>
         <CardText>paragraph about reality checks</CardText>
-        <h5>Interation</h5>
+        <h5>Technique</h5>
         <CardText>paragraph about reality checks</CardText>
       </CardBody>
       <Link className="nav-link" to="/education"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
@@ -29,4 +29,4 @@ function RealityChecks() {
   );
 }
 
-export default RealityChecks;
+export default Techniques;
