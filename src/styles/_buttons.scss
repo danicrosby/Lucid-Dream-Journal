@@ -26,10 +26,11 @@ a {
   text-align: center;
 }
 
-.footer {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 2.5em;
+.expand-arrow-btn {
+  height: 2em;
 }
 
-
+#expand-arrow {
+  font-weight: bolder;
+  font-size: 2em;
+}

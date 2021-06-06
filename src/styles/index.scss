@@ -1,60 +1,32 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import 'cards';
-@import 'views';
 @import 'buttons';
+@import 'navBar';
+@import 'addForm';
+@import 'footer';
+@import 'welcomePage';
 
-@keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
-}
-@keyframes colors {
-  0%  {color: darkblue;}
-  25%  {color: darkorchid;}
-  50%  {color: violet;}
-  100%  {color: darkmagenta;}
-}
 
-.jumbotron {
+body {
+  // background-color: hotpink;
   display: flex;
   justify-content: center;
 }
 
-.welcome-title h1 {
-  animation-name: fadein;
-  animation-fill-mode: backwards;
-  animation-duration: 5s;
-  animation-delay: .7s;
-  color: black;
-  text-align: center;
-  font-size: 7em;
-  font-family: 'Sacramento', cursive;
-  margin-top: 1em;
-}
-
-.cloud-container {
+#root {
+  // background-color: orange;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  width: 69vmin;
 }
 
-#cloud {
-  color: black;
-  font-size: 6em;
-  opacity: .9;
-  animation-name: colors;
-  animation-delay: .3s;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  animation-direction:alternate-reverse;
-  width: 7em;  
-}
+// .routes-container {
+//   background-color: green;
+//   border: 1px solid lightgrey;
+// }
 
-#cloud:hover {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-}
-
-a {
-  color: black;
-  text-decoration: none;
+.recorded-dream-container {
+  //  background-color: aquamarine;
+   border: 1px solid lightgrey;
 }

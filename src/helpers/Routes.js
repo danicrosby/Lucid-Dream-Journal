@@ -8,7 +8,7 @@ import SingleDream from '../views/SingleDream';
 
 export default function Routes({ dreams, setDreams }) {
   return (
-    <div>
+    <div className="routes-container">
       <Switch>
         <Route exact path='/' component={Welcome} />
         <Route

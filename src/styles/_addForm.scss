@@ -1,0 +1,23 @@
+.dream-form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-dream-form {
+  display: flex; 
+  justify-content: center;
+  margin-top: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    // background-color: blue;
+}
+
+.add-dream-card-body {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+
+.keyword-bucket {
+  display: flex;
+  flex-direction: column;
+}
