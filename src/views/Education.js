@@ -19,7 +19,14 @@ function Education() {
         </div>
         <CardText className="date">daily reality checkins</CardText>
       </CardBody>
-      <Link className="nav-link" to="/reality-checks"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
+      <center>
+        <Link
+          className="nav-link"
+          to="/reality-checks">
+          <i className="material-icons"
+          id="expand-arrow"> keyboard_arrow_down </i>
+        </Link>
+      </center>
     </Card>
 
     <Card className="dream-card">
@@ -30,7 +37,14 @@ function Education() {
         </div>
         <CardText className="date">learn how to lucid dream everynight</CardText>
       </CardBody>
-      <Link className="nav-link" to="/techniques"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
+      <center>
+        <Link
+          className="nav-link"
+          to="/techniques">
+          <i className="material-icons"
+          id="expand-arrow"> keyboard_arrow_down </i>
+        </Link>
+      </center>
     </Card>
 
     <Card className="dream-card">
@@ -41,7 +55,14 @@ function Education() {
         </div>
         <CardText className="date">find tranquil calming music</CardText>
       </CardBody>
-      <Link className="nav-link" to="/calming"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
+      <center>
+        <Link
+          className="nav-link"
+          to="/calming">
+          <i className="material-icons"
+          id="expand-arrow"> keyboard_arrow_down </i>
+        </Link>
+      </center>
     </Card>
   </Container>
   );
