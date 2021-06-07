@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 import {
   Card,
   CardTitle,
-  CardBody
+  CardBody,
+  Container
 } from 'reactstrap';
 
 function Settings() {
   return (
+    <Container>
+    <h4>Settings</h4>
+
     <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
@@ -25,6 +29,7 @@ function Settings() {
         </Link>
       </center>
     </Card>
+    </Container>
   );
 }
 

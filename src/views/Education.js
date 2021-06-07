@@ -10,6 +10,7 @@ import {
 function Education() {
   return (
     <Container>
+    <h4>Education</h4>
     <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
