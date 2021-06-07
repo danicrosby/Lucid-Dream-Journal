@@ -9,6 +9,7 @@ import SingleDream from '../views/SingleDream';
 import RealityChecks from '../views/RealityChecks';
 import Techniques from '../views/Techniques';
 import Calming from '../views/Calming';
+import Settings from '../views/Settings';
 
 export default function Routes({ dreams, setDreams }) {
   return (
@@ -20,6 +21,7 @@ export default function Routes({ dreams, setDreams }) {
         <Route path="/reality-checks" component={RealityChecks} />
         <Route path="/techniques" component={Techniques} />
         <Route path="/calming" component={Calming} />
+        <Route path="/settings" component={Settings} />
 
         <Route
           exact path='/dreams'

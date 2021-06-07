@@ -8,13 +8,13 @@ import {
 
 function Calming() {
   return (
-<Card className="dream-card">
+    <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-          <CardTitle>Calming Dreams</CardTitle>
+          <h5>Calming Info Here</h5>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
-        <h5>Calming Info Here</h5>
+        <CardTitle>Calming Dreams</CardTitle>
       </CardBody>
       <Link className="nav-link" to="/education"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
     </Card>

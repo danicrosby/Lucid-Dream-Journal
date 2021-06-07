@@ -6,26 +6,26 @@ import {
   CardBody
 } from 'reactstrap';
 
-function RealityChecks() {
+function Settings() {
   return (
-<Card className="dream-card">
+    <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-        <h5>Reality Info Here</h5>
+          <h5>Account Info Here</h5>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
-        <CardTitle>Reality Checks</CardTitle>
+        <CardTitle>Settings</CardTitle>
       </CardBody>
       <center>
         <Link
           className="nav-link"
-          to="/education">
+          to="/dreams">
           <i className="material-icons"
-          id="expand-arrow"> keyboard_arrow_down </i>
+            id="expand-arrow"> keyboard_arrow_down </i>
         </Link>
       </center>
     </Card>
   );
 }
 
-export default RealityChecks;
+export default Settings;
