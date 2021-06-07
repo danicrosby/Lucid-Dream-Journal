@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   Card,
-  CardTitle,
   CardText,
   CardBody,
   Container
@@ -11,10 +10,11 @@ import {
 function Education() {
   return (
     <Container>
+    <h4>Education</h4>
     <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-          <CardTitle>Reality Checks</CardTitle>
+          <h5>Reality Checks</h5>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
         <CardText className="date">daily reality checkins</CardText>
@@ -32,7 +32,7 @@ function Education() {
     <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-          <CardTitle>Lucid Dream Techniques</CardTitle>
+          <h5>Lucid Dream Techniques</h5>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
         <CardText className="date">learn how to lucid dream everynight</CardText>
@@ -50,7 +50,7 @@ function Education() {
     <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-          <CardTitle>Calming Sounds</CardTitle>
+          <h5>Calming Sounds</h5>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
         <CardText className="date">find tranquil calming music</CardText>

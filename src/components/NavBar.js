@@ -19,7 +19,7 @@ const NavBar = ({ user }) => {
   return (
     <div>
       <Navbar className="navBar" color="transparent" light expand="md">
-        <Link className="navbar-brand" to="/">Lucid</Link>
+        <Link className="navbar-brand" to="/dreams">Lucid</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>

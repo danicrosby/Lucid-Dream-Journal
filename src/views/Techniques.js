@@ -8,13 +8,13 @@ import {
 
 function Techniques() {
   return (
-<Card className="dream-card">
+    <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-          <CardTitle>Dream Techniques</CardTitle>
+          <h5>Techniques Here</h5>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
-        <h5>Techniques Here</h5>
+        <CardTitle>Dream Techniques</CardTitle>
       </CardBody>
       <Link className="nav-link" to="/education"><i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i></Link>
     </Card>

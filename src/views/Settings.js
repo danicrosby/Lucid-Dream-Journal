@@ -3,29 +3,34 @@ import { Link } from 'react-router-dom';
 import {
   Card,
   CardTitle,
-  CardBody
+  CardBody,
+  Container
 } from 'reactstrap';
 
-function RealityChecks() {
+function Settings() {
   return (
-<Card className="dream-card">
+    <Container>
+    <h4>Settings</h4>
+
+    <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
-        <h5>Reality Info Here</h5>
+          <h5>Account Info Here</h5>
           <i className="material-icons dream-type-icon"> cloud </i>
         </div>
-        <CardTitle>Reality Checks</CardTitle>
+        <CardTitle>Settings</CardTitle>
       </CardBody>
       <center>
         <Link
           className="nav-link"
-          to="/education">
+          to="/dreams">
           <i className="material-icons"
-          id="expand-arrow"> keyboard_arrow_down </i>
+            id="expand-arrow"> keyboard_arrow_down </i>
         </Link>
       </center>
     </Card>
+    </Container>
   );
 }
 
-export default RealityChecks;
+export default Settings;

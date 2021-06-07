@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 import DreamCard from '../components/DreamCard';
 
 function Dreams({ dreams, setDreams }) {
   return (
     <Container className="recorded-dream-container">
       <center><Link className="nav-link add-dream-btn-link mr-5 mt-2" to="/add-dream"><Fab className="fab-add-btn add-icon-btn"><AddIcon /></Fab></Link></center>
+      <h4>History</h4>
       <div className="card-container">
         {dreams.map((dreamInfo) => (
           <DreamCard
@@ -29,7 +30,7 @@ function Dreams({ dreams, setDreams }) {
           />
         ))}
       </div>
-      <Footer />
+      {/* <Footer /> */}
       </Container>
   );
 }

@@ -1,18 +1,21 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { Container } from 'reactstrap';
 import AddDream from '../views/AddDream';
-import Welcome from '../views/Welcome';
-import Education from '../views/Education';
 import Dreams from '../views/Dreams';
 import SingleDream from '../views/SingleDream';
+import Welcome from '../views/Welcome';
+import Education from '../views/Education';
 import RealityChecks from '../views/RealityChecks';
 import Techniques from '../views/Techniques';
 import Calming from '../views/Calming';
+import Settings from '../views/Settings';
+import Footer from '../components/Footer';
 
 export default function Routes({ dreams, setDreams }) {
   return (
-    <div className="routes-container">
+    <Container className="routes-container">
       <Switch>
 
         <Route exact path='/' component={Welcome} />
@@ -20,6 +23,7 @@ export default function Routes({ dreams, setDreams }) {
         <Route path="/reality-checks" component={RealityChecks} />
         <Route path="/techniques" component={Techniques} />
         <Route path="/calming" component={Calming} />
+        <Route path="/settings" component={Settings} />
 
         <Route
           exact path='/dreams'
@@ -37,7 +41,8 @@ export default function Routes({ dreams, setDreams }) {
         />
 
       </Switch>
-    </div>
+      <Footer />
+    </Container>
   );
 }
 
