@@ -16,6 +16,7 @@ export default function SingleDream() {
     <div className="single-card-view">
       <SingleDreamCard
         dream={dream}
+        setDream={setDream}
         />
 
     </div>

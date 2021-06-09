@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { enGB } from 'date-fns/locale';
+import { DatePicker } from 'react-nice-dates';
+import 'react-nice-dates/build/style.css';
 import Fab from '@material-ui/core/Fab';
 import CheckIcon from '@material-ui/icons/Check';
 import {
@@ -19,7 +22,7 @@ const DreamForm = ({
   setDreams,
   name,
   entry,
-  date,
+  // date,
   type,
   emotion,
   people,
@@ -31,7 +34,7 @@ const DreamForm = ({
   const [dream, setDream] = useState({
     name: name || '',
     entry: entry || '',
-    date: date || '',
+    // date: date || '',
     type: type || '',
     emotion: emotion || '',
     people: people || '',
@@ -40,6 +43,7 @@ const DreamForm = ({
     color: color || '',
     firebaseKey: firebaseKey || null
   });
+  const [date, setDate] = useState();
   const history = useHistory();
 
   const handleInputChange = (e) => {
@@ -104,7 +108,20 @@ const DreamForm = ({
               />
             </FormGroup>
 
-            <FormGroup>
+            <DatePicker
+              date={date}
+              onDateChange={setDate}
+              format='MMMM d, yyyy'
+              locale={enGB}>
+              {({ inputProps, focused }) => (
+                <input
+                  className={`input${focused ? ' -focused' : ''}`}
+                  {...inputProps}
+                />
+              )}
+            </DatePicker>
+
+            {/* <FormGroup>
               <Input
                 name='date'
                 id='date'
@@ -113,7 +130,7 @@ const DreamForm = ({
                 placeholder='Date'
                 onChange={handleInputChange}
               />
-            </FormGroup>
+            </FormGroup> */}
 
             <FormGroup>
               <Input
@@ -170,6 +187,17 @@ const DreamForm = ({
               />
             </FormGroup>
 
+            <FormGroup>
+              <Input
+                name='color'
+                id='color'
+                value={dream.color}
+                type='text'
+                placeholder='Color'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
             <Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab>
           </Form>
         </CardBody>
@@ -190,7 +218,7 @@ DreamForm.propTypes = {
   place: PropTypes.string,
   thing: PropTypes.string,
   color: PropTypes.string,
-  firebaseKey: PropTypes.string
+  firebaseKey: PropTypes.string,
 };
 
 export default DreamForm;
