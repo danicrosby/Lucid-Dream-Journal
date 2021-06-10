@@ -23,7 +23,7 @@ body {
 
 .routes-container {
   // background-color: green;
-  border: 1px solid lightgrey;
+  // border: 1px solid lightgrey;
   overflow: auto;
 }
 
@@ -32,4 +32,19 @@ body {
   //  border: 1px solid lightgrey;
    height: 47vmax;
    overflow: auto;
+}
+
+
+.input {
+  margin-bottom: 1em;
+  height: 2.5em;
+  width: 100%;
+}
+
+#entry {
+  height: 10em;
+}
+
+h6 {
+  font-weight: bolder;
 }

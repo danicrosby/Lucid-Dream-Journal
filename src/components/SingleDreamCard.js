@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import { enGB } from 'date-fns/locale';
+import { DatePicker } from 'react-nice-dates';
+import 'react-nice-dates/build/style.css';
 import {
   Card,
   Container,
@@ -20,6 +23,7 @@ import interpretation from '../helpers/data/Interp';
 export default function SingleDreamCard({ dream, setDream }) {
   const [editing, setEditing] = useState(false);
   const history = useHistory();
+  const [date, setDate] = useState(new Date(2020, 1, 24, 18, 15));
 
   const handleClick = (type) => {
     switch (type) {
@@ -41,8 +45,9 @@ export default function SingleDreamCard({ dream, setDream }) {
     <Container className="dream-form-container">
       <Card className="add-dream-card">
         <CardHeader>
-          <h2>{dream.name}</h2>
-          <center>{dream.date}</center>
+        <DatePicker date={date} onDateChange={setDate} locale={enGB} format='MMMM dd, yyyy'>
+      {({ inputProps, focused }) => <input className={`input${focused ? ' -focused' : ''}`} {...inputProps} />}
+    </DatePicker>
         </CardHeader>
         <CardBody className="add-dream-card-body">
           <h5>Overview</h5>
@@ -63,8 +68,7 @@ export default function SingleDreamCard({ dream, setDream }) {
             <span>{dream.color}</span>
           </CardText>
           <h5>Interpretation</h5>
-          <CardText>
-            To dream of a {dream.thing} indicates {interpretation.naked}
+          <CardText>To dream of a {dream.thing} indicates {interpretation.naked}
           </CardText>
         </CardBody>
         <CardFooter className="card-footer">
