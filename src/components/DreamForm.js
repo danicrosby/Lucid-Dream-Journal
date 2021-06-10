@@ -13,7 +13,7 @@ import {
   CardHeader,
   Container,
   CardBody,
-  Label
+  // Label
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -122,7 +122,7 @@ const DreamForm = ({
               )}
             </DatePicker>
 
-            <FormGroup>
+            {/* <FormGroup>
               <Label for="dream-type">Dream Type</Label>
               <Input
                 type="select"
@@ -210,9 +210,9 @@ const DreamForm = ({
                   <option>Orange</option>
                   <option>Green</option>
               </Input>
-            </FormGroup>
+            </FormGroup> */}
 
-            {/* <FormGroup>
+            <FormGroup>
               <Input
                 name='type'
                 id='type'
@@ -221,9 +221,8 @@ const DreamForm = ({
                 placeholder='Dream Type'
                 onChange={handleInputChange}
               />
-            </FormGroup> */}
+            </FormGroup>
 
-               {/*
             <FormGroup>
               <Input
                 name='emotion'
@@ -233,21 +232,20 @@ const DreamForm = ({
                 placeholder='Emotion'
                 onChange={handleInputChange}
               />
-            </FormGroup> */}
+            </FormGroup>
 
-              {/*
-          <FormGroup>
-            <Input
-              name='people'
-              id='people'
-              value={dream.people}
-              type='text'
-              placeholder='People'
-              onChange={handleInputChange}
-            />
-          </FormGroup> */}
+            <FormGroup>
+              <Input
+                name='people'
+                id='people'
+                value={dream.people}
+                type='text'
+                placeholder='People'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
 
-                 {/* <FormGroup>
+            <FormGroup>
               <Input
                 name='place'
                 id='place'
@@ -256,9 +254,9 @@ const DreamForm = ({
                 placeholder='Place'
                 onChange={handleInputChange}
               />
-            </FormGroup> */}
+            </FormGroup>
 
-            {/* <FormGroup>
+            <FormGroup>
               <Input
                 name='thing'
                 id='thing'
@@ -267,9 +265,9 @@ const DreamForm = ({
                 placeholder='Thing'
                 onChange={handleInputChange}
               />
-            </FormGroup> */}
+            </FormGroup>
 
-            {/* <FormGroup>
+            <FormGroup>
               <Input
                 name='color'
                 id='color'
@@ -278,7 +276,7 @@ const DreamForm = ({
                 placeholder='Color'
                 onChange={handleInputChange}
               />
-            </FormGroup> */}
+            </FormGroup>
 
             <Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab>
           </Form>

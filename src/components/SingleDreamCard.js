@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { enGB } from 'date-fns/locale';
-import { DatePicker } from 'react-nice-dates';
+// import { enGB } from 'date-fns/locale';
+// import { DatePicker } from 'react-nice-dates';
 import 'react-nice-dates/build/style.css';
 import {
   Card,
@@ -23,7 +23,7 @@ import interpretation from '../helpers/data/Interp';
 export default function SingleDreamCard({ dream, setDream }) {
   const [editing, setEditing] = useState(false);
   const history = useHistory();
-  const [date, setDate] = useState(new Date(2020, 1, 24, 18, 15));
+  // const [date, setDate] = useState(new Date(2020, 1, 24, 18, 15));
 
   const handleClick = (type) => {
     switch (type) {
@@ -42,13 +42,9 @@ export default function SingleDreamCard({ dream, setDream }) {
   };
 
   return (
-    <Container className="dream-form-container">
+    <Container className="dream-form-container mt-5">
       <Card className="add-dream-card">
-        <CardHeader>
-        <DatePicker date={date} onDateChange={setDate} locale={enGB} format='MMMM dd, yyyy'>
-      {({ inputProps, focused }) => <input className={`input${focused ? ' -focused' : ''}`} {...inputProps} />}
-    </DatePicker>
-        </CardHeader>
+        <CardHeader><h4>{dream.type}</h4></CardHeader>
         <CardBody className="add-dream-card-body">
           <h5>Overview</h5>
           <CardText className="intro">Hello, Dani. It looks like you had a {dream.type} dream on {dream.date} that made you feel {dream.emotion}.
