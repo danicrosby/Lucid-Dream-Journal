@@ -30,7 +30,10 @@ export default function SingleDreamCard({ dream, setDream }) {
           });
         break;
       case 'edit':
-        setEditing((prevState) => !prevState);
+        setEditing((prevState) => !prevState)
+          .then(() => {
+            history.push('/firebaseKey');
+          });
         break;
       default:
         console.warn('nothing selected');

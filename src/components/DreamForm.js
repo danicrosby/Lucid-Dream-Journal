@@ -299,6 +299,7 @@ DreamForm.propTypes = {
   thing: PropTypes.string,
   color: PropTypes.string,
   firebaseKey: PropTypes.string,
+  user: PropTypes.any
 };
 
 export default DreamForm;

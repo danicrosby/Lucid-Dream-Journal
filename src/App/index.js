@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import firebase from 'firebase';
-import NavBar from '../components/NavBar';
+// import NavBar from '../components/NavBar';
 import { getDreams } from '../helpers/data/DreamData';
 import Routes from '../helpers/Routes';
 
@@ -31,7 +31,6 @@ function App() {
 
   return (
     <>
-      <NavBar user={user} />
       <Routes
         dreams={dreams}
         setDreams={setDreams}

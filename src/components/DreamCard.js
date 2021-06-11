@@ -50,6 +50,7 @@ DreamCard.propTypes = {
   name: PropTypes.string,
   entry: PropTypes.string,
   date: PropTypes.string,
+  user: PropTypes.any
 };
 
 export default DreamCard;
