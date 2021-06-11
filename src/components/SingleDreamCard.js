@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import { enGB } from 'date-fns/locale';
-// import { DatePicker } from 'react-nice-dates';
-import 'react-nice-dates/build/style.css';
 import {
   Card,
   Container,
@@ -23,7 +20,6 @@ import interpretation from '../helpers/data/Interp';
 export default function SingleDreamCard({ dream, setDream }) {
   const [editing, setEditing] = useState(false);
   const history = useHistory();
-  // const [date, setDate] = useState(new Date(2020, 1, 24, 18, 15));
 
   const handleClick = (type) => {
     switch (type) {
@@ -44,7 +40,10 @@ export default function SingleDreamCard({ dream, setDream }) {
   return (
     <Container className="dream-form-container mt-5">
       <Card className="add-dream-card">
-        <CardHeader><h4>{dream.type}</h4></CardHeader>
+        <CardHeader>
+          <h2>{dream.name}</h2>
+          <center>{dream.date}</center>
+        </CardHeader>
         <CardBody className="add-dream-card-body">
           <h5>Overview</h5>
           <CardText className="intro">Hello, Dani. It looks like you had a {dream.type} dream on {dream.date} that made you feel {dream.emotion}.
@@ -64,8 +63,7 @@ export default function SingleDreamCard({ dream, setDream }) {
             <span>{dream.color}</span>
           </CardText>
           <h5>Interpretation</h5>
-          <CardText>To dream of a {dream.thing} indicates {interpretation.naked}
-          </CardText>
+          <CardText>To dream of a {dream.thing} indicates {interpretation.tiger}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
           <Fab className="fab-icons" onClick={() => handleClick('edit')}><EditIcon /></Fab>
@@ -76,7 +74,7 @@ export default function SingleDreamCard({ dream, setDream }) {
       {
         editing && <DreamForm
           formTitle='Edit Dream'
-          setDreams={setDream}
+          setDream={setDream}
           firebaseKey={dream.firebaseKey}
           name={dream.name}
           entry={dream.entry}

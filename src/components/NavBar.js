@@ -28,8 +28,8 @@ const NavBar = ({ user }) => {
               && <NavItem>
                 {
                   user
-                    ? <Button color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
-                    : <Button color='light' onClick={signInUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
+                    ? <Button className="sign-in-out-button" color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
+                    : <Button className="sign-in-out-button" color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
                 }
               </NavItem>
             }

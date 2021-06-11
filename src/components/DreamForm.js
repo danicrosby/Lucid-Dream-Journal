@@ -42,8 +42,8 @@ const DreamForm = ({
     color: color || '',
     firebaseKey: firebaseKey || null
   });
-  const [date, setDate] = useState();
   const history = useHistory();
+  const [date, setDate] = useState();
 
   const handleInputChange = (e) => {
     setDream((prevState) => ({
