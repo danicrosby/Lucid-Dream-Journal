@@ -9,13 +9,12 @@ import {
 
 function Education() {
   return (
-    <Container>
-    <h4>Education</h4>
+    <Container className="sub-container mt-5">
     <Card className="dream-card">
       <CardBody className="dream-card-body">
         <div className="top-text">
           <h5>Reality Checks</h5>
-          <i className="material-icons dream-type-icon"> cloud </i>
+          <i className="material-icons dream-type-icon"> toggle_on </i>
         </div>
         <CardText className="date">daily reality checkins</CardText>
       </CardBody>
@@ -33,7 +32,7 @@ function Education() {
       <CardBody className="dream-card-body">
         <div className="top-text">
           <h5>Lucid Dream Techniques</h5>
-          <i className="material-icons dream-type-icon"> cloud </i>
+          <i className="material-icons dream-type-icon"> visibility </i>
         </div>
         <CardText className="date">learn how to lucid dream everynight</CardText>
       </CardBody>
@@ -51,7 +50,7 @@ function Education() {
       <CardBody className="dream-card-body">
         <div className="top-text">
           <h5>Calming Sounds</h5>
-          <i className="material-icons dream-type-icon"> cloud </i>
+          <i className="material-icons dream-type-icon"> headphones </i>
         </div>
         <CardText className="date">find tranquil calming music</CardText>
       </CardBody>
