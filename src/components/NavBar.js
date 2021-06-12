@@ -16,6 +16,17 @@ const NavBar = ({ user }) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
+  const authenticated = () => (
+    <>
+      <NavItem>
+        <Link className="nav-link" to="/dreams">Dream</Link>
+      </NavItem>
+      <NavItem>
+        <Link className="nav-link mr-3" to="/add-dream">Add Dream</Link>
+      </NavItem>
+    </>
+  );
+
   return (
     <div>
       <Navbar className="navBar" color="transparent" light expand="md">
@@ -23,6 +34,7 @@ const NavBar = ({ user }) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
+          { user && authenticated() }
             {
               user !== null
               && <NavItem>

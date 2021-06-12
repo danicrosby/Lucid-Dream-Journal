@@ -4,40 +4,45 @@ import { Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-// import Footer from '../components/Footer';
+import Footer from '../components/Footer';
 import DreamCard from '../components/DreamCard';
+import NavBar from '../components/NavBar';
 
-function Dreams({ dreams, setDreams }) {
+function Dreams({ dreams, setDreams, user }) {
   return (
-    <Container className="recorded-dream-container">
-      <center><Link className="nav-link add-dream-btn-link mr-5 mt-2" to="/add-dream"><Fab className="fab-add-btn add-icon-btn"><AddIcon /></Fab></Link></center>
-      <h4>History</h4>
-      <div className="card-container">
-        {dreams.map((dreamInfo) => (
-          <DreamCard
-            key={dreamInfo.firebaseKey}
-            firebaseKey={dreamInfo.firebaseKey}
-            name={dreamInfo.name}
-            entry={dreamInfo.entry}
-            date={dreamInfo.date}
-            type={dreamInfo.type}
-            emotion={dreamInfo.emotion}
-            people={dreamInfo.people}
-            place={dreamInfo.place}
-            thing={dreamInfo.thing}
-            color={dreamInfo.color}
-            setDreams={setDreams}
-          />
-        ))}
-      </div>
-      {/* <Footer /> */}
+    <>
+      <Container className="recorded-dream-container">
+        <NavBar user={user} />
+        <center><Link className="nav-link add-dream-btn-link mr-5 mt-2" to="/add-dream"><Fab className="fab-add-btn add-icon-btn"><AddIcon /></Fab></Link></center>
+        <div className="card-container">
+          {dreams.map((dreamInfo) => (
+            <DreamCard
+              key={dreamInfo.firebaseKey}
+              firebaseKey={dreamInfo.firebaseKey}
+              name={dreamInfo.name}
+              entry={dreamInfo.entry}
+              date={dreamInfo.date}
+              type={dreamInfo.type}
+              emotion={dreamInfo.emotion}
+              people={dreamInfo.people}
+              place={dreamInfo.place}
+              thing={dreamInfo.thing}
+              color={dreamInfo.color}
+              setDreams={setDreams}
+              user={user}
+            />
+          ))}
+        </div>
       </Container>
+      <Footer />
+    </>
   );
 }
 
 Dreams.propTypes = {
   dreams: PropTypes.array.isRequired,
-  setDreams: PropTypes.func.isRequired
+  setDreams: PropTypes.func.isRequired,
+  user: PropTypes.func.isRequired
 };
 
 export default Dreams;

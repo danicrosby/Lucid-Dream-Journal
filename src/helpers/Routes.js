@@ -11,7 +11,7 @@ import RealityChecks from '../views/RealityChecks';
 import Techniques from '../views/Techniques';
 import Calming from '../views/Calming';
 import Settings from '../views/Settings';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 
 export default function Routes({ dreams, setDreams }) {
   return (
@@ -41,7 +41,6 @@ export default function Routes({ dreams, setDreams }) {
         />
 
       </Switch>
-      <Footer />
     </Container>
   );
 }
