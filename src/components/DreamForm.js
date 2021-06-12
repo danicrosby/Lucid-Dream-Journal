@@ -13,7 +13,7 @@ import {
   CardHeader,
   Container,
   CardBody,
-  // Label
+  Label
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -83,20 +83,21 @@ const DreamForm = ({
         <CardBody className="add-dream-card-body">
 
           <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
-
             <FormGroup>
+              <Label for="place">Title</Label>
               <Input
                 className="input-text"
                 name='name'
                 id='name'
                 value={dream.name}
                 type='text'
-                placeholder='Dream Title'
+                // placeholder='Dream Title'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
+              <Label for="place">Record Dream</Label>
               <Input
                 name='entry'
                 id='entry'
@@ -107,20 +108,23 @@ const DreamForm = ({
               />
             </FormGroup>
 
-            <DatePicker
-              className="date-input"
-              date={date}
-              onDateChange={setDate}
-              format='MMMM dd, yyyy'
-              locale={enGB}>
-              {({ inputProps, focused }) => (
-                <input
-                  className={`input${focused ? ' -focused' : ''}`}
-                  {...inputProps}
+            <FormGroup>
+              <Label for="place">Date</Label>
+              <DatePicker
+                className="date-input"
+                date={date}
+                onDateChange={setDate}
+                format='MMMM dd, yyyy'
+                locale={enGB}>
+                {({ inputProps, focused }) => (
+                  <input
+                    className={`input${focused ? ' -focused' : ''}`}
+                    {...inputProps}
                   placeholder='  Date'
-                />
-              )}
-            </DatePicker>
+                  />
+                )}
+              </DatePicker>
+            </FormGroup>
 
             {/* <FormGroup>
               <Label for="dream-type">Dream Type</Label>
@@ -213,67 +217,79 @@ const DreamForm = ({
             </FormGroup> */}
 
             <FormGroup>
+              <Label for="type">Dream Type</Label>
+
               <Input
                 name='type'
                 id='type'
                 value={dream.type}
                 type='text'
-                placeholder='Dream Type'
+                // placeholder='Dream Type'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
+              <Label for="emotion">Emotion</Label>
+
               <Input
                 name='emotion'
                 id='emotion'
                 value={dream.emotion}
                 type='text'
-                placeholder='Emotion'
+                // placeholder='Emotion'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
+              <Label for="people">People</Label>
+
               <Input
                 name='people'
                 id='people'
                 value={dream.people}
                 type='text'
-                placeholder='People'
+                // placeholder='People'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
+              <Label for="place">Place</Label>
+
               <Input
                 name='place'
                 id='place'
                 value={dream.place}
                 type='text'
-                placeholder='Place'
+                // placeholder='Place'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
+              <Label for="thing">Thing</Label>
+
               <Input
                 name='thing'
                 id='thing'
                 value={dream.thing}
                 type='text'
-                placeholder='Thing'
+                // placeholder='Thing'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
+              <Label for="color">Ambient Color</Label>
+
               <Input
                 name='color'
                 id='color'
                 value={dream.color}
                 type='text'
-                placeholder='Color'
+                // placeholder='Color'
                 onChange={handleInputChange}
               />
             </FormGroup>
