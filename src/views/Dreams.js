@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Container } from 'reactstrap';
@@ -7,8 +7,15 @@ import AddIcon from '@material-ui/icons/Add';
 import Footer from '../components/Footer';
 import DreamCard from '../components/DreamCard';
 import NavBar from '../components/NavBar';
+import { getDreams } from '../helpers/data/DreamData';
 
-function Dreams({ dreams, setDreams, user }) {
+function Dreams({ user }) {
+  const [dreams, setDreams] = useState([]);
+
+  useEffect(() => {
+    getDreams().then((dreamsArray) => setDreams(dreamsArray));
+  }, []);
+
   return (
     <>
       <Container className="recorded-dream-container">
@@ -42,7 +49,7 @@ function Dreams({ dreams, setDreams, user }) {
 Dreams.propTypes = {
   dreams: PropTypes.array.isRequired,
   setDreams: PropTypes.func.isRequired,
-  user: PropTypes.func.isRequired
+  user: PropTypes.func
 };
 
 export default Dreams;

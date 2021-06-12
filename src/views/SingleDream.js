@@ -4,7 +4,7 @@ import SingleDreamCard from '../components/SingleDreamCard';
 import { getSingleDream } from '../helpers/data/DreamData';
 
 export default function SingleDream() {
-  const [dream, setDream] = useState({});
+  const [dream, setDream] = useState(null);
   const { firebaseKey } = useParams();
 
   useEffect(() => {
@@ -14,10 +14,9 @@ export default function SingleDream() {
 
   return (
     <div className="single-card-view">
-      <SingleDreamCard
+      {dream && <SingleDreamCard
         dream={dream}
-        setDream={setDream}
-        />
+        />}
 
     </div>
   );

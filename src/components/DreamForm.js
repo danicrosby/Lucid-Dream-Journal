@@ -21,6 +21,7 @@ import { addDream, updateDream } from '../helpers/data/DreamData';
 const DreamForm = ({
   formTitle,
   setDreams,
+  setSingleDream,
   name,
   entry,
   type,
@@ -55,7 +56,7 @@ const DreamForm = ({
   const handleSubmit = (e) => {
     e.preventDefault();
     if (dream.firebaseKey) {
-      updateDream(dream).then(setDreams);
+      updateDream(dream).then(setSingleDream);
     } else {
       addDream(dream).then((response) => {
         setDreams(response);
@@ -304,6 +305,7 @@ const DreamForm = ({
 
 DreamForm.propTypes = {
   formTitle: PropTypes.string.isRequired,
+  setSingleDream: PropTypes.func,
   setDreams: PropTypes.func,
   name: PropTypes.string,
   entry: PropTypes.string,

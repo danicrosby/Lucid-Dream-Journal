@@ -17,14 +17,15 @@ import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
 import interpretation from '../helpers/data/Interp';
 
-export default function SingleDreamCard({ dream, setDream }) {
+export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
+  const [singleDream, setSingleDream] = useState(dream);
   const history = useHistory();
 
   const handleClick = (type) => {
     switch (type) {
       case 'delete':
-        deleteDream(dream.firebaseKey)
+        deleteDream(singleDream.firebaseKey)
           .then(() => {
             history.push('/dreams');
           });
@@ -41,33 +42,33 @@ export default function SingleDreamCard({ dream, setDream }) {
     <Container className="dream-form-container mt-5">
       <Card className="add-dream-card">
         <CardHeader>
-          <h2>{dream.name}</h2>
-          <center>{dream.date}</center>
+          <h2>{singleDream.name}</h2>
+          <center>{singleDream.date}</center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
           <h5>Overview</h5>
           <CardText className="intro">
-            Hello, Dani. It looks like you had a {dream.type}
-            dream on {dream.date} that made you feel {dream.emotion}.
-            You dreamt of {dream.people}, the setting was in {dream.place}.
-            You remembered a few objects, more specifically a {dream.thing}.
-            The overall abmience of this {dream.type} dream was {dream.color}.
+            Hello, Dani. It looks like you had a {singleDream.type}
+            dream on {singleDream.date} that made you feel {singleDream.emotion}.
+            You dreamt of {singleDream.people}, the setting was in {singleDream.place}.
+            You remembered a few objects, more specifically a {singleDream.thing}.
+            The overall abmience of this {singleDream.type} dream was {singleDream.color}.
             Does this sound accurate?
           </CardText>
           <h5>Recorded Dream Story</h5>
-          <CardText>{dream.entry}</CardText>
+          <CardText>{singleDream.entry}</CardText>
           <CardText className="keyword-bucket">
             <h5>Keywords</h5>
-            <span>{dream.type}</span>
-            <span>{dream.emotion}</span>
-            <span>{dream.people}</span>
-            <span>{dream.place}</span>
-            <span>{dream.thing}</span>
-            <span>{dream.color}</span>
+            <span>{singleDream.type}</span>
+            <span>{singleDream.emotion}</span>
+            <span>{singleDream.people}</span>
+            <span>{singleDream.place}</span>
+            <span>{singleDream.thing}</span>
+            <span>{singleDream.color}</span>
           </CardText>
           <h5>Interpretation</h5>
           <CardText>
-            To dream of a {dream.thing} indicates {interpretation.tiger}.
+            To dream of a {singleDream.thing} indicates {interpretation.tiger}.
             Does this analysis correspond to emotions or events happening in your life right now?
           </CardText>
         </CardBody>
@@ -80,17 +81,17 @@ export default function SingleDreamCard({ dream, setDream }) {
       {
         editing && <DreamForm
           formTitle='Edit Dream'
-          setDream={setDream}
+          setSingleDream={setSingleDream}
           firebaseKey={dream.firebaseKey}
-          name={dream.name}
-          entry={dream.entry}
-          date={dream.date}
-          type={dream.type}
-          emotion={dream.emotion}
-          people={dream.people}
-          place={dream.place}
-          thing={dream.thing}
-          color={dream.color}
+          name={singleDream.name}
+          entry={singleDream.entry}
+          date={singleDream.date}
+          type={singleDream.type}
+          emotion={singleDream.emotion}
+          people={singleDream.people}
+          place={singleDream.place}
+          thing={singleDream.thing}
+          color={singleDream.color}
         />
       }
     </Container>
@@ -100,5 +101,4 @@ export default function SingleDreamCard({ dream, setDream }) {
 SingleDreamCard.propTypes = {
   firebaseKey: PropTypes.string,
   dream: PropTypes.object,
-  setDream: PropTypes.object
 };

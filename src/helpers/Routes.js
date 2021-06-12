@@ -13,7 +13,7 @@ import Calming from '../views/Calming';
 import Settings from '../views/Settings';
 // import Footer from '../components/Footer';
 
-export default function Routes({ dreams, setDreams }) {
+export default function Routes({ setDreams }) {
   return (
     <Container className="routes-container">
       <Switch>
@@ -27,12 +27,12 @@ export default function Routes({ dreams, setDreams }) {
 
         <Route
           exact path='/dreams'
-          component={() => <Dreams dreams={dreams} setDreams={setDreams} />}
+          component={() => <Dreams />}
         />
 
         <Route
           path='/dreams/:firebaseKey'
-          component={() => <SingleDream dreams={dreams} setDreams={setDreams} />}
+          component={() => <SingleDream />}
         />
 
         <Route

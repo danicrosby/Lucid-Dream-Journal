@@ -26,15 +26,15 @@ const deleteDream = (firebaseKey) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
-const updateDream = (dream) => new Promise((resolve, reject) => {
-  axios.patch(`${dbUrl}/dreams/${dream.firebaseKey}.json`, dream)
-    .then(() => getDreams().then(resolve))
-    .catch((error) => reject(error));
-});
-
 const getSingleDream = (firebaseKey) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/dreams/${firebaseKey}.json`)
     .then((dream) => resolve(dream.data))
+    .catch((error) => reject(error));
+});
+
+const updateDream = (dream) => new Promise((resolve, reject) => {
+  axios.patch(`${dbUrl}/dreams/${dream.firebaseKey}.json`, dream)
+    .then(() => getSingleDream(dream.firebaseKey).then(resolve))
     .catch((error) => reject(error));
 });
 
