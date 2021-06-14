@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import { format } from 'date-fns';
 import { enGB } from 'date-fns/locale';
 import { DatePicker } from 'react-nice-dates';
 import 'react-nice-dates/build/style.css';
@@ -17,6 +18,7 @@ import {
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
+import Interp from '../helpers/data/Interp';
 
 const DreamForm = ({
   formTitle,
@@ -30,6 +32,8 @@ const DreamForm = ({
   place,
   thing,
   color,
+  followUp,
+  realization,
   firebaseKey
 }) => {
   const [dream, setDream] = useState({
@@ -41,6 +45,8 @@ const DreamForm = ({
     place: place || '',
     thing: thing || '',
     color: color || '',
+    followUp: followUp || '',
+    realization: realization || '',
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
@@ -57,6 +63,25 @@ const DreamForm = ({
     e.preventDefault();
     if (dream.firebaseKey) {
       updateDream(dream).then(setSingleDream);
+      switch (dream.thing) {
+        case 'chased':
+          console.warn(Interp.chased);
+          break;
+        case 'falling':
+          console.warn(Interp.falling);
+          break;
+        case 'flying':
+          console.warn(Interp.flying);
+          break;
+        case 'naked':
+          console.warn(Interp.naked);
+          break;
+        case 'tiger':
+          console.warn(Interp.tiger);
+          break;
+        default:
+          console.warn('nothing selected');
+      }
     } else {
       addDream(dream).then((response) => {
         setDreams(response);
@@ -72,6 +97,8 @@ const DreamForm = ({
         place: '',
         thing: '',
         color: '',
+        followUp: '',
+        realization: '',
         firebaseKey: null
       });
     }
@@ -80,7 +107,9 @@ const DreamForm = ({
   return (
     <Container className="dream-form-container">
       <Card className="add-dream-form">
-        <CardHeader><h2>{formTitle}</h2></CardHeader>
+        <CardHeader><h2>{formTitle}</h2>
+        {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
+        </CardHeader>
         <CardBody className="add-dream-card-body">
 
           <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
@@ -92,7 +121,6 @@ const DreamForm = ({
                 id='name'
                 value={dream.name}
                 type='text'
-                // placeholder='Dream Title'
                 onChange={handleInputChange}
               />
             </FormGroup>
@@ -109,11 +137,13 @@ const DreamForm = ({
               />
             </FormGroup>
 
+            {/* Store date value on cards and edit forms */}
             <FormGroup>
               <Label for="place">Date</Label>
               <DatePicker
                 className="date-input"
                 date={date}
+                value={date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
                 onDateChange={setDate}
                 format='MMMM dd, yyyy'
                 locale={enGB}>
@@ -121,176 +151,96 @@ const DreamForm = ({
                   <input
                     className={`input${focused ? ' -focused' : ''}`}
                     {...inputProps}
-                  placeholder='  Date'
+                    placeholder='  Date'
                   />
                 )}
               </DatePicker>
             </FormGroup>
 
-            {/* <FormGroup>
-              <Label for="dream-type">Dream Type</Label>
-              <Input
-                type="select"
-                name="dream-type"
-                id="dream-type"
-                onChange={handleInputChange}>
-                  <option>Good Dream</option>
-                  <option>Bad Dream</option>
-                  <option>Nightmare Dream</option>
-                  <option>Lucid Dream</option>
-                  <option>Premonition Dream</option>
-              </Input>
-            </FormGroup>
-
-            <FormGroup>
-              <Label for="emotion">Emotion</Label>
-              <Input
-                type="select"
-                name="emotion"
-                id="emotion"
-                onChange={handleInputChange}>
-                  <option>Happy</option>
-                  <option>Sad</option>
-                  <option>Angry</option>
-                  <option>Loved</option>
-                  <option>Hurt</option>
-              </Input>
-            </FormGroup>
-
-            <FormGroup>
-              <Label for="people">People</Label>
-              <Input
-                type="select"
-                name="people"
-                id="exampleSelect"
-                onChange={handleInputChange}>
-                  <option>Jon</option>
-                  <option>Dani</option>
-                  <option>Egan</option>
-                  <option>Logan</option>
-                  <option>Stranger</option>
-              </Input>
-            </FormGroup>
-
-            <FormGroup>
-              <Label for="place">Place</Label>
-              <Input
-                type="select"
-                name="place"
-                id="place"
-                onChange={handleInputChange}>
-                  <option>House</option>
-                  <option>School</option>
-                  <option>Paris</option>
-                  <option>Missouri</option>
-                  <option>NSS</option>
-              </Input>
-            </FormGroup>
-
-            <FormGroup>
-              <Label for="thing">Thing</Label>
-              <Input
-                type="select"
-                name="thing"
-                id="thing"
-                onChange={handleInputChange}>
-                  <option>car</option>
-                  <option>boat</option>
-                  <option>hammer</option>
-                  <option>computer</option>
-                  <option>keyboard</option>
-              </Input>
-            </FormGroup>
-
-            <FormGroup>
-              <Label for="color">Color</Label>
-              <Input
-                type="select"
-                name="color"
-                id="color"
-                onChange={handleInputChange}>
-                  <option>Blue</option>
-                  <option>Black</option>
-                  <option>Red</option>
-                  <option>Orange</option>
-                  <option>Green</option>
-              </Input>
-            </FormGroup> */}
-
             <FormGroup>
               <Label for="type">Dream Type</Label>
-
               <Input
                 name='type'
                 id='type'
                 value={dream.type}
                 type='text'
-                // placeholder='Dream Type'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
               <Label for="emotion">Emotion</Label>
-
               <Input
                 name='emotion'
                 id='emotion'
                 value={dream.emotion}
                 type='text'
-                // placeholder='Emotion'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
               <Label for="people">People</Label>
-
               <Input
                 name='people'
                 id='people'
                 value={dream.people}
                 type='text'
-                // placeholder='People'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
               <Label for="place">Place</Label>
-
               <Input
                 name='place'
                 id='place'
                 value={dream.place}
                 type='text'
-                // placeholder='Place'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
               <Label for="thing">Thing</Label>
-
               <Input
                 name='thing'
                 id='thing'
                 value={dream.thing}
                 type='text'
-                // placeholder='Thing'
                 onChange={handleInputChange}
               />
             </FormGroup>
 
             <FormGroup>
               <Label for="color">Ambient Color</Label>
-
               <Input
                 name='color'
                 id='color'
                 value={dream.color}
                 type='text'
-                // placeholder='Color'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label for="realization">Realization</Label>
+              <Input
+                name='realization'
+                id='realization'
+                value={dream.realization}
+                type='text'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
+              <Label for="followUp">Follow Up</Label>
+              <Input
+                name='followUp'
+                id='followUp'
+                value={dream.followUp}
+                type='text'
                 onChange={handleInputChange}
               />
             </FormGroup>
@@ -316,6 +266,8 @@ DreamForm.propTypes = {
   place: PropTypes.string,
   thing: PropTypes.string,
   color: PropTypes.string,
+  followUp: PropTypes.string,
+  realization: PropTypes.string,
   firebaseKey: PropTypes.string,
   user: PropTypes.any
 };

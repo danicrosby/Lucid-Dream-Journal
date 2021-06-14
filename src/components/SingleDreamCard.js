@@ -15,7 +15,6 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
-import interpretation from '../helpers/data/Interp';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -48,8 +47,8 @@ export default function SingleDreamCard({ dream }) {
         <CardBody className="add-dream-card-body">
           <h5>Overview</h5>
           <CardText className="intro">
-            Hello, Dani. It looks like you had a {singleDream.type}
-            dream on {singleDream.date} that made you feel {singleDream.emotion}.
+            Hello, Dani. It looks like you had a {singleDream.type} dream
+            on {singleDream.date} that made you feel {singleDream.emotion}.
             You dreamt of {singleDream.people}, the setting was in {singleDream.place}.
             You remembered a few objects, more specifically a {singleDream.thing}.
             The overall abmience of this {singleDream.type} dream was {singleDream.color}.
@@ -57,8 +56,8 @@ export default function SingleDreamCard({ dream }) {
           </CardText>
           <h5>Recorded Dream Story</h5>
           <CardText>{singleDream.entry}</CardText>
+          <h5>Keywords</h5>
           <CardText className="keyword-bucket">
-            <h5>Keywords</h5>
             <span>{singleDream.type}</span>
             <span>{singleDream.emotion}</span>
             <span>{singleDream.people}</span>
@@ -68,8 +67,16 @@ export default function SingleDreamCard({ dream }) {
           </CardText>
           <h5>Interpretation</h5>
           <CardText>
-            To dream of a {singleDream.thing} indicates {interpretation.tiger}.
+            To dream of a {singleDream.thing} indicates.
             Does this analysis correspond to emotions or events happening in your life right now?
+          </CardText>
+          <h5>Realization</h5>
+          <CardText>
+            Do you have any realizations that stem from this interpretation? {singleDream.realization}
+          </CardText>
+          <h5>Premonitions or Follow Ups</h5>
+          <CardText>
+            Add more to dream story: {singleDream.followUp}
           </CardText>
         </CardBody>
         <CardFooter className="card-footer">
@@ -92,6 +99,8 @@ export default function SingleDreamCard({ dream }) {
           place={singleDream.place}
           thing={singleDream.thing}
           color={singleDream.color}
+          followUp={singleDream.followup}
+          realization={singleDream.realization}
         />
       }
     </Container>
