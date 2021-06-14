@@ -108,7 +108,7 @@ const DreamForm = ({
     <Container className="dream-form-container">
       <Card className="add-dream-form">
         <CardHeader><h2>{formTitle}</h2>
-        {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
+          {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
         </CardHeader>
         <CardBody className="add-dream-card-body">
 
@@ -245,7 +245,7 @@ const DreamForm = ({
               />
             </FormGroup>
 
-            <Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab>
+            <center><Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab></center>
           </Form>
         </CardBody>
       </Card>

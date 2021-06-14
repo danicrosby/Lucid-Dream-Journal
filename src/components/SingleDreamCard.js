@@ -15,6 +15,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
+import Interp from '../helpers/data/Interp';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -67,16 +68,16 @@ export default function SingleDreamCard({ dream }) {
           </CardText>
           <h5>Interpretation</h5>
           <CardText>
-            To dream of a {singleDream.thing} indicates.
+            To dream of a {singleDream.thing} indicates {Interp.tiger}.
             Does this analysis correspond to emotions or events happening in your life right now?
           </CardText>
           <h5>Realization</h5>
           <CardText>
-            Do you have any realizations that stem from this interpretation? {singleDream.realization}
+            {singleDream.realization}
           </CardText>
           <h5>Premonitions or Follow Ups</h5>
           <CardText>
-            Add more to dream story: {singleDream.followUp}
+            {singleDream.followUp}
           </CardText>
         </CardBody>
         <CardFooter className="card-footer">
