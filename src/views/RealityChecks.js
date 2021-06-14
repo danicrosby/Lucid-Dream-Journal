@@ -15,7 +15,7 @@ function RealityChecks() {
         <CardBody>
           <div className="top-text">
             <h4>Reality Checks</h4>
-            <i className="material-icons dream-type-icon"> toggle_off </i>
+            <i className="material-icons dream-type-icon"> toggle_on </i>
           </div>
           <CardTitle><h6>The Reality Check</h6></CardTitle>
           <CardText>
