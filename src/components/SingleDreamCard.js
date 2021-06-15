@@ -15,7 +15,9 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
-import Interp from '../helpers/data/Interp';
+import Tags from '../helpers/data/Tags';
+import Emotions from '../helpers/data/Emotions';
+import Colors from '../helpers/data/Colors';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -64,21 +66,18 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.people}</span>
             <span>{singleDream.place}</span>
             <span>{singleDream.thing}</span>
+            <span>{singleDream.action}</span>
             <span>{singleDream.color}</span>
           </CardText>
-          <h5>Interpretation</h5>
-          <CardText>
-            To dream of a {singleDream.thing} indicates {Interp.tiger}.
-            Does this analysis correspond to emotions or events happening in your life right now?
-          </CardText>
-          <h5>Realization</h5>
-          <CardText>
-            {singleDream.realization}
-          </CardText>
+          <h5>Dream Interpretation</h5>
+          <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Tags[singleDream.thing]}</CardText>
+          <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
+          <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Tags[singleDream.action]}</CardText>
+          <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
+          <h5>Post Interpretation Realizations</h5>
+          <CardText>{singleDream.realization}</CardText>
           <h5>Premonitions or Follow Ups</h5>
-          <CardText>
-            {singleDream.followUp}
-          </CardText>
+          <CardText>{singleDream.followUp}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
           <Fab className="fab-icons" onClick={() => handleClick('edit')}><EditIcon /></Fab>
@@ -98,6 +97,7 @@ export default function SingleDreamCard({ dream }) {
           emotion={singleDream.emotion}
           people={singleDream.people}
           place={singleDream.place}
+          action={singleDream.action}
           thing={singleDream.thing}
           color={singleDream.color}
           followUp={singleDream.followup}

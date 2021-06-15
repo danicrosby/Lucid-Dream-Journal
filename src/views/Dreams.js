@@ -34,6 +34,7 @@ function Dreams({ user }) {
               people={dreamInfo.people}
               place={dreamInfo.place}
               thing={dreamInfo.thing}
+              action={dreamInfo.action}
               color={dreamInfo.color}
               followUp={dreamInfo.followUp}
               realization={dreamInfo.realization}

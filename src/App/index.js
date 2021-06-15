@@ -30,12 +30,10 @@ function App() {
   }, []);
 
   return (
-    <>
       <Routes
         dreams={dreams}
         setDreams={setDreams}
       />
-    </>
   );
 }
 
