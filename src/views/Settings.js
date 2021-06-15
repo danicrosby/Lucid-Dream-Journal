@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Fab from '@material-ui/core/Fab';
+import CheckIcon from '@material-ui/icons/Check';
 import {
   Card,
   CardBody,
@@ -7,8 +9,6 @@ import {
   // Button,
   Form, FormGroup, Label, Input
 } from 'reactstrap';
-import Fab from '@material-ui/core/Fab';
-import CheckIcon from '@material-ui/icons/Check';
 
 function Settings() {
   return (
@@ -38,13 +38,9 @@ function Settings() {
               <Label for="password">Password</Label>
               <Input type="password" name="password" id="password" />
             </FormGroup>
-            <Link
-              className="nav-link" to="/dreams">
-              <Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab>
-            </Link>
           </Form>
           <center>
-
+            <Fab className="fab-icons mr-3 ml-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
           </center>
         </CardBody>
       </Card>

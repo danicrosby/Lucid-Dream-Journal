@@ -15,16 +15,19 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
-import interpretation from '../helpers/data/Interp';
+import Tags from '../helpers/data/Tags';
+import Emotions from '../helpers/data/Emotions';
+import Colors from '../helpers/data/Colors';
 
-export default function SingleDreamCard({ dream, setDream }) {
+export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
+  const [singleDream, setSingleDream] = useState(dream);
   const history = useHistory();
 
   const handleClick = (type) => {
     switch (type) {
       case 'delete':
-        deleteDream(dream.firebaseKey)
+        deleteDream(singleDream.firebaseKey)
           .then(() => {
             history.push('/dreams');
           });
@@ -41,35 +44,40 @@ export default function SingleDreamCard({ dream, setDream }) {
     <Container className="dream-form-container mt-5">
       <Card className="add-dream-card">
         <CardHeader>
-          <h2>{dream.name}</h2>
-          <center>{dream.date}</center>
+          <h2>{singleDream.name}</h2>
+          <center>{singleDream.date}</center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
           <h5>Overview</h5>
           <CardText className="intro">
-            Hello, Dani. It looks like you had a {dream.type}
-            dream on {dream.date} that made you feel {dream.emotion}.
-            You dreamt of {dream.people}, the setting was in {dream.place}.
-            You remembered a few objects, more specifically a {dream.thing}.
-            The overall abmience of this {dream.type} dream was {dream.color}.
+            Hello, Dani. It looks like you had a {singleDream.type} dream
+            on {singleDream.date} that made you feel {singleDream.emotion}.
+            You dreamt of {singleDream.people}, the setting was in {singleDream.place}.
+            You remembered a few objects, more specifically a {singleDream.thing}.
+            The overall abmience of this {singleDream.type} dream was {singleDream.color}.
             Does this sound accurate?
           </CardText>
           <h5>Recorded Dream Story</h5>
-          <CardText>{dream.entry}</CardText>
+          <CardText>{singleDream.entry}</CardText>
+          <h5>Keywords</h5>
           <CardText className="keyword-bucket">
-            <h5>Keywords</h5>
-            <span>{dream.type}</span>
-            <span>{dream.emotion}</span>
-            <span>{dream.people}</span>
-            <span>{dream.place}</span>
-            <span>{dream.thing}</span>
-            <span>{dream.color}</span>
+            <span>{singleDream.type}</span>
+            <span>{singleDream.emotion}</span>
+            <span>{singleDream.people}</span>
+            <span>{singleDream.place}</span>
+            <span>{singleDream.thing}</span>
+            <span>{singleDream.action}</span>
+            <span>{singleDream.color}</span>
           </CardText>
-          <h5>Interpretation</h5>
-          <CardText>
-            To dream of a {dream.thing} indicates {interpretation.tiger}.
-            Does this analysis correspond to emotions or events happening in your life right now?
-          </CardText>
+          <h5>Dream Interpretation</h5>
+          <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Tags[singleDream.thing]}</CardText>
+          <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
+          <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Tags[singleDream.action]}</CardText>
+          <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
+          <h5>Post Interpretation Realizations</h5>
+          <CardText>{singleDream.realization}</CardText>
+          <h5>Premonitions or Follow Ups</h5>
+          <CardText>{singleDream.followUp}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
           <Fab className="fab-icons" onClick={() => handleClick('edit')}><EditIcon /></Fab>
@@ -80,17 +88,20 @@ export default function SingleDreamCard({ dream, setDream }) {
       {
         editing && <DreamForm
           formTitle='Edit Dream'
-          setDream={setDream}
+          setSingleDream={setSingleDream}
           firebaseKey={dream.firebaseKey}
-          name={dream.name}
-          entry={dream.entry}
-          date={dream.date}
-          type={dream.type}
-          emotion={dream.emotion}
-          people={dream.people}
-          place={dream.place}
-          thing={dream.thing}
-          color={dream.color}
+          name={singleDream.name}
+          entry={singleDream.entry}
+          date={singleDream.date}
+          type={singleDream.type}
+          emotion={singleDream.emotion}
+          people={singleDream.people}
+          place={singleDream.place}
+          action={singleDream.action}
+          thing={singleDream.thing}
+          color={singleDream.color}
+          followUp={singleDream.followup}
+          realization={singleDream.realization}
         />
       }
     </Container>
@@ -100,5 +111,4 @@ export default function SingleDreamCard({ dream, setDream }) {
 SingleDreamCard.propTypes = {
   firebaseKey: PropTypes.string,
   dream: PropTypes.object,
-  setDream: PropTypes.object
 };

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Fab from '@material-ui/core/Fab';
+import CheckIcon from '@material-ui/icons/Check';
 import {
   Card,
   CardTitle,
@@ -38,12 +40,7 @@ function RealityChecks() {
             to fulfill your fantasies, or to solve a problem in your waking life. In fact, some athletes utilize their lucid dreams to practice their tennis serve, golf stroke or bat swing. Even in your day to day life, you can use lucid dreams to ask  the boss for a raise, prepare for a first date, overcome phobias,  get over writer block, etc.
           </CardText>
           <center>
-            <Link
-              className="nav-link"
-              to="/dreams">
-              <i className="material-icons"
-                id="expand-arrow"> keyboard_arrow_down </i>
-            </Link>
+            <Fab className="fab-icons mr-3 ml-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
           </center>
         </CardBody>
       </Card>
