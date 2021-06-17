@@ -36,12 +36,11 @@ const NavBar = ({ user }) => {
           <Nav className="ml-auto" navbar>
           { user && authenticated() }
             {
-              user !== null
-              && <NavItem>
+              user !== null && <NavItem>
                 {
                   user
-                    ? <Button className="sign-in-out-button" color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
-                    : <Button className="sign-in-out-button" color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
+                    ? <Button className="sign-in-out-button" color='transparent' onClick={signOutUser}>OUT</Button>
+                    : <Button className="sign-in-out-button" color='danger' onClick={signInUser}>IN</Button>
                 }
               </NavItem>
             }

@@ -241,6 +241,18 @@ const DreamForm = ({
             </FormGroup>
 
             <FormGroup>
+              {/* <Label for="followUp">Follow Up</Label> */}
+              <Input
+                name='followUp'
+                id='followUp'
+                value={dream.followUp}
+                type='text'
+                placeholder='More Details'
+                onChange={handleInputChange}
+              />
+            </FormGroup>
+
+            <FormGroup>
               {/* <Label for="realization">Realization</Label> */}
               <Input
                 name='realization'
@@ -248,18 +260,6 @@ const DreamForm = ({
                 value={dream.realization}
                 type='text'
                 placeholder='Realization'
-                onChange={handleInputChange}
-              />
-            </FormGroup>
-
-            <FormGroup>
-              {/* <Label for="followUp">Follow Up</Label> */}
-              <Input
-                name='followUp'
-                id='followUp'
-                value={dream.followUp}
-                type='text'
-                placeholder='Follow Up'
                 onChange={handleInputChange}
               />
             </FormGroup>

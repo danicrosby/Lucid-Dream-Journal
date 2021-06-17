@@ -18,6 +18,8 @@ import { deleteDream } from '../helpers/data/DreamData';
 import Tags from '../helpers/data/Tags';
 import Emotions from '../helpers/data/Emotions';
 import Colors from '../helpers/data/Colors';
+// import Places from '../helpers/data/Places';
+import Actions from '../helpers/data/Actions';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -71,10 +73,11 @@ export default function SingleDreamCard({ dream }) {
           </CardText>
           <h5>Dream Interpretation</h5>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Tags[singleDream.thing]}</CardText>
+          {/* <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText> */}
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
-          <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Tags[singleDream.action]}</CardText>
+          <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
-          <h5>Post Interpretation Realizations</h5>
+          <h5>More Details</h5>
           <CardText>{singleDream.realization}</CardText>
           <h5>Premonitions or Follow Ups</h5>
           <CardText>{singleDream.followUp}</CardText>

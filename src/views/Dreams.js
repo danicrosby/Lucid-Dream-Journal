@@ -50,8 +50,8 @@ function Dreams({ user }) {
 }
 
 Dreams.propTypes = {
-  dreams: PropTypes.array.isRequired,
-  setDreams: PropTypes.func.isRequired,
+  dreams: PropTypes.array,
+  setDreams: PropTypes.func,
   user: PropTypes.func
 };
 
