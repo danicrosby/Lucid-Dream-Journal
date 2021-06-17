@@ -6,12 +6,12 @@ import NavBar from '../components/NavBar';
 function AddDream({ setDreams, user }) {
   return (
     <>
-    <NavBar user={user} />
+      <NavBar user={user} />
       <DreamForm
         formTitle='Add Dream'
         setDreams={setDreams}
       />
-      </>
+    </>
   );
 }
 

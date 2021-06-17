@@ -6,12 +6,12 @@ import NavBar from '../components/NavBar';
 function AddSetting({ setSettings, user }) {
   return (
     <>
-    <NavBar user={user} />
+      <NavBar user={user} />
       <SettingForm
         formTitle='Add Setting'
         setDreams={setSettings}
       />
-      </>
+    </>
   );
 }
 

@@ -14,6 +14,10 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
+.card-title-display {
+  font-size: 1.1em;
+}
+
 .top-text {
   display: flex;
   justify-content: space-between;
@@ -41,6 +45,7 @@
 .date {
   font-family: 'Almarai', sans-serif;
   font-size: .8em;
+  color: grey;
 }
 
 h2 {
@@ -49,8 +54,8 @@ h2 {
 
 .sub-card {
   background-color: rgb(233, 232, 232);
-  height: 40em;
   width: 95%;
+  height: 80vmin;
   padding: 1em;
   margin: 1em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

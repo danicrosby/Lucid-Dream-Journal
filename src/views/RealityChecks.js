@@ -14,10 +14,10 @@ import Footer from '../components/Footer';
 function RealityChecks() {
   return (
     <Container className="sub-container mt-5">
-      <Card>
-        <CardBody>
-          <div className="top-text">
-            <h4>Reality Checks</h4>
+      <Card className="sub-card">
+        <CardBody className="sub-card-body">
+          <div className="top-text mb-4">
+            <h2>Reality Checks</h2>
             <i className="material-icons dream-type-icon"> toggle_on </i>
           </div>
           <CardTitle><h6>The Reality Check</h6></CardTitle>
@@ -41,7 +41,9 @@ function RealityChecks() {
             to fulfill your fantasies, or to solve a problem in your waking life.
           </CardText>
           <center>
-            <Fab className="fab-icons mr-3 ml-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
+            <div className="check-icon mt-4">
+              <Fab className="fab-icons mr-3 ml-3 mt-4"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
+            </div>
           </center>
         </CardBody>
       </Card>

@@ -14,10 +14,10 @@ import Footer from '../components/Footer';
 function Settings() {
   return (
     <Container className="sub-container mt-5">
-      <Card>
-        <CardBody>
-          <div className="top-text">
-            <h4>Settings</h4>
+      <Card className="sub-card">
+        <CardBody className="sub-card-body">
+          <div className="top-text mb-4">
+            <h2>Settings</h2>
             <i className="material-icons dream-type-icon"> settings_suggest </i>
           </div>
 
@@ -41,7 +41,9 @@ function Settings() {
             </FormGroup>
           </Form>
           <center>
-            <Fab className="fab-icons mr-3 ml-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
+            <div className="check-icon mt-5">
+              <Fab className="fab-icons mr-3 ml-3 mt-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
+            </div>
           </center>
         </CardBody>
       </Card>

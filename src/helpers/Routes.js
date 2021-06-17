@@ -17,7 +17,7 @@ export default function Routes({ user, setDreams }) {
   return (
     <Container className="routes-container">
       <Switch>
-        <Route exact path="/" component={() => <Welcome user={user}/>} />
+        <Route exact path="/" component={() => <Welcome user={user} />} />
         {/* <Route exact path='/' component={Welcome} /> */}
         <Route path="/education" component={Education} />
         <Route path="/reality-checks" component={RealityChecks} />
@@ -28,27 +28,27 @@ export default function Routes({ user, setDreams }) {
         <Route
           exact path='/dreams'
           component={() => <Dreams
-            user={user}/>}
+            user={user} />}
         />
 
         <Route
           path='/dreams/:firebaseKey'
           component={() => <SingleDream
-            user={user}/>}
+            user={user} />}
         />
 
         <Route
           path='/add-dream'
           component={() => <AddDream
-          setDreams={setDreams}
-          user={user}/>}
+            setDreams={setDreams}
+            user={user} />}
         />
 
         <Route
           path='/add-setting'
           component={() => <AddSetting
-          setDreams={setDreams}
-          user={user}/>}
+            setDreams={setDreams}
+            user={user} />}
         />
 
       </Switch>

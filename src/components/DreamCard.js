@@ -32,7 +32,7 @@ const DreamCard = ({
       <Card className="dream-card">
         <CardBody className="dream-card-body">
           <div className="top-text">
-            <CardTitle>{name}</CardTitle>
+            <CardTitle className="card-title-display">{name}</CardTitle>
             <i className="material-icons dream-type-icon"> cloud </i>
           </div>
           <CardText className="date">{date}</CardText>
