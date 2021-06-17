@@ -6,6 +6,7 @@ import {
   CardBody,
   Container
 } from 'reactstrap';
+import Footer from '../components/Footer';
 
 function Education() {
   return (
@@ -63,6 +64,7 @@ function Education() {
         </Link>
       </center>
     </Card>
+    <Footer />
   </Container>
   );
 }

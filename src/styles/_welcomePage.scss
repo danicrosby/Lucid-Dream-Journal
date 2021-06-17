@@ -22,16 +22,21 @@
   justify-content: center;
 }
 
-.welcome-title h1 {
+.welcome-title {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.welcome-title h3 {
   animation-name: fadein;
   animation-fill-mode: backwards;
   animation-duration: 5s;
   animation-delay: .7s;
   color: black;
   text-align: center;
-  font-size: 7em;
+  font-size: 5em;
   font-family: 'Sacramento', cursive;
-  margin-top: 1em;
 }
 
 .cloud-container {

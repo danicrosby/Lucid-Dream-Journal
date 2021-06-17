@@ -15,10 +15,7 @@ function App() {
   useEffect(() => {
     firebase.auth().onAuthStateChanged((authed) => {
       if (authed) {
-        // something to happen
         const userInfoObj = {
-          name: authed.name,
-          type: authed.type,
           uid: authed.uid,
           user: authed.email.split('@')[0]
         };

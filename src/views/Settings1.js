@@ -9,6 +9,7 @@ import {
   // Button,
   Form, FormGroup, Label, Input
 } from 'reactstrap';
+import Footer from '../components/Footer';
 
 function Settings() {
   return (
@@ -44,6 +45,7 @@ function Settings() {
           </center>
         </CardBody>
       </Card>
+      <Footer />
     </Container>
   );
 }
