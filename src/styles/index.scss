@@ -8,7 +8,10 @@
 
 
 body {
-  // background-color: hotpink;
+  // background-image: url(https://www.script-tutorials.com/demos/360/sky_preview.jpg);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-color: #736372;
   display: flex;
   justify-content: center;
 }
@@ -18,11 +21,11 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100vmin;
+  width: 90vmin;
 }
 
 .routes-container {
-  // background-color: green;
+  // background-color: #2D3142;
   border: 1px solid lightgrey;
   overflow: auto;
   height: 96vh;
@@ -30,11 +33,11 @@ body {
   margin-top: 2em;
   margin-bottom: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  opacity: .8;
 }
 
 .recorded-dream-container {
-  //  background-color: aquamarine;
-  //  border: 1px solid lightgrey;
+   background-color: 2D3142;
    height: 47vmax;
    overflow: auto;
 }
@@ -51,5 +54,11 @@ body {
 }
 
 h6 {
-  font-weight: bolder;
+  font-weight: 700;
+}
+
+.card-container {
+  // background-color: purple;
+  display: flex;
+  flex-direction: column-reverse;
 }

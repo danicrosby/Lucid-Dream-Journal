@@ -13,7 +13,7 @@ function Education() {
   return (
     <Container className="sub-container">
       <NavBar />
-      <center><h3 className="">Education</h3></center>
+      <center><h3 className="mt-4">Education</h3></center>
       <Card className="dream-card">
         <CardBody className="dream-card-body">
           <div className="top-text">

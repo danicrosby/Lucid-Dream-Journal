@@ -8,6 +8,7 @@ const Actions = {
   Flying: 'you are flying with ease and are enjoying the scene and landscape below, then it suggests that you are in charge and on top of a situation. You have risen above something. Flying dreams and the ability to control your flight is representative of your own personal sense of power',
   Walking: 'a slow, but steady progress toward your goals. You are moving through life in a confident manner. Consider your destination. To dream that you have difficulties walking indicates that you are reluctant and hesitant in proceeding forward in some situation. You may also be trying to distance yourself from certain life experiences.  The difficulty in walking is a reflection of your current situation and the obstacles that you are experiencing.',
   OutOfBreath: 'you are experiencing some anxiety, tension, or fear concerning a new situation in your waking life.',
+  Bitten: 'your vulnerability regarding some unresolved issues or emotions. You may be pestered by a problem or obstacle. The dream may also be a metaphor indicating that you have bitten off more than you chew. Perhaps you have too much to handle.',
   Naked: 'you are also most vulnerable. There is absolutely nothing that you can hide behind. Thus the dream may parallel a waking situation where you feel helpless or where you have completely let your guard down. Perhaps you are in a relationship where you have opened yourself up at the risk of getting rejected',
 };
 export default Actions;

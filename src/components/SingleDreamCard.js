@@ -15,7 +15,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
-import Tags from '../helpers/data/Tags';
+import Things from '../helpers/data/Things';
 import Emotions from '../helpers/data/Emotions';
 import Colors from '../helpers/data/Colors';
 // import Places from '../helpers/data/Places';
@@ -44,24 +44,24 @@ export default function SingleDreamCard({ dream }) {
 
   return (
     <Container className="dream-form-container mt-5">
-      <Card className="add-dream-card">
+      <Card className="add-dream-card mt-2 mb-5">
         <CardHeader>
           <h2>{singleDream.name}</h2>
           <center>{singleDream.date}</center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
-          <h5>Overview</h5>
+          <h5 className="mb-3 mt-3">Overview</h5>
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.type} dream
-            on {singleDream.date} that made you feel {singleDream.emotion}.
+            on {singleDream.date}, that made you feel {singleDream.emotion}.
             You dreamt of {singleDream.people}, the setting was in {singleDream.place}.
             You remembered a few objects, more specifically a {singleDream.thing}.
             The overall abmience of this {singleDream.type} dream was {singleDream.color}.
             Does this sound accurate?
           </CardText>
-          <h5>Recorded Dream Story</h5>
+          <h5 className="mb-3 mt-3">Recorded Dream Story</h5>
           <CardText>{singleDream.entry}</CardText>
-          <h5>Keywords</h5>
+          <h5 className="mb-3 mt-3">Keywords</h5>
           <CardText className="keyword-bucket">
             <span>{singleDream.type}</span>
             <span>{singleDream.emotion}</span>
@@ -71,15 +71,15 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.action}</span>
             <span>{singleDream.color}</span>
           </CardText>
-          <h5>Dream Interpretation</h5>
-          <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Tags[singleDream.thing]}</CardText>
+          <h5 className="mb-3 mt-3">Dream Interpretation</h5>
+          <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Things[singleDream.thing]}</CardText>
           {/* <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText> */}
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
-          <h5>More Details</h5>
+          <h5 className="mb-3 mt-3">More Details</h5>
           <CardText>{singleDream.realization}</CardText>
-          <h5>Premonitions or Follow Ups</h5>
+          <h5 className="mb-3 mt-3">Premonitions or Follow Ups</h5>
           <CardText>{singleDream.followUp}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
