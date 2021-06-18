@@ -33,7 +33,7 @@ function Dreams({ user }) {
               name={dreamInfo.name}
               entry={dreamInfo.entry}
               date={dreamInfo.date}
-              type={dreamInfo.type}
+              dreamType={dreamInfo.dreamType}
               emotion={dreamInfo.emotion}
               people={dreamInfo.people}
               place={dreamInfo.place}

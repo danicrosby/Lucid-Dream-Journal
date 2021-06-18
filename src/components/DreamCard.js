@@ -14,6 +14,7 @@ const DreamCard = ({
   firebaseKey,
   name,
   date,
+  dreamType
 }) => {
   const history = useHistory();
 
@@ -33,7 +34,7 @@ const DreamCard = ({
         <CardBody className="dream-card-body">
           <div className="top-text">
             <CardTitle className="card-title-display">{name}</CardTitle>
-            <i className="material-icons dream-type-icon"> cloud </i>
+            <CardText className="date">{dreamType}</CardText>
           </div>
           <CardText className="date">{date}</CardText>
         </CardBody>
@@ -50,6 +51,7 @@ DreamCard.propTypes = {
   name: PropTypes.string,
   entry: PropTypes.string,
   date: PropTypes.string,
+  dreamType: PropTypes.string,
   user: PropTypes.any
 };
 
