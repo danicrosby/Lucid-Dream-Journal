@@ -20,7 +20,7 @@ function Dreams({ user }) {
     <>
       <Container className="recorded-dream-container">
         <NavBar user={user} />
-        <center><Link className="nav-link add-dream-btn-link mr-5 mt-2" to="/add-dream"><Fab className="fab-add-btn add-icon-btn"><AddIcon /></Fab></Link></center>
+        <center><Link className="nav-link add-dream-btn-link mr-5 mt-4" to="/add-dream"><Fab className="fab-add-btn add-icon-btn" color="dark"><AddIcon style={{ color: 'purple' }}/></Fab></Link></center>
         <div className="card-container">
           {dreams.map((dreamInfo) => (
             <DreamCard

@@ -14,6 +14,7 @@ import {
   CardHeader,
   Container,
   CardBody,
+  CardFooter
   // Label
 } from 'reactstrap';
 import PropTypes from 'prop-types';
@@ -91,7 +92,7 @@ const DreamForm = ({
 
   return (
     <Container className="dream-form-container">
-      <Card className="add-dream-form">
+      <Card className="add-dream-form mb-5">
         <CardHeader><h2>{formTitle}</h2>
           {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
         </CardHeader>
@@ -267,6 +268,7 @@ const DreamForm = ({
             <center><Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab></center>
           </Form>
         </CardBody>
+        <CardFooter>footer</CardFooter>
       </Card>
     </Container >
   );
