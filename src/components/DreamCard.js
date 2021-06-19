@@ -9,14 +9,16 @@ import {
   Container
 } from 'reactstrap';
 import PropTypes from 'prop-types';
+import DreamType from '../helpers/data/DreamType';
 
 const DreamCard = ({
   firebaseKey,
   name,
   date,
-  dreamType
+  dreamType,
 }) => {
   const history = useHistory();
+  console.warn(dreamType);
 
   const handleClick = (type) => {
     switch (type) {
@@ -34,7 +36,7 @@ const DreamCard = ({
         <CardBody className="dream-card-body">
           <div className="top-text">
             <CardTitle className="card-title-display">{name}</CardTitle>
-            <CardText className="date">{dreamType}</CardText>
+            <CardText>{DreamType[dreamType].icon}</CardText>
           </div>
           <CardText className="date">{date}</CardText>
         </CardBody>
