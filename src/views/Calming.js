@@ -14,14 +14,14 @@ import Footer from '../components/Footer';
 function Calming() {
   return (
     <Container>
-      <Card className="sub-card mt-5">
+      <Card className="sub-card">
         <CardBody className="sub-card-body">
-          <div className="top-text mb-5">
-            <h2 className="mb-3">Calming Sounds & Techniques</h2>
+          <div className="top-text mb-4">
+            <h5 className="mb-3">Calming Sounds & Techniques</h5>
             <i className="material-icons dream-type-icon"> headphones </i>
           </div>
           <CardTitle><h6>Calming Technique</h6></CardTitle>
-          <CardText>
+          <CardText className="card-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio eu feugiat pretium nibh ipsum consequat nisl vel. Amet mattis vulputate enim nulla aliquet porttitor.
             Nunc faucibus a pellentesque sit amet porttitor eget dolor. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Orci phasellus egestas tellus rutrum
             tellus pellentesque eu tincidunt tortor. Sit amet nulla facilisi morbi tempus iaculis urna id. Facilisis magna etiam tempor orci eu lobortis elementum. Velit euismod in pellentesque massa.
@@ -37,12 +37,10 @@ function Calming() {
             Nunc faucibus a pellentesque sit amet porttitor eget dolor. Tellus id interdum velit laoreet id donec ultrices tincidunt arcu. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Orci phasellus egestas tellus rutrum
             tellus pellentesque eu tincidunt tortor. Sit amet nulla facilisi morbi tempus iaculis urna id. Facilisis magna etiam tempor orci eu lobortis elementum. Velit euismod in pellentesque massa.
           </CardText>
-          <center>
-            <div className="check-icon mt-4">
-              <Fab className="fab-icons mr-3 ml-3 mt-4"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
-            </div>
-          </center>
         </CardBody>
+        <center>
+          <Fab className="fab-icons mr-3 ml-3 mt-4"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
+        </center>
       </Card>
       <Footer />
     </Container>

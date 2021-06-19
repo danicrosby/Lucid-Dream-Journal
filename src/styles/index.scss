@@ -25,9 +25,8 @@ body {
   // background-color: #2D3142;
   border: 1px solid lightgrey;
   overflow: auto;
-  height: 92vmin;
+  height: 96vmin;
   position: relative;
-  margin-top: 2em;
   margin-bottom: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   opacity: .8;
@@ -35,7 +34,7 @@ body {
 
 .recorded-dream-container {
    background-color: 2D3142;
-   height: 47vmax;
+   height: 50vmax;
    overflow: auto;
 }
 
@@ -43,7 +42,6 @@ body {
 .input {
   margin-bottom: 1em;
   height: 2.5em;
-  width: 100%;
 }
 
 #entry {
@@ -51,7 +49,7 @@ body {
 }
 
 h6 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card-container {

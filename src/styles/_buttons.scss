@@ -1,4 +1,12 @@
-
+.sign-in-out-btn {
+  opacity: .9;
+  font-size: 5em;
+  animation-name: colors;
+  animation-delay: .2s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
+}
 
 .add-dream-btn-link {
   width: 2em;
@@ -24,10 +32,6 @@ a {
 #expand-arrow {
   font-weight: bolder;
   font-size: 2em;
-}
-
-.check-icon {
-  border-top: 1px solid grey;
 }
 
 .fab-add-btn {

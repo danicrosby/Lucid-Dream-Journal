@@ -13,21 +13,17 @@ function Education() {
   return (
     <Container className="sub-container">
       <NavBar />
-      <center><h3 className="mt-4">Education</h3></center>
       <Card className="dream-card">
         <CardBody className="dream-card-body">
           <div className="top-text">
-            <h5>Reality Checks</h5>
+            <h6>Reality Checks</h6>
             <i className="material-icons dream-type-icon"> toggle_on </i>
           </div>
           <CardText className="date">daily reality checkins</CardText>
         </CardBody>
         <center>
-          <Link
-            className="nav-link"
-            to="/reality-checks">
-            <i className="material-icons"
-              id="expand-arrow"> keyboard_arrow_down </i>
+          <Link className="nav-link fab-icons expand-arrow-btn m-1" to="/reality-checks">
+            <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
           </Link>
         </center>
       </Card>
@@ -35,17 +31,14 @@ function Education() {
       <Card className="dream-card">
         <CardBody className="dream-card-body">
           <div className="top-text">
-            <h5>Lucid Dream Techniques</h5>
+            <h6>Lucid Dream Techniques</h6>
             <i className="material-icons dream-type-icon"> visibility </i>
           </div>
           <CardText className="date">learn how to lucid dream everynight</CardText>
         </CardBody>
         <center>
-          <Link
-            className="nav-link"
-            to="/techniques">
-            <i className="material-icons"
-              id="expand-arrow"> keyboard_arrow_down </i>
+          <Link className="nav-link fab-icons expand-arrow-btn m-1" to="/reality-checks">
+            <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
           </Link>
         </center>
       </Card>
@@ -53,17 +46,14 @@ function Education() {
       <Card className="dream-card">
         <CardBody className="dream-card-body">
           <div className="top-text">
-            <h5>Calming Sounds</h5>
+            <h6>Calming Sounds</h6>
             <i className="material-icons dream-type-icon"> headphones </i>
           </div>
           <CardText className="date">find tranquil calming music</CardText>
         </CardBody>
         <center>
-          <Link
-            className="nav-link"
-            to="/calming">
-            <i className="material-icons"
-              id="expand-arrow"> keyboard_arrow_down </i>
+          <Link className="nav-link fab-icons expand-arrow-btn m-1" to="/reality-checks">
+            <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
           </Link>
         </center>
       </Card>
