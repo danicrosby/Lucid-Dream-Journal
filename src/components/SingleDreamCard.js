@@ -55,7 +55,7 @@ export default function SingleDreamCard({ dream }) {
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.dreamType} dream
             on {singleDream.date}, that made you feel {singleDream.emotion}.
-            You dreamt of {singleDream.people}, the setting was in {singleDream.place}.
+            You dreamt of {singleDream.people}, the setting was {singleDream.place}.
             You remembered a few objects, more specifically a {singleDream.thing}.
             The overall abmience of this {singleDream.color} dream was {singleDream.color}.
             Does this sound accurate?
@@ -79,9 +79,9 @@ export default function SingleDreamCard({ dream }) {
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
-          <h5 className="mb-3 mt-3">More Details</h5>
+          <h5 className="mb-3 mt-3">Additional Details</h5>
           <CardText>{singleDream.realization}</CardText>
-          <h5 className="mb-3 mt-3">Premonitions or Follow Ups</h5>
+          <h5 className="mb-3 mt-3">Realizations or Follow Ups</h5>
           <CardText>{singleDream.followUp}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
@@ -107,6 +107,7 @@ export default function SingleDreamCard({ dream }) {
           color={singleDream.color}
           followUp={singleDream.followup}
           realization={singleDream.realization}
+          setEditing={setEditing}
         />
       }
     </Container>

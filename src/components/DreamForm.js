@@ -37,6 +37,7 @@ const DreamForm = ({
   color,
   followUp,
   realization,
+  setEditing,
   firebaseKey
 }) => {
   const [dream, setDream] = useState({
@@ -68,9 +69,11 @@ const DreamForm = ({
     e.preventDefault();
     if (dream.firebaseKey) {
       updateDream(dream).then(setSingleDream);
+      setEditing(false);
     } else {
       addDream(dream).then((response) => {
         setDreams(response);
+        setEditing(false);
         history.push('/dreams');
       });
 
@@ -278,6 +281,7 @@ DreamForm.propTypes = {
   formTitle: PropTypes.string.isRequired,
   setSingleDream: PropTypes.func,
   setDreams: PropTypes.func,
+  setEditing: PropTypes.func,
   name: PropTypes.string,
   entry: PropTypes.string,
   date: PropTypes.string,

@@ -17,7 +17,6 @@ const DreamCard = ({
   dreamType,
 }) => {
   const history = useHistory();
-  console.warn(dreamType);
 
   const handleClick = (type) => {
     switch (type) {
