@@ -19,9 +19,9 @@ function Dreams({ user }) {
   return (
     <>
       <Container className="recorded-dream-container">
-        <NavBar user={user} />
+      <NavBar user={user} />
         <center>
-          <Link className="nav-link add-dream-btn-link mr-5 mt-4" to="/add-dream">
+          <Link className="nav-link add-dream-btn-link mr-5 mt-3" to="/add-dream">
             <Fab className="fab-add-btn add-icon-btn" color="dark"><AddIcon style={{ color: 'purple' }}/></Fab>
           </Link>
         </center>
