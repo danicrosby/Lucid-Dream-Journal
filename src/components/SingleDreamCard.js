@@ -20,6 +20,7 @@ import Emotions from '../helpers/data/Emotions';
 import Colors from '../helpers/data/Colors';
 // import Places from '../helpers/data/Places';
 import Actions from '../helpers/data/Actions';
+import DreamType from '../helpers/data/DreamType';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -52,18 +53,18 @@ export default function SingleDreamCard({ dream }) {
         <CardBody className="add-dream-card-body">
           <h5 className="mb-3 mt-3">Overview</h5>
           <CardText className="intro">
-            Hello, Dani. It looks like you had a {singleDream.type} dream
+            Hello, Dani. It looks like you had a {singleDream.dreamType} dream
             on {singleDream.date}, that made you feel {singleDream.emotion}.
             You dreamt of {singleDream.people}, the setting was in {singleDream.place}.
             You remembered a few objects, more specifically a {singleDream.thing}.
-            The overall abmience of this {singleDream.type} dream was {singleDream.color}.
+            The overall abmience of this {singleDream.color} dream was {singleDream.color}.
             Does this sound accurate?
           </CardText>
           <h5 className="mb-3 mt-3">Recorded Dream Story</h5>
           <CardText>{singleDream.entry}</CardText>
           <h5 className="mb-3 mt-3">Keywords</h5>
           <CardText className="keyword-bucket">
-            <span>{singleDream.type}</span>
+            <span>{singleDream.dreamType}</span>
             <span>{singleDream.emotion}</span>
             <span>{singleDream.people}</span>
             <span>{singleDream.place}</span>
@@ -72,6 +73,7 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.color}</span>
           </CardText>
           <h5 className="mb-3 mt-3">Dream Interpretation</h5>
+          <CardText><h6>{singleDream.dreamType}</h6>One reason for {singleDream.dreamType} may be {DreamType[singleDream.dreamType].interpretation}</CardText>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Things[singleDream.thing]}</CardText>
           {/* <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText> */}
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
@@ -96,7 +98,7 @@ export default function SingleDreamCard({ dream }) {
           name={singleDream.name}
           entry={singleDream.entry}
           date={singleDream.date}
-          type={singleDream.type}
+          dreamType={singleDream.dreamType}
           emotion={singleDream.emotion}
           people={singleDream.people}
           place={singleDream.place}

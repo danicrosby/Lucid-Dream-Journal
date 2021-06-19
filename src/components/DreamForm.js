@@ -28,7 +28,7 @@ const DreamForm = ({
   name,
   entry,
   date,
-  type,
+  dreamType,
   emotion,
   people,
   place,
@@ -42,7 +42,7 @@ const DreamForm = ({
   const [dream, setDream] = useState({
     name: name || '',
     entry: entry || '',
-    type: type || '',
+    dreamType: dreamType || '',
     date: date || '',
     emotion: emotion || '',
     people: people || '',
@@ -160,9 +160,9 @@ const DreamForm = ({
             <FormGroup>
               {/* <Label for="type">Dream Type</Label> */}
               <Input
-                name='type'
-                id='type'
-                value={dream.type}
+                name='dreamType'
+                id='dreamType'
+                value={dream.dreamType}
                 type='text'
                 placeholder='Dream Type'
                 onChange={handleInputChange}
@@ -281,7 +281,7 @@ DreamForm.propTypes = {
   name: PropTypes.string,
   entry: PropTypes.string,
   date: PropTypes.string,
-  type: PropTypes.string,
+  dreamType: PropTypes.string,
   emotion: PropTypes.string,
   people: PropTypes.string,
   place: PropTypes.string,

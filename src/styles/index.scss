@@ -8,9 +8,6 @@
 
 
 body {
-  // background-image: url(https://www.script-tutorials.com/demos/360/sky_preview.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
   // background-color: #736372;
   display: flex;
   justify-content: center;
@@ -21,14 +18,14 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 90vmin;
+  width: 100vmin;
 }
 
 .routes-container {
   // background-color: #2D3142;
   border: 1px solid lightgrey;
   overflow: auto;
-  height: 96vh;
+  height: 92vmin;
   position: relative;
   margin-top: 2em;
   margin-bottom: 2em;
