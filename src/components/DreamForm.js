@@ -73,7 +73,7 @@ const DreamForm = ({
     } else {
       addDream(dream).then((response) => {
         setDreams(response);
-        setEditing(false);
+        // setEditing(false);
         history.push('/dreams');
       });
 

@@ -18,7 +18,7 @@ import { deleteDream } from '../helpers/data/DreamData';
 import Things from '../helpers/data/Things';
 import Emotions from '../helpers/data/Emotions';
 import Colors from '../helpers/data/Colors';
-// import Places from '../helpers/data/Places';
+import Places from '../helpers/data/Places';
 import Actions from '../helpers/data/Actions';
 import DreamType from '../helpers/data/DreamType';
 
@@ -75,7 +75,7 @@ export default function SingleDreamCard({ dream }) {
           <h5 className="mb-3 mt-3">Dream Interpretation</h5>
           <CardText><h6>{singleDream.dreamType}</h6>One reason for {singleDream.dreamType} may be {DreamType[singleDream.dreamType].interpretation}</CardText>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Things[singleDream.thing]}</CardText>
-          {/* <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText> */}
+          <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText>
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
