@@ -1,8 +1,5 @@
 import React from 'react';
 import { css } from '@emotion/css';
-import { Link } from 'react-router-dom';
-import Fab from '@material-ui/core/Fab';
-import CheckIcon from '@material-ui/icons/Check';
 import {
   Card,
   CardTitle,
@@ -104,8 +101,8 @@ class Menu extends React.Component {
 
         </div>
         <div className={`${menuOverlay} ${isMenuOpen ? 'show' : null}`}>
-        <Card className="sub-card">
-        <CardBody className="sub-card-body">
+        <Card className="menu-card">
+        <CardBody className="menu-card-body">
           <div className="top-text mb-4">
             <h5 className="mb-3">Lucid Dream Techniques</h5>
             <i className="material-icons dream-type-icon"> visibility </i>
@@ -126,9 +123,6 @@ class Menu extends React.Component {
             to fulfill your fantasies, or to solve a problem in your waking life. In fact, some athletes utilize their lucid dreams to practice their tennis serve, golf stroke or bat swing. Even in your day to day life, you can use lucid dreams to ask  the boss for a raise, prepare for a first date, overcome phobias,  get over writer block, etc.
           </CardText>
         </CardBody>
-        <center>
-        <Fab className="fab-icons mr-3 ml-3 mt-4"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
-        </center>
       </Card>
         </div>
       </React.Fragment>

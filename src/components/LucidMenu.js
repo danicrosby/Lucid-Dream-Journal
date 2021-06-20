@@ -101,8 +101,8 @@ class Menu extends React.Component {
 
         </div>
         <div className={`${menuOverlay} ${isMenuOpen ? 'show' : null}`}>
-          <Card className="sub-card">
-            <CardBody className="sub-card-body">
+          <Card className="menu-card">
+            <CardBody className="menu-card-body">
               <div className="top-text mb-4">
                 <h5 className="mb-3">Lucid Dream Techniques</h5>
                 <i className="material-icons dream-type-icon"> visibility </i>
