@@ -1,8 +1,5 @@
 import React from 'react';
 import { css } from '@emotion/css';
-import { Link } from 'react-router-dom';
-import Fab from '@material-ui/core/Fab';
-import CheckIcon from '@material-ui/icons/Check';
 import {
   Card,
   CardTitle,
@@ -29,10 +26,11 @@ const btnLine = css`
   width: 28px;
   height: 4px;
   margin: 0 0 5px 0;
-  background-color: #71C57F;
+  background-color: #333;
+  opacity: .4;
   ${easeSlow};
   &.closer {
-    background-color: #E76E81;  
+    background-color: #333;  
     &:nth-child(1) {
       transform: rotate(45deg) translate(4px, 0px);
       width: 20px;
@@ -58,7 +56,7 @@ const menuOverlay = css`
   transform: translateX(100%);
   transition: all 500ms ease-in-out;
   &.show {
-    background-color: #FEF7E1;
+    background-color: #333;
     transform: translateX(0%); 
   }
   nav {
@@ -69,11 +67,11 @@ const menuOverlay = css`
     a {
       height: 30px;
       text-decoration: none;
-      color: #EB4C54;
+      color: #333;
       cursor: pointer;
       transition: all 150ms ease-in-out;
       &:hover {
-        color: #F28EBA;
+        color: #333;
       } 
     }
   }
@@ -103,35 +101,27 @@ class Menu extends React.Component {
 
         </div>
         <div className={`${menuOverlay} ${isMenuOpen ? 'show' : null}`}>
-          <Card>
-            <CardBody>
-              <div className="top-text">
-                <h4>Reality Checks</h4>
-                <i className="material-icons dream-type-icon"> toggle_on </i>
+          <Card className="menu-card">
+            <CardBody className="menu-card-body">
+              <div className="top-text mb-4">
+                <h5 className="mb-3">Lucid Dream Techniques</h5>
+                <i className="material-icons dream-type-icon"> visibility </i>
               </div>
-              <CardTitle><h6>The Reality Check</h6></CardTitle>
+              <CardTitle><h6>What are Lucid Dreams?</h6></CardTitle>
+              <CardText className="card-text">
+                Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
+                to fulfill your fantasies, or to solve a problem in your waking life.
+              </CardText>
+              <CardTitle><h6 className="mt-4">Control</h6></CardTitle>
               <CardText>
                 Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
                 to fulfill your fantasies, or to solve a problem in your waking life. In fact, some athletes utilize their lucid dreams to practice their tennis serve, golf stroke or bat swing. Even in your day to day life, you can use lucid dreams to ask  the boss for a raise, prepare for a first date, overcome phobias,  get over writer block, etc.
               </CardText>
-              <CardTitle><h6>The Palm Press</h6></CardTitle>
+              <CardTitle><h6 className="mt-4">Vividness</h6></CardTitle>
               <CardText>
                 Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
                 to fulfill your fantasies, or to solve a problem in your waking life. In fact, some athletes utilize their lucid dreams to practice their tennis serve, golf stroke or bat swing. Even in your day to day life, you can use lucid dreams to ask  the boss for a raise, prepare for a first date, overcome phobias,  get over writer block, etc.
               </CardText>
-              <CardTitle><h6>Interact With Objects</h6></CardTitle>
-              <CardText>
-                Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
-                to fulfill your fantasies, or to solve a problem in your waking life. In fact, some athletes utilize their lucid dreams to practice their tennis serve, golf stroke or bat swing. Even in your day to day life, you can use lucid dreams to ask  the boss for a raise, prepare for a first date, overcome phobias,  get over writer block, etc.
-              </CardText>
-              <CardTitle><h6>Remember, Remember, Remember</h6></CardTitle>
-              <CardText>
-                Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
-                to fulfill your fantasies, or to solve a problem in your waking life. In fact, some athletes utilize their lucid dreams to practice their tennis serve, golf stroke or bat swing. Even in your day to day life, you can use lucid dreams to ask  the boss for a raise, prepare for a first date, overcome phobias,  get over writer block, etc.
-              </CardText>
-              <center>
-                <Fab className="fab-icons mr-3 ml-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
-              </center>
             </CardBody>
           </Card>
         </div>

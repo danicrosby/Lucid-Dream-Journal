@@ -1,21 +1,16 @@
 .dream-card {
   background-color: #dcdde4;
-  height: 14em;
-  width: 98%;
+  height: 12em;
   padding: 1em;
-  margin: 1em;
+  margin: .5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .dream-card-body {
   background-color: white;
-  height: 8em;
+  height: 6em;
   padding: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-title-display {
-  font-size: 1.1em;
 }
 
 .top-text {
@@ -54,7 +49,6 @@ h2 {
 
 .sub-card {
   background-color: rgb(233, 232, 232);
-  width: 95%;
   height: 80vmin;
   padding: 1em;
   margin: 1em;
@@ -62,8 +56,29 @@ h2 {
 }
 
 .sub-card-body {
+  text-align: left;
   background-color: white;
-  height: 8em;
+  height: 12em;
   padding: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.card-title {
+  font-size: 11px;
+  font-weight: bolder;
+}
+
+.menu-card {
+  width: 33em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.menu-card-body {
+  text-align: left;
+  height: 48em;
 }

@@ -13,11 +13,11 @@ import Footer from '../components/Footer';
 
 function Settings() {
   return (
-    <Container className="sub-container mt-5">
+    <Container className="sub-container">
       <Card className="sub-card">
         <CardBody className="sub-card-body">
           <div className="top-text mb-4">
-            <h2>Settings</h2>
+            <h5 className="mb-3">Settings</h5>
             <i className="material-icons dream-type-icon"> settings_suggest </i>
           </div>
 
@@ -40,12 +40,10 @@ function Settings() {
               <Input type="password" name="password" id="password" />
             </FormGroup>
           </Form>
-          <center>
-            <div className="check-icon mt-5">
-              <Fab className="fab-icons mr-3 ml-3 mt-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
-            </div>
-          </center>
         </CardBody>
+        <center>
+          <Fab className="fab-icons mr-3 ml-3 mt-3"><Link className="nav-link" to="/education"><CheckIcon /></Link></Fab>
+        </center>
       </Card>
       <Footer />
     </Container>

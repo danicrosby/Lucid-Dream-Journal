@@ -8,9 +8,6 @@ import Dreams from '../views/Dreams';
 import SingleDream from '../views/SingleDream';
 import Welcome from '../views/Welcome';
 import Education from '../views/Education';
-import RealityChecks from '../views/RealityChecks';
-import Techniques from '../views/Techniques';
-import Calming from '../views/Calming';
 import Settings from '../views/Settings1';
 
 export default function Routes({ user, setDreams }) {
@@ -20,9 +17,6 @@ export default function Routes({ user, setDreams }) {
         <Route exact path="/" component={() => <Welcome user={user} />} />
         {/* <Route exact path='/' component={Welcome} /> */}
         <Route path="/education" component={Education} />
-        <Route path="/reality-checks" component={RealityChecks} />
-        <Route path="/techniques" component={Techniques} />
-        <Route path="/calming" component={Calming} />
         <Route path="/settings" component={Settings} />
 
         <Route
@@ -52,7 +46,6 @@ export default function Routes({ user, setDreams }) {
         />
 
       </Switch>
-      {/* <Footer /> */}
     </Container>
   );
 }

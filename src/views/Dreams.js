@@ -47,8 +47,8 @@ function Dreams({ user }) {
             />
           ))}
         </div>
+        <Footer />
       </Container>
-      <Footer />
     </>
   );
 }

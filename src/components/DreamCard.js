@@ -2,7 +2,6 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import {
   Card,
-  CardTitle,
   CardText,
   CardBody,
   Button,
@@ -18,7 +17,6 @@ const DreamCard = ({
   dreamType,
 }) => {
   const history = useHistory();
-  console.warn(dreamType);
 
   const handleClick = (type) => {
     switch (type) {
@@ -35,7 +33,7 @@ const DreamCard = ({
       <Card className="dream-card">
         <CardBody className="dream-card-body">
           <div className="top-text">
-            <CardTitle className="card-title-display">{name}</CardTitle>
+            <h6>{name}</h6>
             <CardText>{DreamType[dreamType].icon}</CardText>
           </div>
           <CardText className="date">{date}</CardText>
