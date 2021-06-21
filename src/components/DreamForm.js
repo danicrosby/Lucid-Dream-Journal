@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-// import { format } from 'date-fns';
-// import { enGB } from 'date-fns/locale';
-// import { DatePicker } from 'react-nice-dates';
+import { format } from 'date-fns';
+import { enGB } from 'date-fns/locale';
+import { DatePicker } from 'react-nice-dates';
 import 'react-nice-dates/build/style.css';
 import Fab from '@material-ui/core/Fab';
 import CheckIcon from '@material-ui/icons/Check';
@@ -12,14 +12,12 @@ import {
   Input,
   Card,
   CardHeader,
-  Container,
   CardBody,
-  CardFooter
-  // Label
+  CardFooter,
+  Label
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
-// import Interp from '../helpers/data/Interp';
 
 const DreamForm = ({
   formTitle,
@@ -27,7 +25,6 @@ const DreamForm = ({
   setSingleDream,
   name,
   entry,
-  date,
   dreamType,
   emotion,
   people,
@@ -44,7 +41,6 @@ const DreamForm = ({
     name: name || '',
     entry: entry || '',
     dreamType: dreamType || '',
-    date: date || '',
     emotion: emotion || '',
     people: people || '',
     place: place || '',
@@ -56,7 +52,7 @@ const DreamForm = ({
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
-  // const [date, setDate] = useState();
+  const [date, setDate] = useState();
 
   const handleInputChange = (e) => {
     setDream((prevState) => ({
@@ -73,7 +69,6 @@ const DreamForm = ({
     } else {
       addDream(dream).then((response) => {
         setDreams(response);
-        // setEditing(false);
         history.push('/dreams');
       });
 
@@ -81,6 +76,7 @@ const DreamForm = ({
         name: '',
         entry: '',
         date: '',
+        setDate: '',
         emotion: '',
         people: '',
         place: '',
@@ -94,10 +90,10 @@ const DreamForm = ({
   };
 
   return (
-    <Container className="dream-form-container">
-      <Card className="add-dream-form mb-5">
+    <>
+      <Card className="add-dream-form">
         <CardHeader><h2>{formTitle}</h2>
-          {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
+          {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
         </CardHeader>
         <CardBody className="add-dream-card-body">
 
@@ -127,9 +123,9 @@ const DreamForm = ({
               />
             </FormGroup>
 
-            <FormGroup>
-              {/* <Label for="place">Date</Label> */}
-              <Input
+            {/* <FormGroup>
+              <Label for="place">Date</Label>
+               <Input
                 name='date'
                 id='date'
                 value={dream.date}
@@ -137,10 +133,10 @@ const DreamForm = ({
                 placeholder='Date'
                 onChange={handleInputChange}
               />
-            </FormGroup>
+            </FormGroup> */}
 
             {/* Store date value on cards and edit forms */}
-            {/* <FormGroup>
+            <FormGroup>
               <Label for="place">Date</Label>
               <DatePicker
                 className="date-input"
@@ -158,7 +154,7 @@ const DreamForm = ({
                   />
                 )}
               </DatePicker>
-            </FormGroup> */}
+            </FormGroup>
 
             <FormGroup>
               {/* <Label for="type">Dream Type</Label> */}
@@ -273,7 +269,7 @@ const DreamForm = ({
         </CardBody>
         <CardFooter>footer</CardFooter>
       </Card>
-    </Container >
+      </>
   );
 };
 

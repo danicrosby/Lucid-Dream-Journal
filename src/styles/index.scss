@@ -5,23 +5,10 @@
 @import 'addForm';
 @import 'welcomePage';
 
-.input {
-  margin-bottom: 1em;
-  height: 2.5em;
-}
-
-#entry {
-  height: 10em;
-}
-
 h6 {
   font-weight: 600;
 }
 
-.dream-card-container {
-  // background-color: green;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  margin-left: 7em;
+.Nightmare {
+  background-color: green;
 }

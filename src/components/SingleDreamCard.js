@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   Card,
-  Container,
   CardHeader,
   CardText,
   CardBody,
@@ -44,8 +43,8 @@ export default function SingleDreamCard({ dream }) {
   };
 
   return (
-    <Container className="dream-form-container mt-5">
-      <Card className="add-dream-card mt-2 mb-5">
+    <div className="single-card-container">
+      <Card className="single-dream-card">
         <CardHeader>
           <h2>{singleDream.name}</h2>
           <center>{singleDream.date}</center>
@@ -110,7 +109,7 @@ export default function SingleDreamCard({ dream }) {
           setEditing={setEditing}
         />
       }
-    </Container>
+    </div>
   );
 }
 

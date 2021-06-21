@@ -28,7 +28,7 @@ const NavBar = ({ user }) => {
               user
                 ? <Button className="sign-in-out-button" color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
                 : <div className="d-flex justify-content-end">
-                  <NavItem><Link className="nav-link mt-3" to="/eductation">Education</Link></NavItem>
+                  <NavItem><Link className="nav-link mt-3" to="/education">Education</Link></NavItem>
                   <Button className="sign-in-out-button" color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> cloud </i></Button>
                 </div>
             }
