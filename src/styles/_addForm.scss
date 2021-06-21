@@ -25,7 +25,13 @@
   justify-content: center;
 }
 
-.input {
+.input-text {
   margin-bottom: 1em;
-  height: 2em;
+  height: 2.5em;
+  font-size: 12px;
+}
+
+.label-input {
+  // font-weight: bold;
+  font-size: 14;
 }
