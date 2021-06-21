@@ -94,7 +94,7 @@ const DreamForm = ({
 
   return (
     <Card className="add-dream-form mb-5">
-      <CardHeader><center><h5>{formTitle}</h5></center>
+      <CardHeader><h5>{formTitle}</h5>
         {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
       </CardHeader>
       <CardBody className="add-dream-card-body">
@@ -371,11 +371,12 @@ const DreamForm = ({
               onChange={handleInputChange}
             />
           </FormGroup>
+
+          <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
+
         </Form>
       </CardBody>
-      <CardFooter>
-        <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
-      </CardFooter>
+      <CardFooter>footer</CardFooter>
     </Card>
   );
 };
