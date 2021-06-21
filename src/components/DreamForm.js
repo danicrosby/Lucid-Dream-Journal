@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { format } from 'date-fns';
-import { enGB } from 'date-fns/locale';
-import { DatePicker } from 'react-nice-dates';
+// import { format } from 'date-fns';
+// import { enGB } from 'date-fns/locale';
+// import { DatePicker } from 'react-nice-dates';
 import 'react-nice-dates/build/style.css';
 import Fab from '@material-ui/core/Fab';
 import CheckIcon from '@material-ui/icons/Check';
@@ -25,6 +25,7 @@ const DreamForm = ({
   setSingleDream,
   name,
   entry,
+  date,
   dreamType,
   emotion,
   people,
@@ -40,6 +41,7 @@ const DreamForm = ({
   const [dream, setDream] = useState({
     name: name || '',
     entry: entry || '',
+    date: date || '',
     dreamType: dreamType || '',
     emotion: emotion || '',
     people: people || '',
@@ -52,7 +54,7 @@ const DreamForm = ({
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
-  const [date, setDate] = useState();
+  // const [date, setDate] = useState();
 
   const handleInputChange = (e) => {
     setDream((prevState) => ({
@@ -93,7 +95,7 @@ const DreamForm = ({
     <>
       <Card className="add-dream-form">
         <CardHeader><h2>{formTitle}</h2>
-          {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
+          {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
         </CardHeader>
         <CardBody className="add-dream-card-body">
 
@@ -123,7 +125,7 @@ const DreamForm = ({
               />
             </FormGroup>
 
-            {/* <FormGroup>
+            <FormGroup>
               <Label for="place">Date</Label>
                <Input
                 name='date'
@@ -133,10 +135,10 @@ const DreamForm = ({
                 placeholder='Date'
                 onChange={handleInputChange}
               />
-            </FormGroup> */}
+            </FormGroup>
 
             {/* Store date value on cards and edit forms */}
-            <FormGroup>
+            {/* <FormGroup>
               <Label for="place">Date</Label>
               <DatePicker
                 className="date-input"
@@ -154,7 +156,7 @@ const DreamForm = ({
                   />
                 )}
               </DatePicker>
-            </FormGroup>
+            </FormGroup> */}
 
             <FormGroup>
               {/* <Label for="type">Dream Type</Label> */}
@@ -263,13 +265,13 @@ const DreamForm = ({
                 onChange={handleInputChange}
               />
             </FormGroup>
-
-            <center><Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab></center>
           </Form>
         </CardBody>
-        <CardFooter>footer</CardFooter>
+        <CardFooter>
+          <center><Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab></center>
+        </CardFooter>
       </Card>
-      </>
+    </>
   );
 };
 
