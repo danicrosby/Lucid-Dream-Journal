@@ -1,8 +1,17 @@
+.dream-card-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 6em;
+}
+
 .dream-card {
-  background-color: #dcdde4;
-  height: 12em;
-  padding: 1em;
-  margin: .5em;
+  width: 24em;
+  background-color: #f0f0f1;
+  height: 11em;
+  padding: .5em;
+  margin: .6em;
+  border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -10,6 +19,7 @@
   background-color: white;
   height: 6em;
   padding: 2em;
+  border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -18,16 +28,6 @@
   justify-content: space-between;
   border-bottom: 1px solid grey;
   margin-bottom: 1em;
-}
-
-.card-footer {
-  display: flex; 
-  justify-content: center;
-}
-
-.dream-type-icon {
-  margin-right: 1.5em;
-  font-size: 2em;
 }
 
 .hr {
@@ -39,12 +39,17 @@
 
 .date {
   font-family: 'Almarai', sans-serif;
-  font-size: .8em;
+  font-size: 10px;
   color: grey;
 }
 
 h2 {
   text-align: center;
+}
+
+.card-footer {
+  display: flex; 
+  justify-content: center;
 }
 
 .sub-card {
@@ -81,4 +86,28 @@ h2 {
 .menu-card-body {
   text-align: left;
   height: 48em;
+}
+
+.single-dream-card {
+  display: flex;
+  justify-content: center;
+  width: 70em;
+}
+
+.single-card-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 5em;
+}
+
+.single-date {
+  font-size: 10px;
+}
+
+.left {
+  background-color: green;
+}
+
+.right {
+  background-color: blue;
 }

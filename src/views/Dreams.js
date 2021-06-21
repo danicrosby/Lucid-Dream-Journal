@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { Container } from 'reactstrap';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
-import Footer from '../components/Footer';
 import DreamCard from '../components/DreamCard';
 import NavBar from '../components/NavBar';
 import { getDreams } from '../helpers/data/DreamData';
@@ -18,14 +16,13 @@ function Dreams({ user }) {
 
   return (
     <>
-      <Container className="recorded-dream-container">
       <NavBar user={user} />
         <center>
           <Link className="nav-link add-dream-btn-link mr-5 mt-3" to="/add-dream">
             <Fab className="fab-add-btn add-icon-btn" color="dark"><AddIcon style={{ color: 'purple' }}/></Fab>
           </Link>
         </center>
-        <div className="card-container">
+        <div className="dream-card-container">
           {dreams.map((dreamInfo) => (
             <DreamCard
               key={dreamInfo.firebaseKey}
@@ -47,8 +44,6 @@ function Dreams({ user }) {
             />
           ))}
         </div>
-        <Footer />
-      </Container>
     </>
   );
 }

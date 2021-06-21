@@ -1,12 +1,7 @@
-.dream-form-container {
-  display: flex;
-  flex-direction: column;
-}
-
 .add-dream-form {
   display: flex; 
-  justify-content: center;
-  margin-top: 2em;
+  justify-content: flex-start;
+  width: 40em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     // background-color: blue;
 }
@@ -17,7 +12,20 @@
   flex-direction: column;
 }
 
+#entry {
+  height: 8em;
+}
+
 .keyword-bucket {
   display: flex;
   flex-direction: column;
+}
+.dream-form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin-bottom: 1em;
+  height: 2em;
 }

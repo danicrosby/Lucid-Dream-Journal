@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import {
   Card,
-  Container,
   CardHeader,
   CardText,
   CardBody,
@@ -21,6 +20,7 @@ import Colors from '../helpers/data/Colors';
 import Places from '../helpers/data/Places';
 import Actions from '../helpers/data/Actions';
 import DreamType from '../helpers/data/DreamType';
+// import Slick from './Slick';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -44,14 +44,17 @@ export default function SingleDreamCard({ dream }) {
   };
 
   return (
-    <Container className="dream-form-container mt-5">
-      <Card className="add-dream-card mt-2 mb-5">
+    <div className="single-card-container">
+      {/* <Slick /> */}
+      <Card className="single-dream-card">
         <CardHeader>
-          <h2>{singleDream.name}</h2>
-          <center>{singleDream.date}</center>
+        <center>
+          <h5>{singleDream.name}</h5>
+          <span className="single-date">{singleDream.date}</span>
+        </center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
-          <h5 className="mb-3 mt-3">Overview</h5>
+          <h6 className="mb-2 mt-2">Overview</h6>
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.dreamType} dream
             on {singleDream.date}, that made you feel {singleDream.emotion}.
@@ -60,9 +63,9 @@ export default function SingleDreamCard({ dream }) {
             The overall abmience of this {singleDream.color} dream was {singleDream.color}.
             Does this sound accurate?
           </CardText>
-          <h5 className="mb-3 mt-3">Recorded Dream Story</h5>
+          <h6 className="mb-2 mt-2">Recorded Dream Story</h6>
           <CardText>{singleDream.entry}</CardText>
-          <h5 className="mb-3 mt-3">Keywords</h5>
+          <h6 className="mb-2 mt-2">Keywords</h6>
           <CardText className="keyword-bucket">
             <span>{singleDream.dreamType}</span>
             <span>{singleDream.emotion}</span>
@@ -72,16 +75,17 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.action}</span>
             <span>{singleDream.color}</span>
           </CardText>
-          <h5 className="mb-3 mt-3">Dream Interpretation</h5>
-          <CardText><h6>{singleDream.dreamType}</h6>One reason for {singleDream.dreamType} may be {DreamType[singleDream.dreamType].interpretation}</CardText>
+
+          <h6 className="mb-2 mt-2">Dream Interpretation</h6>
+          <CardText>{singleDream.dreamType} {DreamType[singleDream.dreamType].interpretation}</CardText>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Things[singleDream.thing]}</CardText>
           <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText>
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
-          <h5 className="mb-3 mt-3">Additional Details</h5>
+          <h6 className="mb-2 mt-2">Additional Details</h6>
           <CardText>{singleDream.realization}</CardText>
-          <h5 className="mb-3 mt-3">Realizations or Follow Ups</h5>
+          <h6 className="mb-2 mt-2">Realizations or Follow Ups</h6>
           <CardText>{singleDream.followUp}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
@@ -90,8 +94,9 @@ export default function SingleDreamCard({ dream }) {
           <Fab className="fab-icons" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
         </CardFooter>
       </Card>
+      <div>
       {
-        editing && <DreamForm
+       editing && <DreamForm
           formTitle='Edit Dream'
           setSingleDream={setSingleDream}
           firebaseKey={dream.firebaseKey}
@@ -110,7 +115,8 @@ export default function SingleDreamCard({ dream }) {
           setEditing={setEditing}
         />
       }
-    </Container>
+      </div>
+    </div>
   );
 }
 

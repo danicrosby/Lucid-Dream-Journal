@@ -7,10 +7,12 @@ function AddDream({ setDreams, user }) {
   return (
     <>
       <NavBar user={user} />
-      <DreamForm
-        formTitle='Add Dream'
-        setDreams={setDreams}
-      />
+      <div className="dream-form-container">
+        <DreamForm
+          formTitle='Add Dream'
+          setDreams={setDreams}
+        />
+      </div>
     </>
   );
 }

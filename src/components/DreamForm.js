@@ -12,7 +12,7 @@ import {
   Input,
   Card,
   CardHeader,
-  Container,
+  // Container,
   CardBody,
   CardFooter
   // Label
@@ -94,7 +94,7 @@ const DreamForm = ({
   };
 
   return (
-    <Container className="dream-form-container">
+  // <Container className="dream-form-container">
       <Card className="add-dream-form mb-5">
         <CardHeader><h2>{formTitle}</h2>
           {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
@@ -273,7 +273,7 @@ const DreamForm = ({
         </CardBody>
         <CardFooter>footer</CardFooter>
       </Card>
-    </Container >
+  // </Container >
   );
 };
 
