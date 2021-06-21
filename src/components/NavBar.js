@@ -17,6 +17,7 @@ const NavBar = ({ user }) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
+    <>
       <Navbar color="light" light expand="lg">
         <Link className="navbar-brand" to="/">lucid</Link>
         <NavbarToggler onClick={toggle} />
@@ -36,6 +37,7 @@ const NavBar = ({ user }) => {
           }
         </Nav>
       </Navbar>
+      </>
   );
 };
 
