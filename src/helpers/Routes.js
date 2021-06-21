@@ -9,6 +9,7 @@ import Education from '../views/Education';
 
 export default function Routes({ user, setDreams }) {
   return (
+    <>
       <Switch>
         <Route exact path="/" component={() => <Welcome user={user} />} />
         <Route path="/education" component={Education} />
@@ -33,6 +34,7 @@ export default function Routes({ user, setDreams }) {
         />
 
       </Switch>
+      </>
   );
 }
 

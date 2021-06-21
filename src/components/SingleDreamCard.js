@@ -89,9 +89,9 @@ export default function SingleDreamCard({ dream }) {
           <CardText>{singleDream.followUp}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
-          <Fab className="fab-icons" onClick={() => handleClick('edit')}><EditIcon /></Fab>
-          <a href="/dreams"><Fab className="fab-icons mr-3 ml-3"><CheckIcon /></Fab></a>
-          <Fab className="fab-icons" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
+          <Fab className="fab-icons" size="small" onClick={() => handleClick('edit')}><EditIcon /></Fab>
+          <a href="/dreams"><Fab className="fab-icons mr-3 ml-3" size="small"><CheckIcon /></Fab></a>
+          <Fab className="fab-icons" size="small" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
         </CardFooter>
       </Card>
       <div>

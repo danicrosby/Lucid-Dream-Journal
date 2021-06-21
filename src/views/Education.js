@@ -3,7 +3,6 @@ import {
   Card,
   CardText,
   CardBody,
-  Container
 } from 'reactstrap';
 import NavBar from '../components/NavBar';
 import RealityMenu from '../components/RealityMenu';
@@ -12,10 +11,10 @@ import LucidMenu from '../components/LucidMenu';
 
 function Education() {
   return (
-    <Container className="education-sub-container">
+    <div className="education-sub-container">
       <NavBar />
-      <Card className="dream-card">
-        <CardBody className="dream-card-body">
+      <Card className="education-card mb-5 ml-5">
+        <CardBody className="education-card-body">
           <div className="top-text">
             <h6>Reality Checks</h6>
           </div>
@@ -26,8 +25,8 @@ function Education() {
         </center>
       </Card>
 
-      <Card className="dream-card">
-        <CardBody className="dream-card-body">
+      <Card className="education-card mb-5 ml-5">
+        <CardBody className="education-card-body">
           <div className="top-text">
             <h6>Lucid Dream Techniques</h6>
           </div>
@@ -38,8 +37,8 @@ function Education() {
         </center>
       </Card>
 
-      <Card className="dream-card">
-        <CardBody className="dream-card-body">
+      <Card className="education-card ml-5">
+        <CardBody className="education-card-body">
           <div className="top-text">
             <h6>Calming Sounds</h6>
           </div>
@@ -49,7 +48,7 @@ function Education() {
           <CalmMenu />
         </center>
       </Card>
-    </Container>
+    </div>
   );
 }
 
