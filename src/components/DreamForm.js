@@ -12,12 +12,14 @@ import {
   Input,
   Card,
   CardHeader,
+  // Container,
   CardBody,
-  CardFooter,
-  Label
+  CardFooter
+  // Label
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
+// import Interp from '../helpers/data/Interp';
 
 const DreamForm = ({
   formTitle,
@@ -41,8 +43,8 @@ const DreamForm = ({
   const [dream, setDream] = useState({
     name: name || '',
     entry: entry || '',
-    date: date || '',
     dreamType: dreamType || '',
+    date: date || '',
     emotion: emotion || '',
     people: people || '',
     place: place || '',
@@ -71,6 +73,7 @@ const DreamForm = ({
     } else {
       addDream(dream).then((response) => {
         setDreams(response);
+        // setEditing(false);
         history.push('/dreams');
       });
 
@@ -78,7 +81,6 @@ const DreamForm = ({
         name: '',
         entry: '',
         date: '',
-        setDate: '',
         emotion: '',
         people: '',
         place: '',
@@ -92,8 +94,8 @@ const DreamForm = ({
   };
 
   return (
-    <>
-      <Card className="add-dream-form">
+  // <Container className="dream-form-container">
+      <Card className="add-dream-form mb-5">
         <CardHeader><h2>{formTitle}</h2>
           {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
         </CardHeader>
@@ -126,8 +128,8 @@ const DreamForm = ({
             </FormGroup>
 
             <FormGroup>
-              <Label for="place">Date</Label>
-               <Input
+              {/* <Label for="place">Date</Label> */}
+              <Input
                 name='date'
                 id='date'
                 value={dream.date}
@@ -265,13 +267,13 @@ const DreamForm = ({
                 onChange={handleInputChange}
               />
             </FormGroup>
+
+            <center><Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab></center>
           </Form>
         </CardBody>
-        <CardFooter>
-          <center><Fab className="add-btn-submit" type='submit'><CheckIcon /></Fab></center>
-        </CardFooter>
+        <CardFooter>footer</CardFooter>
       </Card>
-    </>
+  // </Container >
   );
 };
 

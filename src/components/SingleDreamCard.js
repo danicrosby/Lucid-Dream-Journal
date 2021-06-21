@@ -96,7 +96,7 @@ export default function SingleDreamCard({ dream }) {
       </Card>
       <div>
       {
-        editing && <DreamForm
+       editing && <DreamForm
           formTitle='Edit Dream'
           setSingleDream={setSingleDream}
           firebaseKey={dream.firebaseKey}
