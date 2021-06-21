@@ -16,38 +16,26 @@ const NavBar = ({ user }) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
-  const authenticated = () => (
-    <>
-      <NavItem>
-        <Link className="nav-link" to="/dreams">Dream</Link>
-      </NavItem>
-      <NavItem>
-        <Link className="nav-link mr-3" to="/add-dream">Add Dream</Link>
-      </NavItem>
-    </>
-  );
-
   return (
-    <div>
-      <Navbar className="navBar" color="transparent" light expand="md">
-        <Link className="navbar-brand" to="/dreams">lucid</Link>
+      <Navbar color="light" light expand="lg">
+        <Link className="navbar-brand" to="/">lucid</Link>
         <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            {user && authenticated()}
+        <Collapse isOpen={isOpen} navbar></Collapse>
+        <Nav className="ml-auto" navbar>
+
+          {user !== null && <NavItem>
             {
-              user !== null && <NavItem>
-                {
-                  user
-                    ? <Button className="sign-in-out-button" color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
-                    : <Button className="sign-in-out-button" color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> cloud </i></Button>
-                }
-              </NavItem>
+              user
+                ? <Button className="sign-in-out-button" color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
+                : <div className="d-flex justify-content-end">
+                  <NavItem><Link className="nav-link mt-3" to="/eductation">Education</Link></NavItem>
+                  <Button className="sign-in-out-button" color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> cloud </i></Button>
+                </div>
             }
-          </Nav>
-        </Collapse>
+          </NavItem>
+          }
+        </Nav>
       </Navbar>
-    </div>
   );
 };
 

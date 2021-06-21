@@ -9,7 +9,6 @@ import NavBar from '../components/NavBar';
 import RealityMenu from '../components/RealityMenu';
 import CalmMenu from '../components/CalmMenu';
 import LucidMenu from '../components/LucidMenu';
-import Footer from '../components/Footer';
 
 function Education() {
   return (
@@ -50,7 +49,6 @@ function Education() {
           <CalmMenu />
         </center>
       </Card>
-      <Footer />
     </Container>
   );
 }

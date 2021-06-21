@@ -4,8 +4,7 @@ import {
   Card,
   CardText,
   CardBody,
-  Button,
-  Container
+  Button
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import DreamType from '../helpers/data/DreamType';
@@ -29,7 +28,6 @@ const DreamCard = ({
   };
 
   return (
-    <Container>
       <Card className="dream-card">
         <CardBody className="dream-card-body">
           <div className="top-text">
@@ -42,7 +40,6 @@ const DreamCard = ({
           <i className="material-icons" id="expand-arrow"> keyboard_arrow_down </i>
         </Button>
       </Card>
-    </Container>
   );
 };
 
