@@ -51,7 +51,7 @@ function Dreams({ user }) {
 Dreams.propTypes = {
   dreams: PropTypes.array,
   setDreams: PropTypes.func,
-  user: PropTypes.func
+  user: PropTypes.any
 };
 
 export default Dreams;

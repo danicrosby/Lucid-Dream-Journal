@@ -4,16 +4,18 @@
 
 .navbar-brand {
   font-size: 2em;
-  color: lightgrey;
+  margin-left: 1em;
+  color: black;
+}
+
+.navbar-brand:hover a {
+  color: black;
 }
 
 .sign-in-out-btn {
-  display: flex;
-  justify-content: flex-end;
   opacity: .9;
-  width: 4em;
-  height: 4em;
   margin-right: 2em;
+  font-size: 3em;
   animation-name: colors;
   animation-delay: .2s;
   animation-duration: 6s;
@@ -21,6 +23,6 @@
   animation-direction:alternate-reverse;
 }
 
-.sign-icon {
-  font-size: 3em;
+.links {
+  margin-top: 1em;
 }

@@ -22,20 +22,19 @@
   justify-content: center;
   flex-direction: column;
   position: absolute;
-  margin-left: -2em;
+  margin-left: -3em;
   animation-name: fadein;
   animation-fill-mode: backwards;
   animation-duration: 2s;
   animation-delay: .1s;
-  font-size: 10em;
-  // letter-spacing: -.1ch;
+  font-size: 8em;
 }
 
 .journal-title {
   text-align: center;
-  font-size: 3em;
-  margin-top: 2.6em;
-  margin-left: 9em;
+  font-size: 2.5em;
+  margin-top: 2.4em;
+  margin-left: 6em;
   animation-name: fadein;
   animation-fill-mode: backwards;
   animation-duration: 3s;
@@ -63,6 +62,6 @@
 }
 
 a {
-  color: white;
+  color: black;
   text-decoration: none;
 }

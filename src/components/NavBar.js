@@ -7,7 +7,7 @@ import {
   NavbarToggler,
   Nav,
   NavItem,
-  Button,
+  Button
 } from 'reactstrap';
 import { signInUser, signOutUser } from '../helpers/auth';
 
@@ -18,15 +18,15 @@ const NavBar = ({ user }) => {
 
   const authenticated = () => (
     <>
-      <NavItem><Link className="nav-link" to="/dreams">Dreams</Link></NavItem>
-      <NavItem><Link className="nav-link mr-3" to="/education">Education</Link></NavItem>
+      <NavItem><Link className="nav-link links" to="/dreams">Dreams</Link></NavItem>
+      <NavItem><Link className="nav-link links mr-3" to="/education">Education</Link></NavItem>
     </>
   );
 
   return (
     <div>
-      <Navbar className="navbar" color="dark" light expand="md">
-        <Link className="navbar-brand" to="/"><h4>Lucid</h4></Link>
+      <Navbar className="navbar" color="dark" expand="md">
+        <Link className="navbar-brand" to="/">Lucid</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
@@ -36,8 +36,8 @@ const NavBar = ({ user }) => {
               && <NavItem>
                 {
                   user
-                    ? <Button className="sign-in-out-btn" outline size="sm" color='danger' onClick={signOutUser}><i className="material-icons sign-icon"> wb_cloud </i></Button>
-                    : <Button className="sign-in-out-btn" outline size="sm" color='info' onClick={signInUser}><i className="material-icons sign-icon"> wb_cloud </i></Button>
+                    ? <Button color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
+                    : <Button color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
                 }
               </NavItem>
             }

@@ -12,7 +12,7 @@ export default function Routes({ user, setDreams }) {
     <>
       <Switch>
         <Route exact path="/" component={() => <Welcome user={user} />} />
-        <Route path="/education" component={Education} />
+        <Route path="/education" component={() => <Education user={user} />} />
 
         <Route
           exact path='/dreams'

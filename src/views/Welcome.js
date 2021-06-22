@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import NavBar from '../components/NavBar';
 
 export default function Welcome() {
   const [index, setIndex] = useState(0);
@@ -20,7 +19,6 @@ export default function Welcome() {
 
   return (
     <>
-      <NavBar />
       <div className="welcome-container">
         <span className="lucid-title">LUCID</span>
         <span className="journal-title">{text}</span>
