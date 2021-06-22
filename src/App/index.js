@@ -19,7 +19,6 @@ function App() {
         const userInfoObj = {
           name: authed.displayName,
           imageUrl: authed.imageUrl,
-          uid: authed.uid,
           user: authed.email.split('@')[0]
         };
         setUser(userInfoObj);
@@ -35,7 +34,6 @@ function App() {
       <Routes
         dreams={dreams}
         setDreams={setDreams}
-        user={user}
       />
     </div>
   );
