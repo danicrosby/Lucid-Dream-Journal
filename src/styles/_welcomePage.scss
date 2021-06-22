@@ -14,32 +14,39 @@
 .welcome-container {
   display: flex;
   justify-content: center;
-  padding-top: 8em;
-
+  padding-top: 6em;
 }
+
 .lucid-title {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  // animation-name: fadein;
-  // animation-fill-mode: backwards;
-  // animation-duration: 3s;
-  // animation-delay: .1s;
+  position: absolute;
+  margin-left: -2em;
+  animation-name: fadein;
+  animation-fill-mode: backwards;
+  animation-duration: 2s;
+  animation-delay: .1s;
   font-size: 10em;
+  // letter-spacing: -.1ch;
 }
 
 .journal-title {
   text-align: center;
   font-size: 3em;
   margin-top: 2.6em;
-  // margin-left: .2em;
+  margin-left: 9em;
+  animation-name: fadein;
+  animation-fill-mode: backwards;
+  animation-duration: 3s;
+  animation-delay: .1s;
   font-family: 'Parisienne', cursive;
   font-family: 'Shadows Into Light Two', cursive;  color: grey;
 }
 
 #cloud {
   color: black;
-  font-size: 6em;
+  font-size: 2em;
   opacity: .9;
   animation-name: colors;
   animation-delay: .3s;
