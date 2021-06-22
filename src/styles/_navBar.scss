@@ -1,18 +1,21 @@
-.navbar-brand {
-  font-size: 2em;
-  color: lightgrey;
+.navbar {
+  height: 6em;
 }
 
-.cloud-nav {
-  display: flex;
-  flex-direction: column;
-  text-align: end;
+.navbar-brand {
+  font-size: 2em;
+  margin-left: 1em;
+  color: black;
+}
+
+.navbar-brand:hover a {
+  color: black;
 }
 
 .sign-in-out-btn {
   opacity: .9;
-  font-size: 4em;
-
+  margin-right: 2em;
+  font-size: 3em;
   animation-name: colors;
   animation-delay: .2s;
   animation-duration: 6s;
@@ -20,7 +23,6 @@
   animation-direction:alternate-reverse;
 }
 
-.education-text {
-  margin-top: -1.1em;
-  font-size: 1em;
+.links {
+  margin-top: 1em;
 }

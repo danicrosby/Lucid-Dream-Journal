@@ -72,7 +72,6 @@ const DreamForm = ({
     } else {
       addDream(dream).then((response) => {
         setDreams(response);
-        // setEditing(false);
         history.push('/dreams');
       });
 
@@ -93,7 +92,7 @@ const DreamForm = ({
   };
 
   return (
-    <Card className="add-dream-form mb-5">
+    <Card className="add-dream-form mt-2 mb-5">
       <CardHeader><h5>{formTitle}</h5>
         {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
       </CardHeader>
@@ -257,7 +256,7 @@ const DreamForm = ({
               type='select'
               placeholder='Thing'
               onChange={handleInputChange}>
-              <option>Object</option>
+              <option>Thing</option>
               <option>Afterlife</option>
               <option>Airplane</option>
               <option>Alcohol</option>
@@ -371,12 +370,11 @@ const DreamForm = ({
               onChange={handleInputChange}
             />
           </FormGroup>
-
-          <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
-
         </Form>
       </CardBody>
-      <CardFooter>footer</CardFooter>
+      <CardFooter>
+        <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
+      </CardFooter>
     </Card>
   );
 };
