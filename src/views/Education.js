@@ -4,7 +4,6 @@ import {
   CardText,
   CardBody,
 } from 'reactstrap';
-import NavBar from '../components/NavBar';
 import RealityMenu from '../components/RealityMenu';
 import CalmMenu from '../components/CalmMenu';
 import LucidMenu from '../components/LucidMenu';
@@ -12,7 +11,6 @@ import LucidMenu from '../components/LucidMenu';
 function Education() {
   return (
     <div className="education-sub-container">
-      <NavBar />
       <Card className="education-card mt-5 mb-3 ml-5">
         <CardBody className="education-card-body">
           <div className="top-text">

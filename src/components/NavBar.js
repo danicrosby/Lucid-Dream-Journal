@@ -2,11 +2,12 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import {
+  Collapse,
   Navbar,
   NavbarToggler,
   Nav,
   NavItem,
-  Button
+  Button,
 } from 'reactstrap';
 import { signInUser, signOutUser } from '../helpers/auth';
 
@@ -15,27 +16,35 @@ const NavBar = ({ user }) => {
 
   const toggle = () => setIsOpen(!isOpen);
 
-  return (
+  const authenticated = () => (
     <>
-      <Navbar color="dark" light expand="lg">
-        <Link className="navbar-brand ml-5" to="/">lucid</Link>
+      <NavItem><Link className="nav-link" to="/dreams">Dreams</Link></NavItem>
+      <NavItem><Link className="nav-link mr-3" to="/education">Education</Link></NavItem>
+    </>
+  );
+
+  return (
+    <div>
+      <Navbar className="navbar" color="dark" light expand="md">
+        <Link className="navbar-brand" to="/"><h4>Lucid</h4></Link>
         <NavbarToggler onClick={toggle} />
-        <div className="cloud-nav ml-auto mr-5">
-          <Nav className="navbar ml-auto" navbar>
-            {user !== null && <NavItem>
-              {
-                user
-                  ? <Button className="sign-in-out-button" color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
-                  : <Button className="sign-in-out-button" color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> cloud </i></Button>
-              }
-              <NavItem className="education-text"><Link className="nav-link" to="/dreams">Dreams</Link></NavItem>
-              <NavItem className="education-text"><Link className="nav-link" to="/education">Education</Link></NavItem>
-            </NavItem>
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            { user && authenticated() }
+            {
+              user !== null
+              && <NavItem>
+                {
+                  user
+                    ? <Button className="sign-in-out-btn" outline size="sm" color='danger' onClick={signOutUser}><i className="material-icons sign-icon"> wb_cloud </i></Button>
+                    : <Button className="sign-in-out-btn" outline size="sm" color='info' onClick={signInUser}><i className="material-icons sign-icon"> wb_cloud </i></Button>
+                }
+              </NavItem>
             }
           </Nav>
-        </div>
+        </Collapse>
       </Navbar>
-    </>
+    </div>
   );
 };
 

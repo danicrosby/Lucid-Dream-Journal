@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import DreamCard from '../components/DreamCard';
-import NavBar from '../components/NavBar';
 import { getDreams } from '../helpers/data/DreamData';
 
 function Dreams({ user }) {
@@ -16,7 +15,6 @@ function Dreams({ user }) {
 
   return (
     <div>
-      <NavBar user={user} />
       <div className="dream-container">
       <center>
         <Link className="nav-link mt-3 mb-3" to="/add-dream">

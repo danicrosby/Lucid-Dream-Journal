@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import NavBar from '../components/NavBar';
 import { getDreams } from '../helpers/data/DreamData';
 import Routes from '../helpers/Routes';
 
@@ -15,8 +17,10 @@ function App() {
     firebase.auth().onAuthStateChanged((authed) => {
       if (authed) {
         const userInfoObj = {
-          name: authed.name,
+          name: authed.displayName,
+          imageUrl: authed.imageUrl,
           uid: authed.uid,
+          user: authed.email.split('@')[0]
         };
         setUser(userInfoObj);
       } else if (user || user === null) {
@@ -26,10 +30,14 @@ function App() {
   }, []);
 
   return (
+    <div className="App">
+      <NavBar user={user} />
       <Routes
         dreams={dreams}
         setDreams={setDreams}
+        user={user}
       />
+    </div>
   );
 }
 
