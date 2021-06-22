@@ -32,7 +32,6 @@ export default function Routes({ user, setDreams }) {
             setDreams={setDreams}
             user={user} />}
         />
-
       </Switch>
       </>
   );
@@ -43,5 +42,3 @@ Routes.propTypes = {
   setDreams: PropTypes.func.isRequired,
   user: PropTypes.any,
 };
-
-// I want to redirect when delete single card. Card is deleting but page breaks becuase it's not there

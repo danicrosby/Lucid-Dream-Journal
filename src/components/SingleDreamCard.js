@@ -20,7 +20,6 @@ import Colors from '../helpers/data/Colors';
 import Places from '../helpers/data/Places';
 import Actions from '../helpers/data/Actions';
 import DreamType from '../helpers/data/DreamType';
-// import Slick from './Slick';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -45,7 +44,6 @@ export default function SingleDreamCard({ dream }) {
 
   return (
     <div className="single-card-container">
-      {/* <Slick /> */}
       <Card className="single-dream-card">
         <CardHeader>
         <center>

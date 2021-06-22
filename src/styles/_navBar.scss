@@ -1,21 +1,26 @@
-.navBar {
-  height: 2em;
-  border-bottom: 1px solid lightgrey;
-  background-color: green;
-}
-
 .navbar-brand {
   font-size: 2em;
-  margin-bottom: -.3em;
   color: lightgrey;
+}
+
+.cloud-nav {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
 }
 
 .sign-in-out-btn {
   opacity: .9;
-  font-size: 3em;
+  font-size: 4em;
+
   animation-name: colors;
   animation-delay: .2s;
-  animation-duration: 10s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction:alternate-reverse;
+}
+
+.education-text {
+  margin-top: -1.1em;
+  font-size: 1em;
 }
