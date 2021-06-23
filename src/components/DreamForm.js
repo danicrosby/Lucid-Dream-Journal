@@ -236,10 +236,12 @@ const DreamForm = ({
               placeholder='Place'
               onChange={handleInputChange}>
               <option>Location</option>
+              <option>Beach</option>
               <option>Bus</option>
               <option>Classroom</option>
               <option>College</option>
               <option>Home</option>
+              <option>Ocean</option>
               <option>Outside</option>
               <option>Salon</option>
               <option>Underwater</option>
@@ -267,7 +269,9 @@ const DreamForm = ({
               <option>Aquarium</option>
               <option>Arcade</option>
               <option>Bed</option>
+              <option>Beach</option>
               <option>Bird</option>
+              <option>bridge</option>
               <option>Car</option>
               <option>Bus</option>
               <option>Bridge</option>
@@ -282,11 +286,15 @@ const DreamForm = ({
               <option>Graduation</option>
               <option>Homework</option>
               <option>Library</option>
+              <option>Ocean</option>
               <option>Monolith</option>
+              <option>Raptor</option>
+              <option>Skateboard</option>
               <option>Teacher</option>
               <option>Tooth</option>
+              <option>Turkey</option>
+              <option>Tiger</option>
               <option>Water</option>
-              <option>Raptor</option>
 
             </Input>
           </FormGroup>
@@ -305,10 +313,13 @@ const DreamForm = ({
               <option>Chased</option>
               <option>Driving</option>
               <option>Falling</option>
+              <option>Fighting</option>
               <option>Flying</option>
               <option>Walking</option>
               <option>OutOfBreath</option>
               <option>Naked</option>
+              <option>Skating</option>
+              <option>Swimming</option>
               <option>Running</option>
               <option>Sleeping</option>
               <option>Urinating</option>
@@ -324,7 +335,7 @@ const DreamForm = ({
               type="select"
               placeholder='Ambient Color'
               onChange={handleInputChange}>
-              <option>Ambient Color</option>
+              <option>Color</option>
               <option>Amber</option>
               <option>Beige</option>
               <option>Black</option>
