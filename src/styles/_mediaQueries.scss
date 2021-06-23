@@ -55,7 +55,7 @@
   }
   
   .single-dream-card {
-    width: 400px;
+    width: 450px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
   
@@ -70,5 +70,15 @@
     width: 450px;
     margin-top: 2em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .menu-card {
+    width: 20px;
+    margin-top: 10px;
+  }
+  
+  .menu-card-body {
+    text-align: left;
+    height: 38px;
   }
 }

@@ -23,4 +23,16 @@ a {
 
 .add-dream-btn-link {
   margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.sign-cloud-icon {
+  opacity: .9;
+  margin-right: 3em;
+  font-size: 3em;
+  animation-name: colors;
+  animation-delay: .2s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
 }
