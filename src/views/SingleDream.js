@@ -13,11 +13,10 @@ export default function SingleDream() {
   }, []);
 
   return (
-    <div className="single-card-view">
-      {dream && <SingleDreamCard
-        dream={dream}
+      <div className="single-container">
+        {dream && <SingleDreamCard
+          dream={dream}
         />}
-
-    </div>
+      </div>
   );
 }

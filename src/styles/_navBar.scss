@@ -4,23 +4,12 @@
 
 .navbar-brand {
   font-size: 2em;
-  margin-left: 1em;
+  margin-left: 2em;
   color: black;
 }
 
 .navbar-brand:hover a {
   color: black;
-}
-
-.sign-in-out-btn {
-  opacity: .9;
-  margin-right: 2em;
-  font-size: 3em;
-  animation-name: colors;
-  animation-delay: .2s;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  animation-direction:alternate-reverse;
 }
 
 .links {

@@ -1,9 +1,19 @@
+.dream-form-container {
+  display: flex;
+  justify-content: center;
+}
+
 .add-dream-form {
   display: flex; 
   justify-content: flex-start;
   width: 40em;
   margin-top: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.add-dream-card-body {
+  overflow: scroll;
+  height: 40em;
 }
 
 #entry {
@@ -13,11 +23,6 @@
 .keyword-bucket {
   display: flex;
   flex-direction: column;
-}
-
-.dream-form-container {
-  display: flex;
-  justify-content: center;
 }
 
 .input-text {

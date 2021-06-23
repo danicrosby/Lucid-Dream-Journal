@@ -18,11 +18,9 @@ export default function Welcome() {
   }, [index]);
 
   return (
-    <>
-      <div className="welcome-container">
-        <span className="lucid-title">LUCID</span>
-        <span className="journal-title">{text}</span>
-      </div>
-    </>
+    <div className="welcome-container">
+      <div className="lucid-title">LUCID</div>
+      <div className="journal-title">{text}</div>
+    </div>
   );
 }
