@@ -12,13 +12,11 @@ import {
   Input,
   Card,
   CardHeader,
-  // Container,
   CardBody,
   CardFooter,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
-// import Interp from '../helpers/data/Interp';
 
 const DreamForm = ({
   formTitle,
@@ -92,13 +90,12 @@ const DreamForm = ({
   };
 
   return (
-    <Card className="add-dream-form mt-2 mb-5">
+    <Card className="add-dream-form mt-5 mb-5">
       <CardHeader><h5>{formTitle}</h5>
         {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
       </CardHeader>
+      <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
       <CardBody className="add-dream-card-body">
-
-        <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
           <FormGroup>
             <Input
               className="input-text"
@@ -370,11 +367,11 @@ const DreamForm = ({
               onChange={handleInputChange}
             />
           </FormGroup>
-        </Form>
       </CardBody>
       <CardFooter>
         <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
       </CardFooter>
+      </Form>
     </Card>
   );
 };

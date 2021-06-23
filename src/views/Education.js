@@ -11,7 +11,7 @@ import LucidMenu from '../components/LucidMenu';
 function Education() {
   return (
     <div className="education-sub-container">
-      <Card className="education-card mt-5 mb-3 ml-5">
+      <Card className="education-card">
         <CardBody className="education-card-body">
           <div className="top-text">
             <h6>Reality Checks</h6>
@@ -23,7 +23,7 @@ function Education() {
         </center>
       </Card>
 
-      <Card className="education-card mb-3 ml-5">
+      <Card className="education-card">
         <CardBody className="education-card-body">
           <div className="top-text">
             <h6>Lucid Dream Techniques</h6>
@@ -35,7 +35,7 @@ function Education() {
         </center>
       </Card>
 
-      <Card className="education-card ml-5">
+      <Card className="education-card">
         <CardBody className="education-card-body">
           <div className="top-text">
             <h6>Calming Sounds</h6>

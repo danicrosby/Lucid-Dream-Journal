@@ -51,7 +51,7 @@ export default function SingleDreamCard({ dream }) {
           <span className="single-date">{singleDream.date}</span>
         </center>
         </CardHeader>
-        <CardBody className="add-dream-card-body">
+        <CardBody className="single-dream-card-body">
           <h6 className="mb-2 mt-2">Overview</h6>
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.dreamType} dream

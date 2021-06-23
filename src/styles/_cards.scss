@@ -78,8 +78,7 @@ h2 {
 
 .menu-card {
   width: 50em;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 9em;
 }
 
 .menu-card-body {
@@ -87,16 +86,23 @@ h2 {
   height: 48em;
 }
 
-.single-dream-card {
-  display: flex;
-  justify-content: center;
-  width: 70em;
-}
-
 .single-card-container {
   display: flex;
   justify-content: flex-start;
-  margin-left: 5em;
+  margin-left: 10em;
+}
+
+.single-dream-card {
+  display: flex; 
+  justify-content: flex-start;
+  width: 40em;
+  margin: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.single-dream-card-body {
+  overflow: scroll;
+  height: 40em;
 }
 
 .single-date {
@@ -114,24 +120,21 @@ h2 {
 .education-card {
   width: 30em;
   background-color: #f0f0f1;
-  height: 11em;
+  height: 14em;
   padding: .5em;
-  margin: .6em;
   border-radius: 5px;
+  margin-top: 2em;
+  margin-left: 10em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .education-card-body {
   background-color: white;
-  height: em;
   padding: 2em;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .education-sub-container {
-  // background-image: url(https://www.script-tutorials.com/demos/360/sky_preview.jpg);
-  // background-repeat: no-repeat;
-  // background-size: cover;
   height: 100vh;
 }

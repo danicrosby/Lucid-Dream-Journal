@@ -29,13 +29,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <>
       <NavBar user={user} />
       <Routes
         dreams={dreams}
         setDreams={setDreams}
       />
-    </div>
+    </>
   );
 }
 

@@ -37,7 +37,7 @@ const NavBar = ({ user }) => {
                 {
                   user
                     ? <Button color='transparent' onClick={signOutUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
-                    : <Button color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button>
+                    : <div><Button color='transparent' onClick={signInUser}><i className="material-icons sign-in-out-btn"> wb_cloud </i></Button></div>
                 }
               </NavItem>
             }
