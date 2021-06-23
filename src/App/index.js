@@ -34,7 +34,6 @@ function App() {
       <Routes
         dreams={dreams}
         setDreams={setDreams}
-        user={user}
       />
     </>
   );
