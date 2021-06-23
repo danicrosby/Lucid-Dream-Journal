@@ -33,7 +33,7 @@ export default function Routes({ user, setDreams }) {
             user={user} />}
         />
       </Switch>
-      </>
+    </>
   );
 }
 
