@@ -15,33 +15,33 @@ function Dreams({ user }) {
 
   return (
     <>
-        <center>
-          <Link className="nav-link add-dream-btn-link" to="/add-dream">
-            <Fab className="add-dream-btn" color="dark"><AddIcon style={{ color: 'purple' }}/></Fab>
-          </Link>
-        </center>
-        <div className="dream-card-container">
-          {dreams.map((dreamInfo) => (
-            <DreamCard
-              key={dreamInfo.firebaseKey}
-              firebaseKey={dreamInfo.firebaseKey}
-              name={dreamInfo.name}
-              entry={dreamInfo.entry}
-              date={dreamInfo.date}
-              dreamType={dreamInfo.dreamType}
-              emotion={dreamInfo.emotion}
-              people={dreamInfo.people}
-              place={dreamInfo.place}
-              thing={dreamInfo.thing}
-              action={dreamInfo.action}
-              color={dreamInfo.color}
-              followUp={dreamInfo.followUp}
-              realization={dreamInfo.realization}
-              setDreams={setDreams}
-              user={user}
-            />
-          ))}
-        </div>
+      <center>
+        <Link className="nav-link add-dream-btn-link" to="/add-dream">
+          <Fab className="add-dream-btn" color="dark"><AddIcon style={{ color: 'purple' }} /></Fab>
+        </Link>
+      </center>
+      <div className="dream-card-container">
+        {dreams.map((dreamInfo) => (
+          <DreamCard
+            key={dreamInfo.firebaseKey}
+            firebaseKey={dreamInfo.firebaseKey}
+            name={dreamInfo.name}
+            entry={dreamInfo.entry}
+            date={dreamInfo.date}
+            dreamType={dreamInfo.dreamType}
+            emotion={dreamInfo.emotion}
+            people={dreamInfo.people}
+            place={dreamInfo.place}
+            thing={dreamInfo.thing}
+            action={dreamInfo.action}
+            color={dreamInfo.color}
+            followUp={dreamInfo.followUp}
+            realization={dreamInfo.realization}
+            setDreams={setDreams}
+            user={user}
+          />
+        ))}
+      </div>
     </>
   );
 }

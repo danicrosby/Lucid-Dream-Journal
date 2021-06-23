@@ -46,10 +46,10 @@ export default function SingleDreamCard({ dream }) {
     <div className="single-card-container">
       <Card className="single-dream-card">
         <CardHeader>
-        <center>
-          <h5>{singleDream.name}</h5>
-          <span className="single-date">{singleDream.date}</span>
-        </center>
+          <center>
+            <h5>{singleDream.name}</h5>
+            <span className="single-date">{singleDream.date}</span>
+          </center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
           <h6 className="mb-2 mt-2">Overview</h6>
@@ -58,7 +58,7 @@ export default function SingleDreamCard({ dream }) {
             on {singleDream.date}, that made you feel {singleDream.emotion}.
             You dreamt of {singleDream.people}, the setting was {singleDream.place}.
             You remembered a few objects, more specifically a {singleDream.thing}.
-            The overall abmience of this {singleDream.color} dream was {singleDream.color}.
+            The overall abmience of this {singleDream.dreamType} dream was {singleDream.color}.
             Does this sound accurate?
           </CardText>
           <h6 className="mb-2 mt-2">Recorded Dream Story</h6>
@@ -93,26 +93,26 @@ export default function SingleDreamCard({ dream }) {
         </CardFooter>
       </Card>
       <div>
-      {
-       editing && <DreamForm
-          formTitle='Edit Dream'
-          setSingleDream={setSingleDream}
-          firebaseKey={dream.firebaseKey}
-          name={singleDream.name}
-          entry={singleDream.entry}
-          date={singleDream.date}
-          dreamType={singleDream.dreamType}
-          emotion={singleDream.emotion}
-          people={singleDream.people}
-          place={singleDream.place}
-          action={singleDream.action}
-          thing={singleDream.thing}
-          color={singleDream.color}
-          followUp={singleDream.followup}
-          realization={singleDream.realization}
-          setEditing={setEditing}
-        />
-      }
+        {
+          editing && <DreamForm
+            formTitle='Edit Dream'
+            setSingleDream={setSingleDream}
+            firebaseKey={dream.firebaseKey}
+            name={singleDream.name}
+            entry={singleDream.entry}
+            date={singleDream.date}
+            dreamType={singleDream.dreamType}
+            emotion={singleDream.emotion}
+            people={singleDream.people}
+            place={singleDream.place}
+            action={singleDream.action}
+            thing={singleDream.thing}
+            color={singleDream.color}
+            followUp={singleDream.followup}
+            realization={singleDream.realization}
+            setEditing={setEditing}
+          />
+        }
       </div>
     </div>
   );

@@ -95,7 +95,7 @@ const DreamForm = ({
         {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
       </CardHeader>
       <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
-      <CardBody className="add-dream-card-body">
+        <CardBody className="add-dream-card-body">
           <FormGroup>
             <Input
               className="input-text"
@@ -240,6 +240,8 @@ const DreamForm = ({
               <option>Outside</option>
               <option>College</option>
               <option>Classroom</option>
+              <option>Bus</option>
+              <option>Salon</option>
               <option>Underwater</option>
             </Input>
           </FormGroup>
@@ -284,7 +286,7 @@ const DreamForm = ({
               <option>Raptor</option>
               <option>Casket</option>
               <option>Bird</option>
-              <option>OTHER...</option>
+              <option>Bus</option>
             </Input>
           </FormGroup>
 
@@ -367,10 +369,10 @@ const DreamForm = ({
               onChange={handleInputChange}
             />
           </FormGroup>
-      </CardBody>
-      <CardFooter>
-        <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
-      </CardFooter>
+        </CardBody>
+        <CardFooter>
+          <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
+        </CardFooter>
       </Form>
     </Card>
   );
