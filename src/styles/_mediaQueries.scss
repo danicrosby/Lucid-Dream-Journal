@@ -1,0 +1,74 @@
+@media only screen and (min-width: 375px) and (max-width: 700px) {
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dream-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .lucid-title {
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+    animation-duration: 2s;
+    animation-delay: .1s;
+    font-size: 4em;
+    margin-left: 2px;
+  }
+  
+  .journal-title {
+    font-size: 16px;
+    animation-name: fadein;
+    animation-fill-mode: backwards;
+    animation-duration: 3s;
+    animation-delay: .1s;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Shadows Into Light Two', cursive;  color: grey;
+  }
+  
+  .navbar-brand {
+    font-size: 1em;
+    margin-left: .5em;
+    color: black;
+  }
+
+  .sign-in-out-btn {
+    opacity: .9;
+    font-size: 2em;
+    animation-name: colors;
+    animation-delay: .2s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+  }
+
+  .add-dream-btn-link {
+    margin-top: 1em;
+  }
+
+  .single-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .single-dream-card {
+    width: 400px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .single-dream-card-body {
+    overflow: scroll;
+    height: 30em;
+  }
+
+  .add-dream-form {
+    display: flex; 
+    justify-content: center;
+    width: 450px;
+    margin-top: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+}
