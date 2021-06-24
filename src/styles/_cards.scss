@@ -1,8 +1,3 @@
-.dream-card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .dream-card {
   width: 24em;
@@ -78,19 +73,13 @@ h2 {
 }
 
 .menu-card {
-  width: 50em;
+  width: 45em;
   margin-top: 9em;
 }
 
 .menu-card-body {
   text-align: left;
   height: 48em;
-}
-
-.single-card-container {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 10em;
 }
 
 .single-dream-card {
@@ -111,22 +100,13 @@ h2 {
   margin-top: -1em;
 }
 
-.left {
-  background-color: green;
-}
-
-.right {
-  background-color: blue;
-}
-
 .education-card {
   width: 30em;
   background-color: #f0f0f1;
   height: 14em;
   padding: .5em;
   border-radius: 5px;
-  margin-top: 2em;
-  margin-left: 10em;
+  margin: 3em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -135,8 +115,4 @@ h2 {
   padding: 2em;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.education-sub-container {
-  height: 100vh;
 }

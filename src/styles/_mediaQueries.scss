@@ -81,4 +81,24 @@
     text-align: left;
     height: 38px;
   }
+
+  .education-sub-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .education-card {
+    width: 350px;
+    background-color: #f0f0f1;
+    height: 10em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .education-card-body {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
 }

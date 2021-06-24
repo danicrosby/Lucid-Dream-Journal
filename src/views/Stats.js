@@ -2,39 +2,31 @@ import React from 'react';
 import {
   Card,
   CardBody,
+  CardImg
 } from 'reactstrap';
-import RealityMenu from '../components/RealityMenu';
-import CalmMenu from '../components/CalmMenu';
-import LucidMenu from '../components/LucidMenu';
+import DreamTypeStats from '../styles/Assets/DreamTypeStats.png';
+import Recurring from '../styles/Assets/RecurringStats.png';
+import ColorStats from '../styles/Assets/ColorStats.png';
 
 function Education() {
   return (
-    <div className="education-sub-container">
+    <div className="stats-sub-container">
       <div className="education-card-container">
         <Card className="education-card">
           <CardBody className="education-card-body">
-            <div className="top-text">
-              <h6>Reality Checks</h6>
-              <RealityMenu />
-            </div>
+          <CardImg top width="100%" src={DreamTypeStats} />
           </CardBody>
         </Card>
 
         <Card className="education-card">
           <CardBody className="education-card-body">
-            <div className="top-text">
-              <h6>Lucid Dream Techniques</h6>
-              <LucidMenu />
-            </div>
+          <CardImg top width="100%" src={Recurring} />
           </CardBody>
         </Card>
 
         <Card className="education-card">
           <CardBody className="education-card-body">
-            <div className="top-text">
-              <h6>Calming Sounds</h6>
-              <CalmMenu />
-            </div>
+          <CardImg top width="100%" src={ColorStats} />
           </CardBody>
         </Card>
       </div>

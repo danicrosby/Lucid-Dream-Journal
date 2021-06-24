@@ -52,12 +52,12 @@ const menuOverlay = css`
   right: 0;
   background-color: white;
   height: 100vh;
-  width: 60vw;
+  width: 50vw;
   transform: translateX(100%);
   transition: all 500ms ease-in-out;
   &.show {
     background-color: #333;
-    transform: translateX(0%); 
+    transform: translate(0%); 
   }
   nav {
     padding-top: 100px;

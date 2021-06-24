@@ -6,6 +6,7 @@ import Dreams from '../views/Dreams';
 import SingleDream from '../views/SingleDream';
 import Welcome from '../views/Welcome';
 import Education from '../views/Education';
+import Stats from '../views/Stats';
 
 export default function Routes({ user, setDreams }) {
   return (
@@ -13,6 +14,7 @@ export default function Routes({ user, setDreams }) {
       <Switch>
         <Route exact path="/" component={() => <Welcome user={user} />} />
         <Route path="/education" component={() => <Education user={user} />} />
+        <Route path="/stats" component={() => <Stats user={user} />} />
 
         <Route
           exact path='/dreams'
