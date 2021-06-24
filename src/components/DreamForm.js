@@ -241,6 +241,8 @@ const DreamForm = ({
               <option>Bathroom</option>
               <option>Classroom</option>
               <option>College</option>
+              <option>Darkness</option>
+              <option>Game Show</option>
               <option>Home</option>
               <option>Hut</option>
               <option>Mountain</option>
@@ -249,6 +251,7 @@ const DreamForm = ({
               <option>Salon</option>
               <option>Toilet</option>
               <option>Underwater</option>
+              <option>Void</option>
             </Input>
           </FormGroup>
 
@@ -266,6 +269,7 @@ const DreamForm = ({
               <option>Airplane</option>
               <option>Alcohol</option>
               <option>Alligator</option>
+              <option>Alien</option>
               <option>Ambulance</option>
               <option>Angel</option>
               <option>Animal</option>
@@ -275,7 +279,8 @@ const DreamForm = ({
               <option>Bed</option>
               <option>Beach</option>
               <option>Bird</option>
-              <option>bridge</option>
+              <option>Bridge</option>
+              <option>Buzzer</option>
               <option>Car</option>
               <option>Bus</option>
               <option>Bridge</option>
@@ -284,6 +289,7 @@ const DreamForm = ({
               <option>Computer</option>
               <option>Desk</option>
               <option>Dinosaur</option>
+              <option>Door</option>
               <option>Eyes</option>
               <option>Exam</option>
               <option>Fire</option>
@@ -298,6 +304,7 @@ const DreamForm = ({
               <option>Skateboard</option>
               <option>Teacher</option>
               <option>Toilet</option>
+              <option>Teeth</option>
               <option>Tooth</option>
               <option>Tsumani</option>
               <option>Turkey</option>
@@ -318,18 +325,23 @@ const DreamForm = ({
               onChange={handleInputChange}>
               <option>Action</option>
               <option>Bitten</option>
+              <option>Breathless</option>
               <option>Chased</option>
               <option>Driving</option>
               <option>Falling</option>
+              <option>Floating</option>
               <option>Fighting</option>
               <option>Hiking</option>
               <option>Flying</option>
-              <option>OutOfBreath</option>
+              <option>Out Of Breath</option>
+              <option>Playing</option>
               <option>Naked</option>
               <option>Skating</option>
               <option>Swimming</option>
               <option>Running</option>
               <option>Sleeping</option>
+              <option>Sweating</option>
+              <option>Sweat</option>
               <option>Urinating</option>
               <option>Walking</option>
             </Input>
@@ -374,7 +386,7 @@ const DreamForm = ({
               id='followUp'
               value={dream.followUp}
               type='text'
-              placeholder='More Details'
+              placeholder='Additional Details'
               onChange={handleInputChange}
             />
           </FormGroup>

@@ -75,7 +75,7 @@ export default function SingleDreamCard({ dream }) {
           </CardText>
 
           <h6 className="mb-3 mt-3">Dream Interpretation</h6>
-          <CardText><h6>{singleDream.dreamType}</h6>{DreamType[singleDream.dreamType].interpretation}</CardText>
+          <CardText><h6>{singleDream.dreamType}</h6>{singleDream.dreamType} {DreamType[singleDream.dreamType].interpretation}</CardText>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Things[singleDream.thing]}</CardText>
           <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText>
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
