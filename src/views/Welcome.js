@@ -13,7 +13,7 @@ export default function Welcome() {
         setText(text + fullText[index]);
         setIndex(index + 1);
         setFullText(fullText);
-      }, 100);
+      }, 150);
     }
   }, [index]);
 

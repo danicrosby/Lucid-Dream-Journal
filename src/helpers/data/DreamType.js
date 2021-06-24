@@ -19,7 +19,7 @@ const DreamType = {
   Lucid: {
     interpretation: 'dreams occur when you realize you are dreaming. "Wait a second. This is only a dream!" Most dreamers wake themselves up once they realize that they are dreaming. Other dreamers have cultivated the skill to remain in the lucid state of dreaming. They become an active participant in their own dreams, making decisions in their dreams and influencing the dream outcome without awakening.',
     icon: <img src={lucid} height={25} width={25} />,
-    color: '#555'
+    color: '#6C657B'
   },
   Premonition: {
     interpretation: 'dreams, also referred to as precognitive or psychic dreams, are dreams that seemingly foretell the future.  One rational theory to explain this phenomenon is that your dreaming mind is able to piece together bits of information and observation that you may normally overlook or that you do not seriously consider. In other words, your unconscious mind knows what is coming before you consciously piece together the same information',
@@ -29,7 +29,7 @@ const DreamType = {
   Recurring: {
     interpretation: 'dreams repeat themselves with little variation in story or theme.  These dreams may be positive, but most often they are nightmarish in content.  Dreams may recur because a conflict depicted in the dream remains unresolved or  ignored. Once you find a resolution to the problem, your recurring dreams will cease.',
     icon: <img src={lucid} height={25} width={25} />,
-    color: '#777'
+    color: '#45404F'
   },
   Frustrating: {
     interpretation: 'dreams represents feelings about difficulties, challenges, or obstacles you are having. Feeling annoyed by someone or something. Too much willingness to accept a problem. Keeping your frustration or anger bottled up. Anxiety about communicating your true feelings that is causing a problem to get worse. Being too nice or respectful to someone that is causing problems. Ignoring your own happiness to keep others happy. Sensitivity about something you like not being as easy as you think it should be. Feeling that others are not helping out. Frustration that someone or something is holding you back in life.',
@@ -39,12 +39,12 @@ const DreamType = {
   Unsettling: {
     interpretation: 'RECURRING may be a way for your unconscious to get your attention about a situation or problem that you have been avoiding. It is time to take notice and confront the issue! Sometimes nightmares serve to warn you about your health or an accident. However, often times nightmares stem from a deeper level indicating that something is troubling you from within your subconscious.  Discussing, analyzing, and understanding your nightmares can lead to a solution to some problem, internal conflict or personal difficulty.',
     icon: <img src={lucid} height={25} width={25} />,
-    color: '#999'
+    color: '#804D5C'
   },
   Funny: {
     interpretation: 'RECURRING may be a way for your unconscious to get your attention about a situation or problem that you have been avoiding. It is time to take notice and confront the issue! Sometimes nightmares serve to warn you about your health or an accident. However, often times nightmares stem from a deeper level indicating that something is troubling you from within your subconscious.  Discussing, analyzing, and understanding your nightmares can lead to a solution to some problem, internal conflict or personal difficulty.',
     icon: <img src={lucid} height={25} width={25} />,
-    color: '#1111'
+    color: '#ACADBC'
   },
   Epic: {
     interpretation: 'dreams, also referred to as Great Dreams, Cosmic Dreams or Numinous Dreams, are so huge, so compelling, and so vivid that you cannot ignore them. The details of such dreams remain with you for years, as if you just dreamt it last night. These dreams possess much beauty and contain many archetypal symbology.  When you wake up from such a dream, you feel that you have discovered something profound or amazing about yourself or about the world. It feels like a life-changing experience.',
@@ -59,7 +59,7 @@ const DreamType = {
   Stress: {
     interpretation: 'the actual stress that you are experiencing in your waking life. The stress has carried over into your dream state where even in your sleep, you are unable to relax. The dream may call attention to some setbacks, obstacles, self-doubts, or criticism that you are facing in some waking situation or relationship. You are on the verge of breaking down and need to take some leisure time off to distance yourself from these issues.',
     icon: <img src={lucid} height={25} width={25} />,
-    color: '#1111'
+    color: '#4F7D68'
   },
 
 };

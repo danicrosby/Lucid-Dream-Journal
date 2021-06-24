@@ -21,19 +21,17 @@ a {
   margin-bottom: 1em;
 }
 
-auth-btn {
-  width: 1em;
-}
-
 .auth-cloud {
   opacity: .9;
   margin-right: 3em;
   font-size: 3em;
-  margin-right: -.1em;
-  margin-left: -2em;
   animation-name: colors;
   animation-delay: .2s;
   animation-duration: 6s;
   animation-iteration-count: infinite;
   animation-direction:alternate-reverse;
+}
+
+.auth-button {
+  border: transparent;
 }
