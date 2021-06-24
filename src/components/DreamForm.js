@@ -170,6 +170,7 @@ const DreamForm = ({
               <option>Lucid</option>
               <option>Nightmare</option>
               <option>Premonition</option>
+              <option>Stress</option>
               <option>Recurring</option>
               <option>Unsettling</option>
             </Input>
@@ -236,6 +237,7 @@ const DreamForm = ({
               placeholder='Place'
               onChange={handleInputChange}>
               <option>Location</option>
+              <option>Amusement Park</option>
               <option>Beach</option>
               <option>Bus</option>
               <option>Bathroom</option>

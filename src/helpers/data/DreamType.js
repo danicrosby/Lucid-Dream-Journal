@@ -56,5 +56,11 @@ const DreamType = {
     icon: <img src={lucid} height={25} width={25} />,
     color: '#1111'
   },
+  Stress: {
+    interpretation: 'the actual stress that you are experiencing in your waking life. The stress has carried over into your dream state where even in your sleep, you are unable to relax. The dream may call attention to some setbacks, obstacles, self-doubts, or criticism that you are facing in some waking situation or relationship. You are on the verge of breaking down and need to take some leisure time off to distance yourself from these issues.',
+    icon: <img src={lucid} height={25} width={25} />,
+    color: '#1111'
+  },
+
 };
 export default DreamType;

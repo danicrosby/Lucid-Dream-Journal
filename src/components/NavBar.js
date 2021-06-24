@@ -19,7 +19,8 @@ const NavBar = ({ user }) => {
   const authenticated = () => (
     <>
       <NavItem><Link className="nav-link links" to="/dreams">Dreams</Link></NavItem>
-      <NavItem><Link className="nav-link links mr-3" to="/education">Education</Link></NavItem>
+      <NavItem><Link className="nav-link ed-link" to="/education">Education</Link></NavItem>
+      <NavItem><Link className="nav-link stats-link" to="/stats">Stats</Link></NavItem>
     </>
   );
 
@@ -35,8 +36,8 @@ const NavBar = ({ user }) => {
               user !== null && <NavItem>
                 {
                   user
-                    ? <Button className="sign-btn" color='transparent' size="small" onClick={signOutUser}><span className="material-icons sign-cloud-icon">cloud</span></Button>
-                    : <Button className="sign-btn" color='transparent' size="small" onClick={signInUser}><span className="material-icons sign-cloud-icon">cloud</span></Button>
+                    ? <Button className="auth-btn" color='transparent' size="small" onClick={signOutUser}><span className="material-icons auth-cloud">cloud</span></Button>
+                    : <Button className="auth-btn" color='transparent' size="small" onClick={signInUser}><span className="material-icons auth-cloud">cloud</span></Button>
                 }
               </NavItem>
             }

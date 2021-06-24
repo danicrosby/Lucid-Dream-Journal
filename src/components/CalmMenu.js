@@ -52,7 +52,7 @@ const menuOverlay = css`
   right: 0;
   background-color: white;
   height: 100vh;
-  width: 60vw;
+  width: 50vw;
   transform: translateX(100%);
   transition: all 500ms ease-in-out;
   &.show {
