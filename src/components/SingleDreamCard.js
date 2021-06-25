@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
-// import { format } from 'date-fns';
-// import { enGB } from 'date-fns/locale';
-// import { DatePicker } from 'react-nice-dates';
+import { format } from 'date-fns';
+import { enGB } from 'date-fns/locale';
 import {
   Card,
   CardHeader,
@@ -51,23 +50,22 @@ export default function SingleDreamCard({ dream }) {
         <CardHeader>
           <center>
             <h5>{singleDream.name}</h5>
-            <span className="single-date">{singleDream.date}</span>
-            {/* <span className="single-date">{format(singleDream.date, 'MMMM dd, yyyy', { locale: enGB })}</span> */}
+            <span className="single-date">{format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}</span>
           </center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
-          <h6 className="mb-2 mt-2">Overview</h6>
+          <CardText><h6 className="mb-2 mt-2">Overview</h6></CardText>
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.dreamType} dream
-            on {singleDream.date}, that made you feel {singleDream.emotion}.
+            on {format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}, that made you feel {singleDream.emotion}.
             You dreamt of {singleDream.people}, the setting was {singleDream.place}.
             You remembered a few objects, more specifically a {singleDream.thing}.
             The overall abmience of this {singleDream.dreamType} dream was {singleDream.color}.
             Does this sound accurate?
           </CardText>
-          <h6 className="mb-2 mt-2">Recorded Dream Story</h6>
+          <CardText><h6 className="mb-2 mt-2">Recorded Dream Story</h6></CardText>
           <CardText>{singleDream.entry}</CardText>
-          <h6 className="mb-2 mt-2">Keywords</h6>
+          <CardText><h6 className="mb-2 mt-2">Keywords</h6></CardText>
           <CardText className="keyword-bucket">
             <span>{singleDream.dreamType}</span>
             <span>{singleDream.emotion}</span>
@@ -78,17 +76,17 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.color}</span>
           </CardText>
 
-          <h6 className="mb-3 mt-3">Dream Interpretation</h6>
+          <CardText><h6 className="mb-3 mt-3">Dream Interpretation</h6></CardText>
           <CardText><h6>{singleDream.dreamType}</h6>{singleDream.dreamType} {DreamType[singleDream.dreamType].interpretation}</CardText>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Things[singleDream.thing]}</CardText>
           <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText>
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
-          <h6 className="mb-2 mt-2">Additional Details</h6>
+          <CardText><h6 className="mb-2 mt-2">Additional Details</h6></CardText>
           <CardText>{singleDream.realization}</CardText>
-          <h6 className="mb-2 mt-2">Realizations or Follow Ups</h6>
-          <CardText>{singleDream.followUp}</CardText>
+          <CardText><h6 className="mb-2 mt-2">Realizations or Follow Ups</h6></CardText>
+          <CardText>{singleDream.addDetails}</CardText>
         </CardBody>
         <CardFooter className="card-footer">
           <Fab className="fab-icons" size="small" onClick={() => handleClick('edit')}><EditIcon /></Fab>
@@ -112,7 +110,7 @@ export default function SingleDreamCard({ dream }) {
             action={singleDream.action}
             thing={singleDream.thing}
             color={singleDream.color}
-            followUp={singleDream.followup}
+            addDetails={singleDream.addDetails}
             realization={singleDream.realization}
             setEditing={setEditing}
           />

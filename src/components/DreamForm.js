@@ -32,7 +32,7 @@ const DreamForm = ({
   thing,
   action,
   color,
-  followUp,
+  addDetails,
   realization,
   setEditing,
   firebaseKey
@@ -48,7 +48,7 @@ const DreamForm = ({
     thing: thing || '',
     action: action || '',
     color: color || '',
-    followUp: followUp || '',
+    addDetails: addDetails || '',
     realization: realization || '',
     firebaseKey: firebaseKey || null
   });
@@ -83,7 +83,7 @@ const DreamForm = ({
         place: '',
         thing: '',
         color: '',
-        followUp: '',
+        addDetails: '',
         realization: '',
         firebaseKey: null
       });
@@ -91,7 +91,7 @@ const DreamForm = ({
   };
 
   return (
-    <Card className="add-dream-form mt-5 mb-5">
+    <Card className="add-dream-form">
       <CardHeader><h5>{formTitle}</h5>
         {xdate ? format(xdate, 'MMMM dd, yyyy', { locale: enGB }) : ''}
       </CardHeader>
@@ -121,19 +121,6 @@ const DreamForm = ({
             />
           </FormGroup>
 
-          {/* <FormGroup>
-            <Input
-              className="input-text"
-              name='date'
-              id='date'
-              value={dream.date}
-              type='text'
-              placeholder='Date'
-              onChange={handleInputChange}
-            />
-          </FormGroup> */}
-
-          {/* Store date value on cards and edit forms */}
           <FormGroup>
               <DatePicker
                 className="input-text"
@@ -145,9 +132,10 @@ const DreamForm = ({
                 locale={enGB}>
                 {({ inputProps, focused }) => (
                   <input
+                  id="date-input"
                     className={`input${focused ? ' -focused' : ''}`}
                     {...inputProps}
-                    placeholder='  Date'
+                    placeholder='    Date'
                   />
                 )}
               </DatePicker>
@@ -384,9 +372,9 @@ const DreamForm = ({
           <FormGroup>
             <Input
               className="input-text"
-              name='followUp'
-              id='followUp'
-              value={dream.followUp}
+              name='addDetails'
+              id='addDetails'
+              value={dream.addDetails}
               type='text'
               placeholder='Additional Details'
               onChange={handleInputChange}
@@ -428,7 +416,7 @@ DreamForm.propTypes = {
   thing: PropTypes.string,
   action: PropTypes.string,
   color: PropTypes.string,
-  followUp: PropTypes.string,
+  addDetails: PropTypes.string,
   realization: PropTypes.string,
   firebaseKey: PropTypes.string,
   user: PropTypes.any
