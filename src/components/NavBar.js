@@ -36,8 +36,8 @@ const NavBar = ({ user }) => {
               user !== null && <NavItem>
                 {
                   user
-                    ? <Button className="auth-btn" color='transparent' size="small" onClick={signOutUser}><span className="material-icons auth-cloud">cloud</span></Button>
-                    : <Button className="auth-btn" color='transparent' size="small" onClick={signInUser}><span className="material-icons auth-cloud">cloud</span></Button>
+                    ? <Button className="auth-btn mr-2" color='transparent' onClick={signOutUser}><span className="material-icons auth-cloud">cloud</span></Button>
+                    : <Button className="auth-btn mr-2" color='transparent' onClick={signInUser}><span className="material-icons auth-cloud">cloud</span></Button>
                 }
               </NavItem>
             }
