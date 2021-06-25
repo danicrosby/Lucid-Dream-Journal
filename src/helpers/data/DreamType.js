@@ -39,7 +39,7 @@ const DreamType = {
   Unsettling: {
     interpretation: 'RECURRING may be a way for your unconscious to get your attention about a situation or problem that you have been avoiding. It is time to take notice and confront the issue! Sometimes nightmares serve to warn you about your health or an accident. However, often times nightmares stem from a deeper level indicating that something is troubling you from within your subconscious.  Discussing, analyzing, and understanding your nightmares can lead to a solution to some problem, internal conflict or personal difficulty.',
     icon: <img src={lucid} height={25} width={25} />,
-    color: '#804D5C'
+    color: '#653E49'
   },
   Funny: {
     interpretation: 'RECURRING may be a way for your unconscious to get your attention about a situation or problem that you have been avoiding. It is time to take notice and confront the issue! Sometimes nightmares serve to warn you about your health or an accident. However, often times nightmares stem from a deeper level indicating that something is troubling you from within your subconscious.  Discussing, analyzing, and understanding your nightmares can lead to a solution to some problem, internal conflict or personal difficulty.',
@@ -59,7 +59,7 @@ const DreamType = {
   Stress: {
     interpretation: 'the actual stress that you are experiencing in your waking life. The stress has carried over into your dream state where even in your sleep, you are unable to relax. The dream may call attention to some setbacks, obstacles, self-doubts, or criticism that you are facing in some waking situation or relationship. You are on the verge of breaking down and need to take some leisure time off to distance yourself from these issues.',
     icon: <img src={lucid} height={25} width={25} />,
-    color: '#4F7D68'
+    color: '#254C55'
   },
 
 };

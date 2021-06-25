@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-// import { format } from 'date-fns';
-// import { enGB } from 'date-fns/locale';
-// import { DatePicker } from 'react-nice-dates';
+import { format } from 'date-fns';
+import { enGB } from 'date-fns/locale';
+import { DatePicker } from 'react-nice-dates';
 import 'react-nice-dates/build/style.css';
 import Fab from '@material-ui/core/Fab';
 import CheckIcon from '@material-ui/icons/Check';
@@ -14,6 +14,7 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
+  // Label,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -53,7 +54,7 @@ const DreamForm = ({
     firebaseKey: firebaseKey || null
   });
   const history = useHistory();
-  // const [date, setDate] = useState();
+  const [xdate, xsetDate] = useState();
 
   const handleInputChange = (e) => {
     setDream((prevState) => ({
@@ -64,6 +65,7 @@ const DreamForm = ({
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    dream.date = xdate;
     if (dream.firebaseKey) {
       updateDream(dream).then(setSingleDream);
       setEditing(false);
@@ -92,7 +94,7 @@ const DreamForm = ({
   return (
     <Card className="add-dream-form mt-5 mb-5">
       <CardHeader><h5>{formTitle}</h5>
-        {/* {date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'} */}
+        {xdate ? format(xdate, 'MMMM dd, yyyy', { locale: enGB }) : ''}
       </CardHeader>
       <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
         <CardBody className="add-dream-card-body">
@@ -120,7 +122,7 @@ const DreamForm = ({
             />
           </FormGroup>
 
-          <FormGroup>
+          {/* <FormGroup>
             <Input
               className="input-text"
               name='date'
@@ -130,17 +132,17 @@ const DreamForm = ({
               placeholder='Date'
               onChange={handleInputChange}
             />
-          </FormGroup>
+          </FormGroup> */}
 
           {/* Store date value on cards and edit forms */}
-          {/* <FormGroup>
-              <Label for="place">Date</Label>
+          <FormGroup>
+              {/* <Label for="place">Date</Label> */}
               <DatePicker
-                className="date-input"
+                className="input-text"
                 name="date"
-                date={date}
-                value={date ? format(date, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
-                onDateChange={setDate}
+                date={xdate}
+                value={xdate ? format(xdate, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
+                onDateChange={xsetDate}
                 format='MMMM dd, yyyy'
                 locale={enGB}>
                 {({ inputProps, focused }) => (
@@ -151,7 +153,7 @@ const DreamForm = ({
                   />
                 )}
               </DatePicker>
-            </FormGroup> */}
+            </FormGroup>
 
           <FormGroup>
             <Input

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
+// import { format } from 'date-fns';
+// import { enGB } from 'date-fns/locale';
+// import { DatePicker } from 'react-nice-dates';
 import {
   Card,
   CardHeader,
@@ -49,6 +52,7 @@ export default function SingleDreamCard({ dream }) {
           <center>
             <h5>{singleDream.name}</h5>
             <span className="single-date">{singleDream.date}</span>
+            {/* <span className="single-date">{format(singleDream.date, 'MMMM dd, yyyy', { locale: enGB })}</span> */}
           </center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
