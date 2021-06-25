@@ -1,5 +1,7 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import { format } from 'date-fns';
+import { enGB } from 'date-fns/locale';
 import {
   Card,
   CardBody,
@@ -33,7 +35,7 @@ const DreamCard = ({
           <h6>{name}</h6>
           <div className="dream-card-icon">{DreamType[dreamType].icon}</div>
         </div>
-        <div className="date">{date}</div>
+        <div className="date">{format(new Date(date), 'MMMM dd, yyyy', { locale: enGB })}</div>
       </CardBody>
       <Button color="transparent" className="fab-icons expand-arrow-btn m-1" onClick={() => handleClick('view')}>
         <i className="material-icons dream-card-expand-arrow" id="expand-arrow"> keyboard_arrow_down </i>
