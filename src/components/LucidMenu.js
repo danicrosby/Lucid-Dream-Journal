@@ -50,7 +50,7 @@ const menuOverlay = css`
   position: fixed;
   top: 0;
   right: 0;
-  background-color: darkmagenta;
+  background-color: #440D44;
   height: 100vh;
   width: 50vw;
   transform: translateX(100%);

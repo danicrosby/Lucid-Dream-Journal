@@ -19,7 +19,7 @@ export default function Welcome() {
 
   return (
     <div className="welcome-container">
-      <div className="lucid-title">LUCID</div>
+      <div className="lucid-title">Lucid.</div>
       <div className="journal-title">{text}</div>
     </div>
   );
