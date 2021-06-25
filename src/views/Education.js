@@ -13,8 +13,8 @@ function Education() {
       <div className="education-card-container">
         <Card className="education-card">
           <CardBody className="education-card-body">
-            <div className="top-text">
-              <h6>Reality Checks</h6>
+            <div className="sub-top-text">
+              <h6 className="sub-card-title">Reality Checks</h6>
               <RealityMenu />
             </div>
           </CardBody>
@@ -22,7 +22,7 @@ function Education() {
 
         <Card className="education-card">
           <CardBody className="education-card-body">
-            <div className="top-text">
+            <div className="sub-top-text">
               <h6>Lucid Dream Techniques</h6>
               <LucidMenu />
             </div>
@@ -31,7 +31,7 @@ function Education() {
 
         <Card className="education-card">
           <CardBody className="education-card-body">
-            <div className="top-text">
+            <div className="sub-top-text">
               <h6>Calming Sounds</h6>
               <CalmMenu />
             </div>

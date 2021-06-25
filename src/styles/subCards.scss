@@ -1,0 +1,51 @@
+.sub-card {
+  background-color: rgb(233, 232, 232);
+  height: 80vmin;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sub-card-body {
+  text-align: left;
+  background-color: white;
+  height: 12em;
+  padding: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.sub-top-text {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1em;
+}
+
+.education-card {
+  width: 30em;
+  background-color: #f0f0f1;
+  height: 14em;
+  padding: .5em;
+  border-radius: 5px;
+  margin: 3em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.education-card-body {
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.menu-card {
+  width: 45em;
+  margin-top: 9em;
+  margin-left: 5em;
+}
+
+.menu-card-body {
+  text-align: left;
+  height: 50em;
+  width: 45em;
+}
