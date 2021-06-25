@@ -14,7 +14,6 @@ import {
   CardHeader,
   CardBody,
   CardFooter,
-  // Label,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -136,7 +135,6 @@ const DreamForm = ({
 
           {/* Store date value on cards and edit forms */}
           <FormGroup>
-              {/* <Label for="place">Date</Label> */}
               <DatePicker
                 className="input-text"
                 name="date"
