@@ -47,7 +47,7 @@ export default function SingleDreamCard({ dream }) {
   return (
     <div className="single-card-container">
       <Card className="single-dream-card">
-        <CardHeader>
+        <CardHeader className="single-card-header">
           <center>
             <h5>{singleDream.name}</h5>
             <span className="single-date">{format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}</span>

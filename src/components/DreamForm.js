@@ -154,9 +154,11 @@ const DreamForm = ({
               <option>Epic</option>
               <option>Good</option>
               <option>Frustrating</option>
+              <option>Angry</option>
               <option>Funny</option>
               <option>Lucid</option>
               <option>Nightmare</option>
+              <option>Omnious</option>
               <option>Premonition</option>
               <option>Stress</option>
               <option>Recurring</option>
@@ -314,6 +316,7 @@ const DreamForm = ({
               placeholder='Action'
               onChange={handleInputChange}>
               <option>Action</option>
+              <option>Going To The Bathroom</option>
               <option>Bitten</option>
               <option>Breathless</option>
               <option>Chased</option>
