@@ -1,10 +1,10 @@
 # LUCID | A Dream Journal for Adults ![Netlify Status](https://api.netlify.com/api/v1/badges/7faacd10-cfbd-44ae-845c-c0483042b443/deploy-status)]
 
-I plan to build an application that allows people to log their dreams and mood. The primary user  of the application will be anyone over the age of 13, the secondary will be parents of the children under 18.
+I plan to build an application that allows people to log their dreams and mood. The primary user of the application will be anyone over the age of 13, the secondary will be parents of the children under 18.
 
-When a individual logs in the the app, they will be prompted to add a new dream. When they click on the "add" button they will be taken to a page where they can record their dream in detail. Once they submit the log they will be taken to a page where they can choose from a variety of tags including objects, mood, colors that occurred in the dream they just logged. When they click the "done" button, key words are stored and populated in a stats page where the individual is presented with documentation about what the psychology of that word means and the interpretation is stored for later use.
+When the user logs in the the app, they will be prompted to add a new dream. When the user clicks on the "add" button they will be taken to a page where they can record their dream in detail. Once the user submit the log they will be taken to a page where they can choose from a variety of tags including objects, mood, colors that occurred in the dream they just logged. When the user clicks the "done" button, a keywords are stored and populated in a stats page where the individual is presented with documentation about what the psychology of that word means and the interpretation is stored for later use.
 
-Personally, I want to use this to practice using REACT. This project will have multiple aspects but will be simple and straightforward. My goal is to have clear, clean UI and target simplicity above all things. It will reinforce the knowledge I've taken from our previous assignment and challenge me to make those challenges more efficient.
+Personally, I want to use this to practice using React. This project will have multiple aspects but will be simple and straightforward. My goal is to have clear, clean UI and target simplicity above all things. It will reinforce the knowledge I've taken from our previous assignment and challenge me to make those challenges more efficient.
 
 
 ## Relevant Links
@@ -28,24 +28,26 @@ Personally, I want to use this to practice using REACT. This project will have m
 - Dream data and info will be grabbed via API or coded with JSON data and keywords.
 - Once dream is submitted, user can view data collected in the stats view page.
 
-### Welcome Page
+Welcome Page:
+<img width="1438" alt="Screen Shot 2021-06-24 at 11 55 04 PM" src="https://user-images.githubusercontent.com/68397076/123371550-9a1e3f80-d547-11eb-940e-8cbfde6ac622.png">
 
-<img width="558" alt="Screen Shot 2021-06-01 at 4 21 22 PM" src="https://user-images.githubusercontent.com/68397076/120391973-6b6cca80-c2f5-11eb-8822-2c3eb46bd7ed.png">
+Dream Bank:
+<img width="1430" alt="Screen Shot 2021-06-24 at 11 55 44 PM" src="https://user-images.githubusercontent.com/68397076/123371602-b28e5a00-d547-11eb-87b4-367419eb6ead.png">
 
-### Logged Dreams
-<img width="538" alt="Screen Shot 2021-06-01 at 4 13 09 PM" src="https://user-images.githubusercontent.com/68397076/120391171-44fa5f80-c2f4-11eb-904f-b530745a298a.png">
+Add Dream Form: 
+<img width="1426" alt="Screen Shot 2021-06-24 at 11 56 24 PM" src="https://user-images.githubusercontent.com/68397076/123371653-ca65de00-d547-11eb-8398-32cd1022427b.png">
 
-### Education, Stat & Overview Planning
-<img width="818" alt="Screen Shot 2021-06-01 at 4 18 30 PM" src="https://user-images.githubusercontent.com/68397076/120391689-044f1600-c2f5-11eb-9e5d-cebc11218c6a.png">
+Add Dream Form with Functional DatePicker: 
+<img width="1427" alt="Screen Shot 2021-06-24 at 11 57 12 PM" src="https://user-images.githubusercontent.com/68397076/123371728-e6697f80-d547-11eb-8ee1-82fa9c0ad159.png">
 
-### Entry Log Field
-<img width="574" alt="Screen Shot 2021-06-01 at 4 13 44 PM" src="https://user-images.githubusercontent.com/68397076/120391219-580d2f80-c2f4-11eb-9c16-345431c90fa5.png">
+Single Dream View and Edit Form:
+<img width="1432" alt="Screen Shot 2021-06-24 at 11 58 35 PM" src="https://user-images.githubusercontent.com/68397076/123371839-1749b480-d548-11eb-8ca7-6df143140372.png">
 
-### Mock Design of History | Entries
-<img width="726" alt="Screen Shot 2021-06-01 at 4 15 24 PM" src="https://user-images.githubusercontent.com/68397076/120391400-94409000-c2f4-11eb-83ab-9298a8f1bae9.png">
+Education Page with Slide-Out Menu: 
+<img width="1427" alt="Screen Shot 2021-06-24 at 11 59 08 PM" src="https://user-images.githubusercontent.com/68397076/123371887-2cbede80-d548-11eb-8068-0b074fc463bd.png">
 
-![Screen Shot 2021-06-01 at 8 39 10 PM](https://user-images.githubusercontent.com/68397076/120410858-6de11b80-c319-11eb-8531-b834ca147999.png)
-
+Stats Menu:
+<img width="1400" alt="Screen Shot 2021-06-24 at 11 59 59 PM" src="https://user-images.githubusercontent.com/68397076/123371957-4a8c4380-d548-11eb-908e-f59ae7f30bda.png">
 
 
 ### Stretch Goals for LUCID
