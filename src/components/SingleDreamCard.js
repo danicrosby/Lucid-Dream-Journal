@@ -56,11 +56,11 @@ export default function SingleDreamCard({ dream }) {
         <CardBody className="add-dream-card-body">
           <CardText><h6 className="mb-2 mt-2">Overview</h6></CardText>
           <CardText className="intro">
-            Hello, Dani. It looks like you had a {singleDream.dreamType} dream
-            on {format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}, that made you feel {singleDream.emotion}.
-            You dreamt of {singleDream.people}, the setting was {singleDream.place}.
-            You remembered a few objects, more specifically a {singleDream.thing}.
-            The overall abmience of this {singleDream.dreamType} dream was {singleDream.color}.
+            Hello, Dani. It looks like you had a {singleDream.dreamType.toLowerCase()} dream
+            on {format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}, that made you feel {singleDream.emotion.toLowerCase()}.
+            You dreamt of {singleDream.people}, the setting was {singleDream.place.toLowerCase()}.
+            You remembered a few objects, more specifically a {singleDream.thing.toLowerCase()}.
+            The overall abmience of this {singleDream.dreamType.toLowerCase()} dream was {singleDream.color.toLowerCase()}.
             Does this sound accurate?
           </CardText>
           <CardText><h6 className="mb-2 mt-2">Recorded Dream Story</h6></CardText>
@@ -77,12 +77,12 @@ export default function SingleDreamCard({ dream }) {
           </CardText>
 
           <CardText><h6 className="mb-3 mt-3">Dream Interpretation</h6></CardText>
-          <CardText><h6>{singleDream.dreamType}</h6>{singleDream.dreamType} {DreamType[singleDream.dreamType].interpretation}</CardText>
-          <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing} indicates {Things[singleDream.thing]}</CardText>
-          <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place} indicates {Places[singleDream.place]}</CardText>
-          <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
-          <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action} during your dream it might indicate {Actions[singleDream.action]}</CardText>
-          <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color} symbolizes {Colors[singleDream.color]}</CardText>
+          <CardText><h6>{singleDream.dreamType}</h6>{singleDream.dreamType.toLowerCase()} {DreamType[singleDream.dreamType].interpretation}</CardText>
+          <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing.toLowerCase()} indicates {Things[singleDream.thing]}</CardText>
+          <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place.toLowerCase()} indicates {Places[singleDream.place]}</CardText>
+          <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion.toLowerCase()} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
+          <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action.toLowerCase()} during your dream it might indicate {Actions[singleDream.action]}</CardText>
+          <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color.toLowerCase()} symbolizes {Colors[singleDream.color]}</CardText>
           <CardText><h6 className="mb-2 mt-2">Additional Details</h6></CardText>
           <CardText>{singleDream.realization}</CardText>
           <CardText><h6 className="mb-2 mt-2">Realizations or Follow Ups</h6></CardText>
