@@ -157,6 +157,7 @@ const DreamForm = ({
               <option>Angry</option>
               <option>Funny</option>
               <option>Lucid</option>
+              <option>Neutral</option>
               <option>Nightmare</option>
               <option>Omnious</option>
               <option>Premonition</option>
@@ -240,6 +241,8 @@ const DreamForm = ({
               <option>Mountain</option>
               <option>Ocean</option>
               <option>Outside</option>
+              <option>Post-Apocalypse</option>
+              <option>Road</option>
               <option>Salon</option>
               <option>Toilet</option>
               <option>Underwater</option>
@@ -286,6 +289,7 @@ const DreamForm = ({
               <option>Exam</option>
               <option>Fire</option>
               <option>Graduation</option>
+              <option>Hair</option>
               <option>Homework</option>
               <option>Hut</option>
               <option>Library</option>
@@ -293,6 +297,8 @@ const DreamForm = ({
               <option>Monolith</option>
               <option>Mountain</option>
               <option>Raptor</option>
+              <option>Road</option>
+              <option>Robot</option>
               <option>Skateboard</option>
               <option>Teacher</option>
               <option>Toilet</option>
