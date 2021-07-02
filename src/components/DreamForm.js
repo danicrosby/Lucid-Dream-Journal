@@ -151,8 +151,11 @@ const DreamForm = ({
               onChange={handleInputChange}>
               <option>Dream Type</option>
               <option>Daydreams</option>
+              <option>Bliss</option>
               <option>Epic</option>
               <option>Good</option>
+              <option>False Awakening</option>
+              <option>False Awakening Loop</option>
               <option>Frustrating</option>
               <option>Angry</option>
               <option>Funny</option>
@@ -161,6 +164,7 @@ const DreamForm = ({
               <option>Nightmare</option>
               <option>Omnious</option>
               <option>Premonition</option>
+              <option>Realism and Non-Realism</option>
               <option>Stress</option>
               <option>Recurring</option>
               <option>Unsettling</option>
@@ -185,6 +189,7 @@ const DreamForm = ({
               <option>Confused</option>
               <option>Depressed</option>
               <option>Despair</option>
+              <option>Elated</option>
               <option>Embarrassed</option>
               <option>Envy</option>
               <option>Excited</option>
@@ -229,12 +234,14 @@ const DreamForm = ({
               onChange={handleInputChange}>
               <option>Location</option>
               <option>Amusement Park</option>
+              <option>Backyard</option>
               <option>Beach</option>
               <option>Bus</option>
               <option>Bathroom</option>
               <option>Classroom</option>
               <option>College</option>
               <option>Darkness</option>
+              <option>Forest</option>
               <option>Game Show</option>
               <option>Home</option>
               <option>House</option>
@@ -243,10 +250,16 @@ const DreamForm = ({
               <option>Ocean</option>
               <option>Outside</option>
               <option>Post-Apocalypse</option>
+              <option>River</option>
+              <option>Rock</option>
+              <option>Rocks</option>
               <option>Road</option>
               <option>Salon</option>
+              <option>Sun</option>
               <option>Toilet</option>
+              <option>Trail</option>
               <option>Underwater</option>
+              <option>University</option>
               <option>Void</option>
             </Input>
           </FormGroup>
@@ -272,6 +285,7 @@ const DreamForm = ({
               <option>Apocalypse</option>
               <option>Aquarium</option>
               <option>Arcade</option>
+              <option>Backyard</option>
               <option>Bed</option>
               <option>Beach</option>
               <option>Blanket</option>
@@ -291,6 +305,7 @@ const DreamForm = ({
               <option>Eyes</option>
               <option>Exam</option>
               <option>Fire</option>
+              <option>Forest</option>
               <option>Ghost</option>
               <option>Graduation</option>
               <option>Hair</option>
@@ -300,17 +315,21 @@ const DreamForm = ({
               <option>Library</option>
               <option>Ocean</option>
               <option>Path</option>
+              <option>Machine</option>
               <option>Monolith</option>
               <option>Mountain</option>
               <option>Raptor</option>
+              <option>River</option>
               <option>Road</option>
               <option>Robot</option>
               <option>Skateboard</option>
               <option>Stone</option>
+              <option>Sun</option>
               <option>Teacher</option>
-              <option>Toilet</option>
               <option>Teeth</option>
+              <option>Toilet</option>
               <option>Tooth</option>
+              <option>Trail</option>
               <option>Tsumani</option>
               <option>Turkey</option>
               <option>Tiger</option>

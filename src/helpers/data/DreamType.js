@@ -22,10 +22,25 @@ const DreamType = {
     icon: <img src={daydream} height={25} width={25} />,
     color: '#1111'
   },
+  Bliss: {
+    interpretation: 'dreams, also referred to as Great Dreams, Cosmic Dreams or Numinous Dreams, are so huge, so compelling, and so vivid that you cannot ignore them. The details of such dreams remain with you for years, as if you just dreamt it last night. These dreams possess much beauty and contain many archetypal symbology.  When you wake up from such a dream, you feel that you have discovered something profound or amazing about yourself or about the world. It feels like a life-changing experience.',
+    icon: <img src={epic} height={25} width={25} />,
+    color: '#E9E9ED'
+  },
   Epic: {
     interpretation: 'dreams, also referred to as Great Dreams, Cosmic Dreams or Numinous Dreams, are so huge, so compelling, and so vivid that you cannot ignore them. The details of such dreams remain with you for years, as if you just dreamt it last night. These dreams possess much beauty and contain many archetypal symbology.  When you wake up from such a dream, you feel that you have discovered something profound or amazing about yourself or about the world. It feels like a life-changing experience.',
     icon: <img src={epic} height={25} width={25} />,
     color: '#E9E9ED'
+  },
+  'False Awakening': {
+    interpretation: 'dream is a vivid and convincing dream about awakening from sleep, while the dreamer in reality continues to sleep. After a false awakening, subjects often dream they are performing daily morning routine such as showering, cooking, cleaning, eating, and using the bathroom. False awakenings, mainly those in which one dreams that they have awoken from a sleep that featured dreams, take on aspects of a double dream or a dream within a dream.',
+    icon: <img src={lucid} height={25} width={25} />,
+    color: '#6C657B'
+  },
+  'False Awakening Loop': {
+    interpretation: 'dream is when a subject dreams about waking up over and over again, sometimes even up to 10 times or more without knowing which time they are actually awake.[3] At times the individual can perform actions unknowingly. The movie A Nightmare on Elm Street popularized this phenomenon. This phenomenon can be related to that of sleepwalking or carrying out actions in a state of unconsciousness.',
+    icon: <img src={lucid} height={25} width={25} />,
+    color: '#6C657B'
   },
   Frustrating: {
     interpretation: 'dreams represents feelings about difficulties, challenges, or obstacles you are having. Feeling annoyed by someone or something. Too much willingness to accept a problem. Keeping your frustration or anger bottled up. Anxiety about communicating your true feelings that is causing a problem to get worse. Being too nice or respectful to someone that is causing problems. Ignoring your own happiness to keep others happy. Sensitivity about something you like not being as easy as you think it should be. Feeling that others are not helping out. Frustration that someone or something is holding you back in life. It can also mean ',
@@ -66,6 +81,11 @@ const DreamType = {
     interpretation: 'dreams, also referred to as precognitive or psychic dreams, are dreams that seemingly foretell the future.  One rational theory to explain this phenomenon is that your dreaming mind is able to piece together bits of information and observation that you may normally overlook or that you do not seriously consider. In other words, your unconscious mind knows what is coming before you consciously piece together the same information',
     icon: <img src={prem} height={30} width={30} style={{ marginBottom: -2 }} />,
     color: '#7E94A0'
+  },
+  'Realism and Non-Realism': {
+    interpretation: 'dream are when things may seem wrong: details, like the painting on a wall, not being able to talk or difficulty reading (reportedly, reading in lucid dreams is often difficult or impossible[4]). In some experiences, the subjects senses are heightened, or changed.',
+    icon: <img src={lucid} height={25} width={25} />,
+    color: '#6C657B'
   },
   Recurring: {
     interpretation: 'dreams repeat themselves with little variation in story or theme. These dreams may be positive, but most often they are nightmarish in content.  Dreams may recur because a conflict depicted in the dream remains unresolved or  ignored. Once you find a resolution to the problem, your recurring dreams will cease.',
