@@ -237,6 +237,7 @@ const DreamForm = ({
               <option>Darkness</option>
               <option>Game Show</option>
               <option>Home</option>
+              <option>House</option>
               <option>Hut</option>
               <option>Mountain</option>
               <option>Ocean</option>
@@ -273,6 +274,7 @@ const DreamForm = ({
               <option>Arcade</option>
               <option>Bed</option>
               <option>Beach</option>
+              <option>Blanket</option>
               <option>Bird</option>
               <option>Bridge</option>
               <option>Buzzer</option>
@@ -284,22 +286,27 @@ const DreamForm = ({
               <option>Computer</option>
               <option>Desk</option>
               <option>Dinosaur</option>
+              <option>Dirt</option>
               <option>Door</option>
               <option>Eyes</option>
               <option>Exam</option>
               <option>Fire</option>
+              <option>Ghost</option>
               <option>Graduation</option>
               <option>Hair</option>
               <option>Homework</option>
+              <option>House</option>
               <option>Hut</option>
               <option>Library</option>
               <option>Ocean</option>
+              <option>Path</option>
               <option>Monolith</option>
               <option>Mountain</option>
               <option>Raptor</option>
               <option>Road</option>
               <option>Robot</option>
               <option>Skateboard</option>
+              <option>Stone</option>
               <option>Teacher</option>
               <option>Toilet</option>
               <option>Teeth</option>
@@ -307,6 +314,7 @@ const DreamForm = ({
               <option>Tsumani</option>
               <option>Turkey</option>
               <option>Tiger</option>
+              <option>Wall</option>
               <option>Water</option>
 
             </Input>
@@ -336,11 +344,15 @@ const DreamForm = ({
               <option>Playing</option>
               <option>Naked</option>
               <option>Skating</option>
-              <option>Swimming</option>
+              <option>Reaching</option>
               <option>Running</option>
+              <option>Searching</option>
               <option>Sleeping</option>
+              <option>Stumbling</option>
+              <option>Swimming</option>
               <option>Sweating</option>
               <option>Sweat</option>
+              <option>Training</option>
               <option>Urinating</option>
               <option>Walking</option>
             </Input>
