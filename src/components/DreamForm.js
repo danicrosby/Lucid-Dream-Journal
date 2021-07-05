@@ -199,6 +199,7 @@ const DreamForm = ({
               <option>Happy</option>
               <option>Jealous</option>
               <option>Loved</option>
+              <option>Neutral</option>
               <option>Pain</option>
               <option>Panic</option>
               <option>Parranoid</option>
@@ -206,8 +207,10 @@ const DreamForm = ({
               <option>Pride</option>
               <option>Rage</option>
               <option>Rejection</option>
-              <option>Scared</option>
               <option>Sad</option>
+              <option>Scared</option>
+              <option>Terror</option>
+              <option>Terrified</option>
             </Input>
           </FormGroup>
 
@@ -235,17 +238,22 @@ const DreamForm = ({
               <option>Location</option>
               <option>Amusement Park</option>
               <option>Backyard</option>
+              <option>Bathroom</option>
               <option>Beach</option>
               <option>Bus</option>
+              <option>Building</option>
               <option>Bathroom</option>
               <option>Classroom</option>
               <option>College</option>
               <option>Darkness</option>
               <option>Forest</option>
+              <option>Fortress</option>
               <option>Game Show</option>
+              <option>Hills</option>
               <option>Home</option>
               <option>House</option>
               <option>Hut</option>
+              <option>Ledge</option>
               <option>Mountain</option>
               <option>Ocean</option>
               <option>Outside</option>
@@ -255,7 +263,9 @@ const DreamForm = ({
               <option>Rocks</option>
               <option>Road</option>
               <option>Salon</option>
+              <option>Ship</option>
               <option>Sun</option>
+              <option>Titanic</option>
               <option>Toilet</option>
               <option>Trail</option>
               <option>Underwater</option>
@@ -286,11 +296,14 @@ const DreamForm = ({
               <option>Aquarium</option>
               <option>Arcade</option>
               <option>Backyard</option>
+              <option>Balloon</option>
+              <option>Bathroom</option>
               <option>Bed</option>
               <option>Beach</option>
               <option>Blanket</option>
               <option>Bird</option>
               <option>Bridge</option>
+              <option>Building</option>
               <option>Buzzer</option>
               <option>Car</option>
               <option>Bus</option>
@@ -306,12 +319,16 @@ const DreamForm = ({
               <option>Exam</option>
               <option>Fire</option>
               <option>Forest</option>
+              <option>Fortress</option>
               <option>Ghost</option>
               <option>Graduation</option>
+              <option>Gun</option>
               <option>Hair</option>
+              <option>Hills</option>
               <option>Homework</option>
               <option>House</option>
               <option>Hut</option>
+              <option>Ledge</option>
               <option>Library</option>
               <option>Ocean</option>
               <option>Path</option>
@@ -322,20 +339,23 @@ const DreamForm = ({
               <option>River</option>
               <option>Road</option>
               <option>Robot</option>
+              <option>Ship</option>
               <option>Skateboard</option>
               <option>Stone</option>
               <option>Sun</option>
               <option>Teacher</option>
               <option>Teeth</option>
+              <option>Titanic</option>
               <option>Toilet</option>
               <option>Tooth</option>
               <option>Trail</option>
               <option>Tsumani</option>
               <option>Turkey</option>
               <option>Tiger</option>
+              <option>Underwear</option>
               <option>Wall</option>
               <option>Water</option>
-
+              <option>Window</option>
             </Input>
           </FormGroup>
 
@@ -353,6 +373,7 @@ const DreamForm = ({
               <option>Bitten</option>
               <option>Breathless</option>
               <option>Chased</option>
+              <option>Climbing</option>
               <option>Driving</option>
               <option>Falling</option>
               <option>Floating</option>
@@ -360,6 +381,7 @@ const DreamForm = ({
               <option>Hiking</option>
               <option>Flying</option>
               <option>Out Of Breath</option>
+              <option>Panicking</option>
               <option>Playing</option>
               <option>Naked</option>
               <option>Skating</option>
@@ -371,9 +393,11 @@ const DreamForm = ({
               <option>Swimming</option>
               <option>Sweating</option>
               <option>Sweat</option>
+              <option>Talking</option>
               <option>Training</option>
               <option>Urinating</option>
               <option>Walking</option>
+              <option>Watching</option>
             </Input>
           </FormGroup>
 

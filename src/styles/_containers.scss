@@ -19,8 +19,9 @@
 
 .dream-card-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: first baseline;
+  align-items: center;
+  flex-wrap: wrap-reverse;
 }
 
 .dream-form-container {
