@@ -48,10 +48,7 @@ export default function SingleDreamCard({ dream }) {
     <div className="single-card-container">
       <Card className="single-dream-card">
         <CardHeader className="single-card-header">
-          <center>
             <h5>{singleDream.name}</h5>
-            <span className="single-date">{format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}</span>
-          </center>
         </CardHeader>
         <CardBody className="add-dream-card-body">
           <CardText><h6 className="mb-2 mt-2">Overview</h6></CardText>
@@ -94,7 +91,7 @@ export default function SingleDreamCard({ dream }) {
           <Fab className="fab-icons" size="small" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
         </CardFooter>
       </Card>
-      <div>
+      <div className="mt-3">
         {
           editing && <DreamForm
             formTitle='Edit Dream'
