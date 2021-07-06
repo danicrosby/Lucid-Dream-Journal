@@ -50,13 +50,13 @@ const menuOverlay = css`
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #440D44;
+  background-color: #333;
   height: 100vh;
   width: 50vw;
   transform: translateX(100%);
   transition: all 900ms ease-in-out;
   &.show {
-    background-color: #333;
+    background-color: #440D44;
     transform: translate(0%); 
   }
   nav {

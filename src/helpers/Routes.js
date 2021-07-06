@@ -5,6 +5,7 @@ import AddDream from '../views/AddDream';
 import Dreams from '../views/Dreams';
 import SingleDream from '../views/SingleDream';
 import Welcome from '../views/Welcome';
+import Goodbye from '../views/Goodbye';
 import Education from '../views/Education';
 import Stats from '../views/Stats';
 
@@ -13,6 +14,7 @@ export default function Routes({ user, setDreams }) {
     <>
       <Switch>
         <Route exact path="/" component={() => <Welcome user={user} />} />
+        <Route exact path="/" component={() => <Goodbye user={user} />} />
         <Route path="/education" component={() => <Education user={user} />} />
         <Route path="/stats" component={() => <Stats user={user} />} />
 
