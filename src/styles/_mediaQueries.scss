@@ -35,6 +35,16 @@
     color: black;
   }
 
+  .auth-cloud {
+    opacity: .9;
+    font-size: 2em;
+    animation-name: colors;
+    animation-delay: .2s;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+  }
+
   .sign-in-out-btn {
     opacity: .9;
     font-size: 2em;

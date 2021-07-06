@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 const Colors = {
-  None: 'no color associated',
+  None: 'no color remembered',
   Amber: 'the sun and positive energy. Amber is said to have natural healing power. Some believe that the amber can heal sore eyes, sprained limbs or arthritis. Thus the amber in your dream could mean you need to be healed in some way. Alternatively, to see amber in your dream represents resurrection. Something in your past will prove to be extremely important to your future. It could mean a situation or relationship in your waking life that was once lively, is now non-existent. You feel trapped or that your life is too rigid and inflexible. You need to change your outdated way of thinking and old ideas.',
   Beige: 'the basics, the essentials and the barest form. It may also indicate your neutral or unbiased position in some matter.',
   Black: 'the unknown, the unconscious, danger, mystery, darkness, death, mourning, rejection, hate or malice. The color invites you to delve deeper in your unconscious in order to gain a better understanding of yourself. It also signifies a lack of love and lack of support. More positively, black represents potential and possibilities, like a blank slate.',

@@ -181,6 +181,7 @@ const DreamForm = ({
               placeholder='Emotion'
               onChange={handleInputChange}>
               <option>Emotion</option>
+              <option>None</option>
               <option>Afraid</option>
               <option>Alone</option>
               <option>Angry</option>
@@ -195,6 +196,7 @@ const DreamForm = ({
               <option>Ecstasy</option>
               <option>Elated</option>
               <option>Embarrassed</option>
+              <option>Emptiness</option>
               <option>Envy</option>
               <option>Excited</option>
               <option>Fear</option>
@@ -243,6 +245,7 @@ const DreamForm = ({
               placeholder='Place'
               onChange={handleInputChange}>
               <option>Location</option>
+              <option>None</option>
               <option>Abyss</option>
               <option>Amusement Park</option>
               <option>Backyard</option>
@@ -252,9 +255,11 @@ const DreamForm = ({
               <option>Building</option>
               <option>Bathroom</option>
               <option>Campus</option>
+              <option>Church</option>
               <option>Classroom</option>
               <option>College</option>
               <option>Darkness</option>
+              <option>Elevator</option>
               <option>Forest</option>
               <option>Fortress</option>
               <option>Game Show</option>
@@ -275,6 +280,9 @@ const DreamForm = ({
               <option>Road</option>
               <option>Salon</option>
               <option>Ship</option>
+              <option>Space</option>
+              <option>Stairs</option>
+              <option>Staircase</option>
               <option>Store</option>
               <option>Sun</option>
               <option>Titanic</option>
@@ -283,6 +291,7 @@ const DreamForm = ({
               <option>Underwater</option>
               <option>University</option>
               <option>Void</option>
+              <option>Woods</option>
             </Input>
           </FormGroup>
 
@@ -296,6 +305,7 @@ const DreamForm = ({
               placeholder='Thing'
               onChange={handleInputChange}>
               <option>Thing</option>
+              <option>None</option>
               <option>Abyss</option>
               <option>Afterlife</option>
               <option>Airplane</option>
@@ -324,12 +334,15 @@ const DreamForm = ({
               <option>Canoe</option>
               <option>Car</option>
               <option>Casket</option>
+              <option>Chair</option>
+              <option>Church</option>
               <option>Classmates</option>
               <option>Computer</option>
               <option>Desk</option>
               <option>Dinosaur</option>
               <option>Dirt</option>
               <option>Door</option>
+              <option>Elevator</option>
               <option>Eyes</option>
               <option>Exam</option>
               <option>Fire</option>
@@ -337,6 +350,7 @@ const DreamForm = ({
               <option>Fortress</option>
               <option>Ghost</option>
               <option>Graduation</option>
+              <option>Grass</option>
               <option>Gun</option>
               <option>Horse</option>
               <option>Hair</option>
@@ -360,7 +374,10 @@ const DreamForm = ({
               <option>Robot</option>
               <option>Shark</option>
               <option>Ship</option>
+              <option>Shopping Cart</option>
               <option>Skateboard</option>
+              <option>Stairs</option>
+              <option>Staircase</option>
               <option>Stone</option>
               <option>Store</option>
               <option>Sun</option>
@@ -377,6 +394,7 @@ const DreamForm = ({
               <option>Wall</option>
               <option>Water</option>
               <option>Window</option>
+              <option>Woods</option>
             </Input>
           </FormGroup>
 
@@ -390,6 +408,9 @@ const DreamForm = ({
               placeholder='Action'
               onChange={handleInputChange}>
               <option>Action</option>
+              <option>Balancing</option>
+              <option>Abandoned</option>
+              <option>None</option>
               <option>Going To The Bathroom</option>
               <option>Bitten</option>
               <option>Breathless</option>
@@ -404,6 +425,7 @@ const DreamForm = ({
               <option>Fighting</option>
               <option>Hiking</option>
               <option>Flying</option>
+              <option>Looting</option>
               <option>Out Of Breath</option>
               <option>Panicking</option>
               <option>Playing</option>
@@ -412,6 +434,7 @@ const DreamForm = ({
               <option>Reaching</option>
               <option>Running</option>
               <option>Searching</option>
+              <option>Shopping</option>
               <option>Sleeping</option>
               <option>Standing</option>
               <option>Stumbling</option>
