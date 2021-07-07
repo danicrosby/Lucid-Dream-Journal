@@ -6,6 +6,7 @@ import {
   CardBody,
   CardText
 } from 'reactstrap';
+import info from '../styles/Assets/info.png';
 
 const easeSlow = css`
   transition: all 450ms ease-in-out;
@@ -18,18 +19,6 @@ const menuBtn = css`
   cursor: pointer;
   ${easeSlow};
   &.closer {
-  }
-`;
-
-const btnLine = css`
-  width: 16px;
-  height: 16px;
-  border-radius: 10px;
-  background-color: darkmagenta;
-  opacity: .6;
-  ${easeSlow};
-  &.closer {
-    background-color: grey;
   }
 `;
 
@@ -63,19 +52,15 @@ class Menu extends React.Component {
     const { isMenuOpen } = this.state;
     return (
       <React.Fragment>
-        <div
-          className={`${menuBtn} ${isMenuOpen ? 'closer' : null}`}
-          onClick={this.toggleMenu}
-        >
-          <div className={`${btnLine} ${isMenuOpen ? 'closer' : null}`} />
-
+        <div className={`${menuBtn} ${isMenuOpen ? 'closer' : null}`} onClick={this.toggleMenu}>
+          <div className={`${isMenuOpen ? 'closer' : null}`} />
+          <img src={info} height={20} width={20} />
         </div>
         <div className={`${menuOverlay} ${isMenuOpen ? 'show' : null}`}>
           <Card className="menu-card">
             <CardBody className="menu-card-body">
               <div className="top-text mb-4">
                 <h5 className="mb-3">Reality Checks</h5>
-                <i className="material-icons dream-type-icon mr-3"> cloud_queue </i>
               </div>
               <CardTitle><h6 className="mt-3">Reality Checks</h6></CardTitle>
               <CardText className="card-text">

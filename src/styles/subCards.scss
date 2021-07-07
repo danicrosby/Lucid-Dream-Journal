@@ -21,6 +21,7 @@
   padding: 2em;
   border-radius: 5px;
   font-size: 14px;
+  color: grey;
   line-height: 1.8em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -58,12 +59,4 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-}
-
-.ed {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 45em;
-  border-right: 2px solid grey;
 }
