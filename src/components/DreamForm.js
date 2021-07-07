@@ -4,8 +4,8 @@ import { format } from 'date-fns';
 import { enGB } from 'date-fns/locale';
 import { DatePicker } from 'react-nice-dates';
 import 'react-nice-dates/build/style.css';
-import Fab from '@material-ui/core/Fab';
-import CheckIcon from '@material-ui/icons/Check';
+// import Fab from '@material-ui/core/Fab';
+// import CheckIcon from '@material-ui/icons/Check';
 import {
   Form,
   FormGroup,
@@ -13,7 +13,8 @@ import {
   Card,
   CardHeader,
   CardBody,
-  CardFooter,
+  Button,
+  // CardFooter,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -91,12 +92,13 @@ const DreamForm = ({
   };
 
   return (
-    <Card className="add-dream-form">
-      <CardHeader><h5>{formTitle}</h5>
-        {xdate ? format(xdate, 'MMMM dd, yyyy', { locale: enGB }) : ''}
+    <Card className="form">
+        <Form id='form' autoComplete='off' onSubmit={handleSubmit}>
+      <CardHeader className="header">
+        <span>{formTitle}</span>
+        <span><Button className="material-icons submit-btn" type='submit'>done</Button></span>
       </CardHeader>
-      <Form id='add-dream-form' autoComplete='off' onSubmit={handleSubmit}>
-        <CardBody className="add-dream-card-body">
+        <CardBody className="form-body">
           <FormGroup>
             <Input
               className="input-text"
@@ -122,24 +124,24 @@ const DreamForm = ({
           </FormGroup>
 
           <FormGroup>
-              <DatePicker
-                className="input-text"
-                name="date"
-                date={xdate}
-                value={xdate ? format(xdate, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
-                onDateChange={xsetDate}
-                format='MMMM dd, yyyy'
-                locale={enGB}>
-                {({ inputProps, focused }) => (
-                  <input
+            <DatePicker
+              className="input-text"
+              name="date"
+              date={xdate}
+              value={xdate ? format(xdate, 'MMMM dd, yyyy', { locale: enGB }) : 'Enter Date'}
+              onDateChange={xsetDate}
+              format='MMMM dd, yyyy'
+              locale={enGB}>
+              {({ inputProps, focused }) => (
+                <input
                   id="date-input"
-                    className={`input${focused ? ' -focused' : ''}`}
-                    {...inputProps}
-                    placeholder='    Date'
-                  />
-                )}
-              </DatePicker>
-            </FormGroup>
+                  className={`input${focused ? ' -focused' : ''}`}
+                  {...inputProps}
+                  placeholder='    Date'
+                />
+              )}
+            </DatePicker>
+          </FormGroup>
 
           <FormGroup>
             <Input
@@ -508,9 +510,9 @@ const DreamForm = ({
             />
           </FormGroup>
         </CardBody>
-        <CardFooter>
-          <center><Fab className="add-btn-submit" size="small" type='submit'><CheckIcon /></Fab></center>
-        </CardFooter>
+        {/* <CardFooter className="footer">
+          <center></center>
+        </CardFooter> */}
       </Form>
     </Card>
   );

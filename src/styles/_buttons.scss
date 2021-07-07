@@ -3,10 +3,6 @@ a {
   text-decoration: none;
 }
 
-.fab-icons {
-  margin: 2em;
-}
-
 .expand-arrow-btn {
   height: 2em;
 }
@@ -36,3 +32,18 @@ a {
   border: transparent;
   width: 3em;
 }
+
+.submit-btn {
+  background-color: rgb(102, 161, 102);
+  margin: .2em;
+}
+
+.button {
+  background-color: rgb(163, 163, 163);
+  margin: .2em;
+  opacity: .7;
+}
+
+// .edit-icons {
+//   border: 1px solid green;
+// }

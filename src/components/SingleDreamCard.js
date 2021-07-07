@@ -8,12 +8,8 @@ import {
   CardHeader,
   CardText,
   CardBody,
-  CardFooter
+  Button
 } from 'reactstrap';
-import Fab from '@material-ui/core/Fab';
-import CheckIcon from '@material-ui/icons/Check';
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
 import Things from '../helpers/data/Things';
@@ -47,10 +43,15 @@ export default function SingleDreamCard({ dream }) {
   return (
     <div className="single-card-container">
       <Card className="single-dream-card">
-        <CardHeader className="single-card-header">
-            <h5>{singleDream.name}</h5>
+        <CardHeader className="header">
+          <span>{singleDream.name}</span>
+          <div className="edit-icons">
+          <span><Button className="material-icons button" onClick={() => handleClick('edit')}>edit</Button></span>
+          <span><Button className="material-icons button" onClick={() => handleClick('delete')}>delete</Button></span>
+          <span><a href="/dreams"><Button className="material-icons submit-btn">done</Button></a></span>
+          </div>
         </CardHeader>
-        <CardBody className="add-dream-card-body">
+        <CardBody className="body">
           <CardText><h6 className="mb-2 mt-2">Overview</h6></CardText>
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.dreamType.toLowerCase()} dream
@@ -85,11 +86,6 @@ export default function SingleDreamCard({ dream }) {
           <CardText><h6 className="mb-2 mt-2">Realizations or Follow Ups</h6></CardText>
           <CardText>{singleDream.addDetails}</CardText>
         </CardBody>
-        <CardFooter className="card-footer">
-          <Fab className="fab-icons" size="small" onClick={() => handleClick('edit')}><EditIcon /></Fab>
-          <a href="/dreams"><Fab className="fab-icons mr-3 ml-3" size="small"><CheckIcon /></Fab></a>
-          <Fab className="fab-icons" size="small" onClick={() => handleClick('delete')}><DeleteIcon /></Fab>
-        </CardFooter>
       </Card>
       <div className="mt-3">
         {

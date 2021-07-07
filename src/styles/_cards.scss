@@ -42,13 +42,26 @@ h2 {
   text-align: center;
 }
 
-.card-footer {
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 3em;
+  font-size: 1.8em;
+  color: #333;
+  background-color: transparent;
+  margin-bottom: 1em;
+}
+
+.footer {
   display: flex; 
   justify-content: center;
+  background-color: transparent;
+  padding-top: 2em;
 }
 
 .card-text {
   font-size: 14px;
+  color: grey;
 }
 
 .card-title {
@@ -60,15 +73,19 @@ h2 {
   display: flex; 
   justify-content: flex-start;
   width: 40em;
-  margin-top: 3em;
+  height: 55em;
+  margin-top: 1.5em;
+  margin-left: 5em;
   margin-right: 2em;
-  margin-left: 10em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-right: 1em;
+  border-color: transparent;
+  border-right: 2px solid grey;
 }
 
-.single-dream-card-body {
+.card-body {
   overflow: scroll;
   height: 40em;
+  padding-right: 3em;
 }
 
 .single-date {
