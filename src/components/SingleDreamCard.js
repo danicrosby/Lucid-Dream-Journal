@@ -51,8 +51,8 @@ export default function SingleDreamCard({ dream }) {
           <span><a href="/dreams"><Button className="material-icons submit-btn">done</Button></a></span>
           </div>
         </CardHeader>
-        <CardBody className="body">
-          <CardText><h6 className="mb-2 mt-2">Overview</h6></CardText>
+        <CardBody className="card-body">
+          <div><h6>Overview</h6></div>
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.dreamType.toLowerCase()} dream
             on {format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}, that made you feel {singleDream.emotion.toLowerCase()}.
@@ -61,9 +61,9 @@ export default function SingleDreamCard({ dream }) {
             The overall abmience of this {singleDream.dreamType.toLowerCase()} dream was {singleDream.color.toLowerCase()}.
             Does this sound accurate?
           </CardText>
-          <CardText><h6 className="mb-2 mt-2">Recorded Dream Story</h6></CardText>
+          <div><h6>Dream Story</h6></div>
           <CardText>{singleDream.entry}</CardText>
-          <CardText><h6 className="mb-2 mt-2">Keywords</h6></CardText>
+          <div><h6>Keywords</h6></div>
           <CardText className="keyword-bucket">
             <span>{singleDream.dreamType}</span>
             <span>{singleDream.emotion}</span>
@@ -74,16 +74,16 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.color}</span>
           </CardText>
 
-          <CardText><h6 className="mb-3 mt-3">Dream Interpretation</h6></CardText>
+          <div><h6 className="mb-3 mt-3">Dream Interpretation:</h6></div>
           <CardText><h6>{singleDream.dreamType}</h6>{singleDream.dreamType} {DreamType[singleDream.dreamType].interpretation}</CardText>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing.toLowerCase()} indicates {Things[singleDream.thing]}</CardText>
           <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place.toLowerCase()} indicates {Places[singleDream.place]}</CardText>
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion.toLowerCase()} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action.toLowerCase()} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color.toLowerCase()} symbolizes {Colors[singleDream.color]}</CardText>
-          <CardText><h6 className="mb-2 mt-2">Additional Details</h6></CardText>
+          <CardText><h6>Additional Details</h6></CardText>
           <CardText>{singleDream.realization}</CardText>
-          <CardText><h6 className="mb-2 mt-2">Realizations or Follow Ups</h6></CardText>
+          <CardText><h6>Realizations or Follow Ups</h6></CardText>
           <CardText>{singleDream.addDetails}</CardText>
         </CardBody>
       </Card>

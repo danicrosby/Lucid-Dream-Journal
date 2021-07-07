@@ -75,7 +75,7 @@ class Menu extends React.Component {
             <CardBody className="menu-card-body">
               <div className="top-text mb-4">
                 <h5 className="mb-3">Reality Checks</h5>
-                <i className="material-icons dream-type-icon"> toggle_on </i>
+                <i className="material-icons dream-type-icon mr-3"> cloud_queue </i>
               </div>
               <CardTitle><h6 className="mt-3">Reality Checks</h6></CardTitle>
               <CardText className="card-text">

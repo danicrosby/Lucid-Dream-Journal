@@ -77,7 +77,7 @@ class Menu extends React.Component {
             <CardBody className="menu-card-body">
               <div className="top-text mb-4">
                 <h5 className="mb-3">Lucid Dream Techniques</h5>
-                <i className="material-icons dream-type-icon"> visibility </i>
+                <i className="material-icons dream-type-icon mr-3"> visibility </i>
               </div>
               <CardTitle><h6>What are Lucid Dreams?</h6></CardTitle>
               <CardText className="card-text">

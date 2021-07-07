@@ -20,7 +20,6 @@ a {
 .auth-cloud {
   opacity: .9;
   font-size: 3em;
-  margin-right: 1em;
   animation-name: colors;
   animation-delay: .2s;
   animation-duration: 6s;
@@ -30,15 +29,44 @@ a {
 
 .auth-button {
   border: transparent;
+  text-decoration: none;
+}
+
+.in-auth-cloud {
+  opacity: .9;
+  font-size: 2em;
+  animation-name: colors;
+  animation-delay: .2s;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction:alternate-reverse;
 }
 
 .submit-btn {
+  display: flex;
+  justify-content: center;
   background-color: rgb(102, 161, 102);
   margin: .2em;
+  width: 2em;
+  height: 2em;
 }
 
 .button {
-  background-color: rgb(163, 163, 163);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
   margin: .2em;
+  width: 2em;
+  height: 2em;
+  background-color: rgb(163, 163, 163);;
   opacity: .7;
+}
+
+.edit-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.edit-icons a{
+  text-decoration: none;
 }

@@ -35,7 +35,7 @@ const NavBar = ({ user }) => {
           </Nav>
             { user
               ? <Button className="auth-btn mr-2" color='transparent' onClick={signOutUser}><span className="material-icons auth-cloud">cloud</span></Button>
-              : <Button className="auth-btn mr-2" color='transparent' onClick={signInUser}><span className="material-icons auth-cloud">cloud</span></Button>
+              : <Button className="auth-btn mr-2" color='transparent' onClick={signInUser}><span className="material-icons in-auth-cloud">input</span></Button>
             }
         </Collapse>
       </Navbar>

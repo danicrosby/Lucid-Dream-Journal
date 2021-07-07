@@ -7,7 +7,7 @@ function AddDream({ setDreams }) {
     <>
       <div className="dream-form-container">
         <DreamForm
-          formTitle='Add Dream'
+          formTitle='Record Dream'
           setDreams={setDreams}
         />
       </div>
