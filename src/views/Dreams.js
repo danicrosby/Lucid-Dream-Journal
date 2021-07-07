@@ -17,7 +17,7 @@ function Dreams({ user }) {
     <>
       <center>
         <Link className="nav-link add-dream-btn-link" to="/add-dream">
-          <Fab className="add-dream-btn" color="dark"><AddIcon style={{ color: 'purple' }} /></Fab>
+          <Fab className="add-dream-btn" size="small" color="dark"><AddIcon style={{ color: 'purple' }} /></Fab>
         </Link>
       </center>
       <div className="dream-card-container">

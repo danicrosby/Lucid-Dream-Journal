@@ -218,7 +218,6 @@ const DreamForm = ({
               <option>Revenge</option>
               <option>Sad</option>
               <option>Scared</option>
-              <option>Terror</option>
               <option>Terrified</option>
               <option>Trapped</option>
 

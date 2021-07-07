@@ -38,7 +38,6 @@ const Emotions = {
   Sad: 'you need to learn from your disappointments and just be happy. Try not to dwell on the negative. The dream may be a reflection of how you are feeling in your waking life.',
   Scared: 'you are experiencing self-doubt and feelings of incompetence in your waking life. You may be feeling a lack of control. Anger often masquerades as fear, so also consider issues about which you are angry about in your waking life.',
   Terrified: ' unresolved fears or doubts that needs to be confronted.',
-  Terror: ' unresolved fears or doubts that needs to be confronted.',
   Trapped: 'some aspect of yourself needs to be expressed. It may point to some unused talent or knowledge. If you dont know the person who is trapped, then it symbolizes something you have repressed and needs to be expressed. To dream that you are trapped or caught in a trap suggests that you are feeling confined and restricted in your job, career, health, or a personal relationship. You may be in a rut and are tired of the same daily monotony.',
 };
 

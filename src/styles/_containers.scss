@@ -18,11 +18,11 @@
 
 .dream-card-container {
   display: flex;
-  justify-content: first baseline;
-  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
-  margin-left: 5em;
-  margin-right: 5em;
+  border-top: 2px solid rgb(199, 199, 199);
+  padding-top: 2em;
+  background-color: rgb(247, 247, 247);
   
 }
 
