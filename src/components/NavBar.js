@@ -32,16 +32,11 @@ const NavBar = ({ user }) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ml-auto" navbar>
             { user && authenticated() }
-            {
-              user !== null && <NavItem>
-                {
-                  user
-                    ? <Button className="auth-btn mr-2" color='transparent' onClick={signOutUser}><span className="material-icons auth-cloud">cloud</span></Button>
-                    : <Button className="auth-btn mr-2" color='transparent' onClick={signInUser}><span className="material-icons auth-cloud">cloud</span></Button>
-                }
-              </NavItem>
-            }
           </Nav>
+            { user
+              ? <Button className="auth-btn mr-2" color='transparent' onClick={signOutUser}><span className="material-icons auth-cloud">cloud</span></Button>
+              : <Button className="auth-btn mr-2" color='transparent' onClick={signInUser}><span className="material-icons auth-cloud">cloud</span></Button>
+            }
         </Collapse>
       </Navbar>
     </div>

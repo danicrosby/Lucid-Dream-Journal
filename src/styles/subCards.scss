@@ -1,33 +1,18 @@
-.sub-card {
-  background-color: rgb(233, 232, 232);
-  height: 80vmin;
-  padding: 1em;
-  margin: 1em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.sub-card-body {
-  text-align: left;
-  background-color: white;
-  height: 12em;
-  padding: 2em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
 .sub-top-text {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid grey;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .education-card {
   width: 30em;
   background-color: #f0f0f1;
-  height: 14em;
+  height: 16em;
   padding: .5em;
   border-radius: 5px;
-  margin: 3em;
+  // margin: 3em;
+  padding-bottom: 2em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -35,12 +20,14 @@
   background-color: white;
   padding: 2em;
   border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.8em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .menu-card {
   width: 45em;
-  margin-top: 9em;
+  margin-top: 11em;
   margin-left: 5em;
 }
 
@@ -71,4 +58,12 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.ed {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 45em;
+  border-right: 2px solid grey;
 }

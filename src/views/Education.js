@@ -14,6 +14,7 @@ function Education() {
   return (
     <div className="education-sub-container">
       <div className="education-card-container">
+        <div className="ed">
         <Card className="education-card">
           <CardBody className="education-card-body">
             <div className="sub-top-text">
@@ -64,6 +65,7 @@ function Education() {
             </form>
           </CardBody>
         </Card>
+        </div>
       </div>
     </div>
   );

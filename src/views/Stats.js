@@ -20,7 +20,7 @@ function Stats() {
           </CardBody>
         </Card>
 
-        <Card className="stats-card ml-5 mr-5">
+        <Card className="stats-card ml-4 mr-4">
         <CardText>Recurring Dream Stats</CardText>
           <CardBody className="stats-card-body">
           <CardImg top width="100%" src={Recurring} />
