@@ -70,7 +70,7 @@ h2 {
   font-weight: bolder;
 }
 
-.single-dream-card {
+.single-card {
   display: flex; 
   justify-content: flex-start;
   width: 40em;
@@ -96,4 +96,64 @@ h2 {
 
 h6 {
   color: rgb(88, 88, 88);
+}
+
+.sub-top-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+
+.stats-card {
+  width: 30em;
+  background-color: #f0f0f1;
+  height: 16em;
+  padding: .5em;
+  border-radius: 5px;
+  margin-top: 10em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stats-card-body {
+  background-color: white;
+  padding: 2em;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.check-form {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em 2em;
+  flex-direction: column;
+}
+
+.education-card {
+  display: flex; 
+  justify-content: flex-start;
+  width: 55em;
+  margin-top: 1.5em;
+  margin-left: 5em;
+  margin-right: 2em;
+  padding-right: 1em;
+  border-color: transparent;
+  border-right: 2px solid grey;
+
+}
+
+.education-card-body {
+  overflow: scroll;
+  height: 40em;
+  padding-right: 3em;
+}
+
+.ed-header {
+  display: flex;
+  justify-content: center;
+  height: 3em;
+  width: 95%;
+  font-size: 1.8em;
+  color: rgb(88, 88, 88);
+  background-color: transparent;
+  margin-bottom: 1em;
 }

@@ -42,7 +42,7 @@ export default function SingleDreamCard({ dream }) {
 
   return (
     <div className="single-card-container">
-      <Card className="single-dream-card">
+      <Card className="single-card">
         <CardHeader className="header">
           <span>{singleDream.name}</span>
           <div className="edit-icons">
