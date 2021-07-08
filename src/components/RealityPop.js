@@ -25,16 +25,16 @@ const RealityPop = (props) => {
 
   return (
     <div>
-      <Button className="material-icons" color="transparent" onClick={toggle}>info{buttonLabel}</Button>
+      <Button className="material-icons button" onClick={toggle}>info{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
+        <ModalHeader toggle={toggle}>Are You Dreaming?</ModalHeader>
         <ModalBody>
         <Form>
           <FormGroup check className="check-form">
-            <Label check><Input type="checkbox" />{' '} Check me out </Label>
-            <Label check><Input type="checkbox" />{' '} Check me out </Label>
-            <Label check><Input type="checkbox" />{' '} Check me out </Label>
-            <Label check><Input type="checkbox" />{' '} Check me out </Label>
+            <Label check><Input type="checkbox" />{' '} Mirrors. Check your reflection to see if it looks normal.</Label>
+            <Label check><Input type="checkbox" />{' '} Solid objects. Push your hand against a wall or table and see if it goes through.</Label>
+            <Label check><Input type="checkbox" />{' '} Hands. Look at your hands. Do they look normal? </Label>
+            <Label check><Input type="checkbox" />{' '} Breathing. If you can still breathe, you’re dreaming. </Label>
           </FormGroup>
         </Form>        </ModalBody>
         <ModalFooter>

@@ -19,7 +19,7 @@ const NavBar = ({ user }) => {
   const authenticated = () => (
     <>
       <NavItem><Link className="nav-link links" to="/dreams">Dreams</Link></NavItem>
-      <NavItem><Link className="nav-link ed-link" to="/education">Education</Link></NavItem>
+      <NavItem><Link className="nav-link ed-link" to="/reality-checks">Education</Link></NavItem>
       <NavItem><Link className="nav-link stats-link" to="/stats">Stats</Link></NavItem>
     </>
   );

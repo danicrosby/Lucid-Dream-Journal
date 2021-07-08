@@ -5,8 +5,9 @@ import AddDream from '../views/AddDream';
 import Dreams from '../views/Dreams';
 import SingleDream from '../views/SingleDream';
 import Welcome from '../views/Welcome';
-import Goodbye from '../views/Goodbye';
-import Education from '../views/Education';
+import Reality from '../views/Reality';
+import Lucid from '../views/Lucid';
+import Calm from '../views/Calm';
 import Stats from '../views/Stats';
 
 export default function Routes({ user, setDreams }) {
@@ -19,13 +20,18 @@ export default function Routes({ user, setDreams }) {
           user={user} />} />
 
         <Route
-          exact path="/"
-          component={() => <Goodbye
+          path="/reality-checks"
+          component={() => <Reality
           user={user} />} />
 
         <Route
-          path="/education"
-          component={() => <Education
+          path="/lucid-checks"
+          component={() => <Lucid
+          user={user} />} />
+
+        <Route
+          path="/calm-checks"
+          component={() => <Calm
           user={user} />} />
 
         <Route

@@ -131,13 +131,9 @@ h6 {
 .education-card {
   display: flex; 
   justify-content: flex-start;
-  width: 55em;
+  width: 80%;
   margin-top: 1.5em;
-  margin-left: 5em;
-  margin-right: 2em;
-  padding-right: 1em;
   border-color: transparent;
-  border-right: 2px solid grey;
 
 }
 
@@ -149,11 +145,16 @@ h6 {
 
 .ed-header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 3em;
-  width: 95%;
+  width: 100%;
   font-size: 1.8em;
   color: rgb(88, 88, 88);
   background-color: transparent;
   margin-bottom: 1em;
+}
+
+.ed-icon {
+  display: flex;
+  justify-content: center;
 }

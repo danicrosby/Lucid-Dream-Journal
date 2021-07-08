@@ -25,7 +25,7 @@ const LucidPop = (props) => {
 
   return (
     <div>
-      <Button className="material-icons" color="transparent" onClick={toggle}>info{buttonLabel}</Button>
+      <Button className="material-icons button" onClick={toggle}>info{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Modal title</ModalHeader>
         <ModalBody>
