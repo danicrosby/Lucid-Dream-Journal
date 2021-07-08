@@ -3,7 +3,7 @@
   background-color: #f0f0f1;
   height: 11em;
   padding: .5em;
-  margin: .6em;
+  margin: 1em;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   opacity: .8;
@@ -102,23 +102,6 @@ h6 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5em;
-}
-
-.stats-card {
-  width: 30em;
-  background-color: #f0f0f1;
-  height: 16em;
-  padding: .5em;
-  border-radius: 5px;
-  margin-top: 10em;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.stats-card-body {
-  background-color: white;
-  padding: 2em;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .education-card {

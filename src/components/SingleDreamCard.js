@@ -61,7 +61,7 @@ export default function SingleDreamCard({ dream }) {
             The overall abmience of this {singleDream.dreamType.toLowerCase()} dream was {singleDream.color.toLowerCase()}.
             Does this sound accurate?
           </CardText>
-          <div><h6>Dream Story</h6></div>
+          <div><h6>Recorded Story</h6></div>
           <CardText>{singleDream.entry}</CardText>
           <div><h6>Keywords</h6></div>
           <CardText className="keyword-bucket">
@@ -74,7 +74,7 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.color}</span>
           </CardText>
 
-          <div><h6 className="mb-3 mt-3">Dream Interpretation:</h6></div>
+          <div><h6 className="mb-3 mt-4">Dream Interpretation</h6></div>
           <CardText><h6>{singleDream.dreamType}</h6>{singleDream.dreamType} {DreamType[singleDream.dreamType].interpretation}</CardText>
           <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing.toLowerCase()} indicates {Things[singleDream.thing]}</CardText>
           <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place.toLowerCase()} indicates {Places[singleDream.place]}</CardText>

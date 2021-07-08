@@ -5,25 +5,23 @@
   border-top: 2px solid rgb(199, 199, 199);
   padding-top: 2em;
   background-color: rgb(247, 247, 247);
+  height: 100vh;
 }
 
 .dream-form-container {
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 
 .single-card-container {
   display: flex;
   justify-content: flex-start;
-  height: 53em;
+  height: 100vh;
 }
 
 .education-card-container {
   display: flex;
   justify-content: center;
-}
-
-.stats-card-container {
-  display: flex;
-  justify-content: center;
+  height: 100vh;
 }
