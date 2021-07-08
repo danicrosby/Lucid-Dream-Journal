@@ -25,16 +25,19 @@ const RealityPop = (props) => {
 
   return (
     <div>
-      <Button className="material-icons button" onClick={toggle}>info{buttonLabel}</Button>
+      <Button className="material-icons button" onClick={toggle}>add_circle{buttonLabel}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Are You Dreaming?</ModalHeader>
+        <ModalHeader toggle={toggle}>Is This Really Happening?</ModalHeader>
         <ModalBody>
         <Form>
           <FormGroup check className="check-form">
-            <Label check><Input type="checkbox" />{' '} Mirrors. Check your reflection to see if it looks normal.</Label>
-            <Label check><Input type="checkbox" />{' '} Solid objects. Push your hand against a wall or table and see if it goes through.</Label>
-            <Label check><Input type="checkbox" />{' '} Hands. Look at your hands. Do they look normal? </Label>
-            <Label check><Input type="checkbox" />{' '} Breathing. If you can still breathe, you’re dreaming. </Label>
+            <Label check><Input type="checkbox" />{' '} Mirrors. Does your reflection looks normal? </Label>
+            <Label check><Input type="checkbox" />{' '} Objects. Can you push hand through a solid surface? </Label>
+            <Label check><Input type="checkbox" />{' '} Hands. Do your hands and feet look normal? </Label>
+            <Label check><Input type="checkbox" />{' '} Breathe. Can you hold your nose and mouth shut and breathe? </Label>
+            <Label check><Input type="checkbox" />{' '} Fly. Can you will yourself to fly or hover above the ground? </Label>
+            <Label check><Input type="checkbox" />{' '} Read. Can you read a sentence twice without it changing? </Label>
+            <Label check><Input type="checkbox" />{' '} Time. Can you read a clock face or digital watch? </Label>
           </FormGroup>
         </Form>        </ModalBody>
         <ModalFooter>

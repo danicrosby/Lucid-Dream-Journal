@@ -18,24 +18,24 @@ const NavBar = ({ user }) => {
 
   const authenticated = () => (
     <>
-      <NavItem><Link className="nav-link links" to="/dreams">Dreams</Link></NavItem>
-      <NavItem><Link className="nav-link ed-link" to="/reality-checks">Education</Link></NavItem>
-      <NavItem><Link className="nav-link stats-link" to="/stats">Stats</Link></NavItem>
+      <NavItem><Link className='nav-link links' to='/dreams'>Dreams</Link></NavItem>
+      <NavItem><Link className='nav-link ed-link' to='/reality-checks'>Checks</Link></NavItem>
+      <NavItem><Link className='nav-link stats-link' to='/stats'>Stats</Link></NavItem>
     </>
   );
 
   return (
     <div>
-      <Navbar className="navbar" color="dark" expand="md">
-        <Link className="navbar-brand" to="/">Lucid.</Link>
+      <Navbar className='navbar' color='dark' expand='md'>
+        <Link className='navbar-brand' to='/'>Lucid.</Link>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
+          <Nav className='ml-auto' navbar>
             { user && authenticated() }
           </Nav>
             { user
-              ? <Button className="auth-btn mr-2" color='transparent' onClick={signOutUser}><span className="material-icons auth-cloud">cloud</span></Button>
-              : <Button className="auth-btn mr-2" color='transparent' onClick={signInUser}><span className="material-icons in-auth-cloud">input</span></Button>
+              ? <Button className='auth-btn mr-4' color='transparent' onClick={signOutUser}><span className='material-icons auth-cloud'>cloud</span></Button>
+              : <Button className='auth-btn mr-4' color='transparent' onClick={signInUser}><span className='material-icons in-auth-cloud'>input</span></Button>
             }
         </Collapse>
       </Navbar>
