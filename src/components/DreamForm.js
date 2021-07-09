@@ -4,8 +4,6 @@ import { format } from 'date-fns';
 import { enGB } from 'date-fns/locale';
 import { DatePicker } from 'react-nice-dates';
 import 'react-nice-dates/build/style.css';
-// import Fab from '@material-ui/core/Fab';
-// import CheckIcon from '@material-ui/icons/Check';
 import {
   Form,
   FormGroup,
@@ -14,7 +12,6 @@ import {
   CardHeader,
   CardBody,
   Button,
-  // CardFooter,
 } from 'reactstrap';
 import PropTypes from 'prop-types';
 import { addDream, updateDream } from '../helpers/data/DreamData';
@@ -30,7 +27,7 @@ const DreamForm = ({
   emotion,
   people,
   place,
-  thing,
+  object,
   action,
   color,
   addDetails,
@@ -46,7 +43,7 @@ const DreamForm = ({
     emotion: emotion || '',
     people: people || '',
     place: place || '',
-    thing: thing || '',
+    object: object || '',
     action: action || '',
     color: color || '',
     addDetails: addDetails || '',
@@ -82,7 +79,7 @@ const DreamForm = ({
         emotion: '',
         people: '',
         place: '',
-        thing: '',
+        object: '',
         color: '',
         addDetails: '',
         realization: '',
@@ -93,11 +90,11 @@ const DreamForm = ({
 
   return (
     <Card className="form">
-        <Form id='form' autoComplete='off' onSubmit={handleSubmit}>
-      <CardHeader className="header">
-        <span>{formTitle}</span>
-        <span><Button className="material-icons submit-btn" type='submit'>done</Button></span>
-      </CardHeader>
+      <Form id='form' autoComplete='off' onSubmit={handleSubmit}>
+        <CardHeader className="header">
+          <span>{formTitle}</span>
+          <span><Button className="material-icons submit-btn" type='submit'>done</Button></span>
+        </CardHeader>
         <CardBody className="form-body">
           <FormGroup>
             <Input
@@ -152,23 +149,23 @@ const DreamForm = ({
               placeholder='Dream Type'
               onChange={handleInputChange}>
               <option>Dream Type</option>
+              <option>Angry</option>
               <option>Daydreams</option>
               <option>Bliss</option>
               <option>Epic</option>
-              <option>Good</option>
               <option>False Awakening</option>
               <option>False Awakening Loop</option>
               <option>Frustrating</option>
-              <option>Angry</option>
               <option>Funny</option>
+              <option>Good</option>
               <option>Lucid</option>
               <option>Neutral</option>
               <option>Nightmare</option>
               <option>Omnious</option>
               <option>Premonition</option>
               <option>Realism and Non-Realism</option>
-              <option>Stress</option>
               <option>Recurring</option>
+              <option>Stress</option>
               <option>Unsettling</option>
             </Input>
           </FormGroup>
@@ -193,8 +190,8 @@ const DreamForm = ({
               <option>Confused</option>
               <option>Depressed</option>
               <option>Despair</option>
+              <option>Disapointment</option>
               <option>Dishonest</option>
-              <option>Dissapointment</option>
               <option>Ecstasy</option>
               <option>Elated</option>
               <option>Embarrassed</option>
@@ -210,7 +207,7 @@ const DreamForm = ({
               <option>Neutral</option>
               <option>Pain</option>
               <option>Panic</option>
-              <option>Parranoid</option>
+              <option>Paranoid</option>
               <option>Peace</option>
               <option>Pride</option>
               <option>Rage</option>
@@ -220,7 +217,6 @@ const DreamForm = ({
               <option>Scared</option>
               <option>Terrified</option>
               <option>Trapped</option>
-
             </Input>
           </FormGroup>
 
@@ -254,7 +250,6 @@ const DreamForm = ({
               <option>Beach</option>
               <option>Bus</option>
               <option>Building</option>
-              <option>Bathroom</option>
               <option>Campus</option>
               <option>Church</option>
               <option>Classroom</option>
@@ -276,18 +271,16 @@ const DreamForm = ({
               <option>Outside</option>
               <option>Post-Apocalypse</option>
               <option>River</option>
-              <option>Rock</option>
-              <option>Rocks</option>
               <option>Road</option>
               <option>Salon</option>
               <option>Ship</option>
+              <option>Skatepark</option>
               <option>Space</option>
               <option>Stairs</option>
               <option>Staircase</option>
               <option>Store</option>
               <option>Sun</option>
               <option>Titanic</option>
-              <option>Toilet</option>
               <option>Trail</option>
               <option>Underwater</option>
               <option>University</option>
@@ -299,13 +292,13 @@ const DreamForm = ({
           <FormGroup>
             <Input
               className="input-text"
-              name='thing'
-              id='thing'
-              value={dream.thing}
+              name='object'
+              id='object'
+              value={dream.object}
               type='select'
-              placeholder='Thing'
+              placeholder='Object'
               onChange={handleInputChange}>
-              <option>Thing</option>
+              <option>Object</option>
               <option>None</option>
               <option>Abyss</option>
               <option>Afterlife</option>
@@ -328,9 +321,8 @@ const DreamForm = ({
               <option>Bird</option>
               <option>Bridge</option>
               <option>Building</option>
-              <option>Buzzer</option>
               <option>Bus</option>
-              <option>Bridge</option>
+              <option>Buzzer</option>
               <option>Campus</option>
               <option>Canoe</option>
               <option>Car</option>
@@ -353,25 +345,27 @@ const DreamForm = ({
               <option>Graduation</option>
               <option>Grass</option>
               <option>Gun</option>
-              <option>Horse</option>
               <option>Hair</option>
+              <option>Horse</option>
               <option>Hills</option>
               <option>Homework</option>
               <option>House</option>
               <option>Hut</option>
               <option>Ledge</option>
               <option>Library</option>
-              <option>Mall</option>
-              <option>Obstacle</option>
-              <option>Ocean</option>
-              <option>Projector</option>
-              <option>Path</option>
               <option>Machine</option>
+              <option>Mall</option>
               <option>Monolith</option>
               <option>Mountain</option>
+              <option>Obstacle</option>
+              <option>Ocean</option>
+              <option>Path</option>
+              <option>Projector</option>
               <option>Raptor</option>
-              <option>River</option>
               <option>Road</option>
+              <option>Rock</option>
+              <option>Rocks</option>
+              <option>River</option>
               <option>Robot</option>
               <option>Shark</option>
               <option>Ship</option>
@@ -384,13 +378,13 @@ const DreamForm = ({
               <option>Sun</option>
               <option>Teacher</option>
               <option>Teeth</option>
-              <option>Titanic</option>
               <option>Toilet</option>
+              <option>Tiger</option>
+              <option>Titanic</option>
               <option>Tooth</option>
               <option>Trail</option>
               <option>Tsumani</option>
               <option>Turkey</option>
-              <option>Tiger</option>
               <option>Underwear</option>
               <option>Wall</option>
               <option>Water</option>
@@ -409,9 +403,8 @@ const DreamForm = ({
               placeholder='Action'
               onChange={handleInputChange}>
               <option>Action</option>
-              <option>Balancing</option>
-              <option>Abandoned</option>
               <option>None</option>
+              <option>Balancing</option>
               <option>Going To The Bathroom</option>
               <option>Bitten</option>
               <option>Breathless</option>
@@ -423,19 +416,19 @@ const DreamForm = ({
               <option>Exiting</option>
               <option>Falling</option>
               <option>Floating</option>
+              <option>Flying</option>
               <option>Fighting</option>
               <option>Hiking</option>
-              <option>Flying</option>
               <option>Looting</option>
               <option>Out Of Breath</option>
               <option>Panicking</option>
               <option>Playing</option>
               <option>Naked</option>
-              <option>Skating</option>
               <option>Reaching</option>
               <option>Running</option>
               <option>Searching</option>
               <option>Shopping</option>
+              <option>Skating</option>
               <option>Sleeping</option>
               <option>Standing</option>
               <option>Stumbling</option>
@@ -481,7 +474,6 @@ const DreamForm = ({
               <option>Red</option>
               <option>White</option>
               <option>Yellow</option>
-
             </Input>
           </FormGroup>
 
@@ -493,8 +485,7 @@ const DreamForm = ({
               value={dream.addDetails}
               type='text'
               placeholder='Additional Details'
-              onChange={handleInputChange}
-            />
+              onChange={handleInputChange} />
           </FormGroup>
 
           <FormGroup>
@@ -505,13 +496,9 @@ const DreamForm = ({
               value={dream.realization}
               type='text'
               placeholder='Realization'
-              onChange={handleInputChange}
-            />
+              onChange={handleInputChange} />
           </FormGroup>
         </CardBody>
-        {/* <CardFooter className="footer">
-          <center></center>
-        </CardFooter> */}
       </Form>
     </Card>
   );
@@ -529,7 +516,7 @@ DreamForm.propTypes = {
   emotion: PropTypes.string,
   people: PropTypes.string,
   place: PropTypes.string,
-  thing: PropTypes.string,
+  object: PropTypes.string,
   action: PropTypes.string,
   color: PropTypes.string,
   addDetails: PropTypes.string,

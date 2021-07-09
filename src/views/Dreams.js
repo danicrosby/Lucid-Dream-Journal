@@ -32,7 +32,7 @@ function Dreams({ user }) {
             emotion={dreamInfo.emotion}
             people={dreamInfo.people}
             place={dreamInfo.place}
-            thing={dreamInfo.thing}
+            object={dreamInfo.object}
             action={dreamInfo.action}
             color={dreamInfo.color}
             addDetails={dreamInfo.addDetails}

@@ -1,5 +1,4 @@
 /* eslint react/no-multi-comp: 0, react/prop-types: 0 */
-
 import React, { useState } from 'react';
 import {
   Modal,
@@ -44,8 +43,8 @@ const CalmPop = (props) => {
           </Form>
         </ModalBody>
         <ModalFooter>
-        <span><a href="https://open.spotify.com/track/1pWo4khJ3LRaiY6puo4tmU?si=4771091ef8d54aa3" target="_blank" rel="noopener noreferrer">
-          <Button className="material-icons button">headphones</Button></a></span>
+          <span><a href="https://open.spotify.com/track/1pWo4khJ3LRaiY6puo4tmU?si=4771091ef8d54aa3" target="_blank" rel="noopener noreferrer">
+            <Button className="material-icons button">headphones</Button></a></span>
           <Button className="material-icons submit-btn" onClick={toggle}>done</Button>{' '}
         </ModalFooter>
       </Modal>

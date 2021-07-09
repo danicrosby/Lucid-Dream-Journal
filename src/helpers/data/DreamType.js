@@ -62,15 +62,15 @@ const DreamType = {
     icon: <img src={lucid} height={25} width={25} />,
     color: '#6C657B'
   },
-  Nightmare: {
-    interpretation: 'dreams are disturbing dreams that causes you to wake up feeling anxious and frightened. Nightmares may be a response to real life trauma and situations. These type of nightmares fall under a special category called Post-traumatic Stress Nightmare (PSN). Nightmares may also occur because you have ignored or refused to accept a particular life situation. Research shows that most people who have regular nightmares have a family history of psychiatric problems, are involved in a rocky relationship or have had bad drug experiences. These people may have also contemplated suicide.  Nightmares are an indication of a fear that needs to be acknowledged and confronted. It is a way for the subconscious to wake up and take notice. "Pay attention!"',
-    icon: <img src={nightmare} height={25} width={25} />,
-    color: '#333'
-  },
   Neutral: {
     interpretation: 'dreams may be a way for your unconscious to get your attention about a situation or problem that you have been avoiding. It is time to take notice and confront the issue! Sometimes nightmares serve to warn you about your health or an accident. However, often times nightmares stem from a deeper level indicating that something is troubling you from within your subconscious.  Discussing, analyzing, and understanding your nightmares can lead to a solution to some problem, internal conflict or personal difficulty.',
     icon: <img src={good} height={25} width={25} />,
     color: '#D2D2DA'
+  },
+  Nightmare: {
+    interpretation: 'dreams are disturbing dreams that causes you to wake up feeling anxious and frightened. Nightmares may be a response to real life trauma and situations. These type of nightmares fall under a special category called Post-traumatic Stress Nightmare (PSN). Nightmares may also occur because you have ignored or refused to accept a particular life situation. Research shows that most people who have regular nightmares have a family history of psychiatric problems, are involved in a rocky relationship or have had bad drug experiences. These people may have also contemplated suicide.  Nightmares are an indication of a fear that needs to be acknowledged and confronted. It is a way for the subconscious to wake up and take notice. "Pay attention!"',
+    icon: <img src={nightmare} height={25} width={25} />,
+    color: '#333'
   },
   Omnious: {
     interpretation: 'dreams reflect your concerns, fears and/or anxieties about the future. You are worried about some outcome in your waking life and want to control what is happening around you.',

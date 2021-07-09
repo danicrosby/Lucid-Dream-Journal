@@ -25,23 +25,27 @@ function Stats2() {
           </CardHeader>
 
           <CardTitle><h6 className="mt-4">Dream Type</h6></CardTitle>
-          <CardText className="card-text">
+          <CardText className="card-text-stat">
             Dream Types are associated with and give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
             to fulfill your fantasies, or to solve a problem in your waking life.
-            Dream Types are associated with and give you the ability to control your own dreams and steer them toward the direction you want.
-            <CardImg top width="100%" src={DreamTypeStats} />
+            Dream Types are associated with and give you the ability to control your own dreams and steer them toward the direction you want. Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
+            to fulfill your fantasies, or to solve a problem in your waking life.Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
+            to fulfill your fantasies, or to solve a problem in your waking life.
+            <CardImg src={DreamTypeStats} />
           </CardText>
           <CardTitle><h6 className="mt-4">Colors</h6></CardTitle>
           <CardText>
             Colors in dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
             to fulfill your fantasies, or to solve a problem in your waking life. Dream Types are associated with and give you the ability to control your own dreams and steer them toward the direction you want.
-            Dream Types are associated with and give you the ability to control your own dreams and steer them toward the direction you want.
+            Dream Types are associated with and give you the ability to control your own dreams and steer them toward the direction you want. Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
+            to fulfill your fantasies, or to solve a problem in your waking life.
             <CardImg top width="100%" src={ColorStats} />
           </CardText>
           <CardTitle><h6 className="mt-4">Recurring Dreams</h6></CardTitle>
           <CardText>
             Recurring dreams give you the ability to control your own dreams and Dream Types are associated with and give you the ability to control your own dreams and steer them toward the direction you want.
             steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
+            to fulfill your fantasies, or to solve a problem in your waking life. Lucid dreams give you the ability to control your own dreams and steer them toward the direction you want. In the lucid state, you are more willing to confront threats and as a result, become more self confident. When you achieve lucidity, you can use it as a tool to improve your sports game, to rehearse for a speech,
             to fulfill your fantasies, or to solve a problem in your waking life.
             <CardImg top width="100%" src={Recurring} />
           </CardText>

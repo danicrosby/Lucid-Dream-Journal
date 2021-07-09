@@ -12,7 +12,7 @@ import {
 } from 'reactstrap';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
-import Things from '../helpers/data/Things';
+import Objects from '../helpers/data/Objects';
 import Emotions from '../helpers/data/Emotions';
 import Colors from '../helpers/data/Colors';
 import Places from '../helpers/data/Places';
@@ -57,7 +57,7 @@ export default function SingleDreamCard({ dream }) {
             Hello, Dani. It looks like you had a {singleDream.dreamType.toLowerCase()} dream
             on {format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}, that made you feel {singleDream.emotion.toLowerCase()}.
             You dreamt of {singleDream.people}, the setting was {singleDream.place.toLowerCase()}.
-            You remembered a few objects, more specifically a {singleDream.thing.toLowerCase()}.
+            You remembered a few objects, more specifically a {singleDream.object.toLowerCase()}.
             The overall abmience of this {singleDream.dreamType.toLowerCase()} dream was {singleDream.color.toLowerCase()}.
             Does this sound accurate?
           </CardText>
@@ -69,21 +69,21 @@ export default function SingleDreamCard({ dream }) {
             <span>{singleDream.emotion}</span>
             <span>{singleDream.people}</span>
             <span>{singleDream.place}</span>
-            <span>{singleDream.thing}</span>
+            <span>{singleDream.object}</span>
             <span>{singleDream.action}</span>
             <span>{singleDream.color}</span>
           </CardText>
 
           <div><h6 className="mb-3 mt-4">Dream Interpretation</h6></div>
           <CardText><h6>{singleDream.dreamType}</h6>{singleDream.dreamType} {DreamType[singleDream.dreamType].interpretation}</CardText>
-          <CardText><h6>{singleDream.thing}</h6>To dream of a {singleDream.thing.toLowerCase()} indicates {Things[singleDream.thing]}</CardText>
+          <CardText><h6>{singleDream.object}</h6>To dream of a {singleDream.object.toLowerCase()} indicates {Objects[singleDream.object]}</CardText>
           <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place.toLowerCase()} indicates {Places[singleDream.place]}</CardText>
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion.toLowerCase()} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action.toLowerCase()} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color.toLowerCase()} symbolizes {Colors[singleDream.color]}</CardText>
           <CardText><h6>Additional Details</h6></CardText>
           <CardText>{singleDream.realization}</CardText>
-          <CardText><h6>Realizations or Follow Ups</h6></CardText>
+          <CardText><h6>Post Interpretation Realizations</h6></CardText>
           <CardText>{singleDream.addDetails}</CardText>
         </CardBody>
       </Card>
@@ -101,7 +101,7 @@ export default function SingleDreamCard({ dream }) {
             people={singleDream.people}
             place={singleDream.place}
             action={singleDream.action}
-            thing={singleDream.thing}
+            object={singleDream.object}
             color={singleDream.color}
             addDetails={singleDream.addDetails}
             realization={singleDream.realization}

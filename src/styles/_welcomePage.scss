@@ -23,6 +23,7 @@
   justify-content: center;
   flex-direction: column;
   position: absolute;
+  color: grey;
   margin-left: -3em;
   animation-name: fadein;
   animation-fill-mode: backwards;
@@ -41,7 +42,7 @@
   animation-duration: 3s;
   animation-delay: .1s;
   font-family: 'Parisienne', cursive;
-  font-family: 'Shadows Into Light Two', cursive;  color: grey;
+  font-family: 'Shadows Into Light Two', cursive;  color: lightgrey;
 }
 
 #cloud {
