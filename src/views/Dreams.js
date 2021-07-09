@@ -36,6 +36,7 @@ function Dreams({ user }) {
             action={dreamInfo.action}
             color={dreamInfo.color}
             addDetails={dreamInfo.addDetails}
+            allTags={dreamInfo.allTags}
             realization={dreamInfo.realization}
             setDreams={setDreams}
             user={user}

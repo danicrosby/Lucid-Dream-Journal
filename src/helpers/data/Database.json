@@ -3,6 +3,7 @@
     "-MbNM2LWi7qwre5vEbDI" : {
       "action" : "Out Of Breath",
       "addDetails" : "",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-06-01T05:00:00.000Z",
       "dreamType" : "Premonition",
@@ -19,6 +20,7 @@
     "-McCSgHUVwR-YoiR6vy_" : {
       "action" : "Running",
       "addDetails" : "",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-06-04T05:00:00.000Z",
       "dreamType" : "Frustrating",
@@ -34,7 +36,8 @@
     },
     "-McHL9EstQ3ojfr5f9UE" : {
       "action" : "Sleeping",
-      "addDetails" : "",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Black",
       "date" : "2021-02-10T06:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -50,6 +53,8 @@
     },
     "-McHPlptCA0za0Qoj-Zc" : {
       "action" : "Running",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "White",
       "date" : "2021-06-11T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -66,6 +71,8 @@
     },
     "-McHVLFpT2Nvp-OOliT7" : {
       "action" : "Driving",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Beige",
       "date" : "2021-06-11T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -82,6 +89,8 @@
     },
     "-McHY7L-e8dStN5LwNrL" : {
       "action" : "Bitten",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Red",
       "date" : "2021-06-13T05:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -97,6 +106,8 @@
     },
     "-McH_cdhrNt6ozCsI8EK" : {
       "action" : "Running",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Blue",
       "date" : "2021-03-02T06:00:00.000Z",
       "dreamType" : "Unsettling",
@@ -112,6 +123,8 @@
     },
     "-McHg7HgqEzn0hCeLCh8" : {
       "action" : "Sleeping",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "White",
       "date" : "2020-12-03T06:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -127,6 +140,8 @@
     },
     "-McHhmRDsHbo7yYtVRcy" : {
       "action" : "Running",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-06-27T05:00:00.000Z",
       "dreamType" : "Good",
@@ -142,6 +157,8 @@
     },
     "-McHjhtmRGWB9KwQ7OfP" : {
       "action" : "Walking",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2020-09-01T05:00:00.000Z",
       "dreamType" : "Good",
@@ -157,7 +174,8 @@
     },
     "-McZJdr65jDmAXtz0c0n" : {
       "action" : "Going To The Bathroom",
-      "addDetails" : "",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Neon",
       "date" : "2021-06-22T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -173,6 +191,8 @@
     },
     "-McrSoJvL8zOBFNOzzvV" : {
       "action" : "Flying",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Pink",
       "date" : "2021-06-23T05:00:00.000Z",
       "dreamType" : "Good",
@@ -188,7 +208,8 @@
     },
     "-McuNg_WenWh1sUfkJof" : {
       "action" : "Walking",
-      "addDetails" : "",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2020-09-13T05:00:00.000Z",
       "dreamType" : "Good",
@@ -204,6 +225,8 @@
     },
     "-McuPITKoyfEIEpdfoqA" : {
       "action" : "Skating",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Grey",
       "date" : "2021-06-27T05:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -219,6 +242,8 @@
     },
     "-McuRhJjlei9yjrz1sjd" : {
       "action" : "Swimming",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Blue",
       "date" : "2020-06-03T05:00:00.000Z",
       "dreamType" : "Good",
@@ -234,6 +259,8 @@
     },
     "-McupEmsFniqkioij8q4" : {
       "action" : "Fighting",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-01-09T06:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -249,6 +276,8 @@
     },
     "-Mcw2ExM8we_GBSSJFfh" : {
       "action" : "Hiking",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "White",
       "date" : "2020-07-12T05:00:00.000Z",
       "dreamType" : "Good",
@@ -264,7 +293,8 @@
     },
     "-Mcw4bvtq-NyjW-FF0pX" : {
       "action" : "Running",
-      "addDetails" : "",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Brown",
       "date" : "2020-02-01T06:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -280,6 +310,8 @@
     },
     "-McwC_QrFTV04XlJcgCa" : {
       "action" : "Playing",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Red",
       "date" : "2020-03-08T06:00:00.000Z",
       "dreamType" : "Recurring",
@@ -295,6 +327,8 @@
     },
     "-McwDewsOiUM-b0tQPIw" : {
       "action" : "Swimming",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Red",
       "date" : "2020-04-02T05:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -310,6 +344,8 @@
     },
     "-McwIU96CJxudiIICQdz" : {
       "action" : "Sweating",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-04-27T05:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -325,6 +361,8 @@
     },
     "-McwO1WkLsmmdG62gXDe" : {
       "action" : "Floating",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-03-12T06:00:00.000Z",
       "dreamType" : "Lucid",
@@ -340,6 +378,8 @@
     },
     "-McwTcFKMlwod12F7pke" : {
       "action" : "Walking",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "White",
       "date" : "2020-11-12T06:00:00.000Z",
       "dreamType" : "Stress",
@@ -355,7 +395,8 @@
     },
     "-Md06TpuuoMOBMi3a7vb" : {
       "action" : "Naked",
-      "addDetails" : "",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Multicolor",
       "date" : "2021-06-11T05:00:00.000Z",
       "dreamType" : "Epic",
@@ -371,7 +412,8 @@
     },
     "-Md8CRJAFek7DkGMPTSm" : {
       "action" : "Going To The Bathroom",
-      "addDetails" : "n/a",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Neon",
       "date" : "2021-06-11T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -386,7 +428,8 @@
     },
     "-MdNS-jY72VySybZRvqp" : {
       "action" : "Sweating",
-      "addDetails" : "n/a",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Blue",
       "date" : "2021-07-07T05:00:00.000Z",
       "dreamType" : "Angry",
@@ -401,7 +444,8 @@
     },
     "-MdZap5OgIwMZdCJ1xse" : {
       "action" : "Flying",
-      "addDetails" : "n/a",
+      "addDetails" : "None",
+      "allTags" : "None",
       "color" : "Blue",
       "date" : "2021-06-29T05:00:00.000Z",
       "dreamType" : "Unsettling",
@@ -417,6 +461,7 @@
     "-MdZlFWwLpxbXv4iuB4a" : {
       "action" : "Driving",
       "addDetails" : " Robots for reference: https://turtlepedia.fandom.com/wiki/Robotic_Unicycles_(1987_TV_series)",
+      "allTags" : "None",
       "color" : "Orange",
       "date" : "2021-07-08T05:00:00.000Z",
       "dreamType" : "Neutral",
@@ -432,6 +477,7 @@
     "-MdZtaFVCPtlzLnON73X" : {
       "action" : "Stumbling",
       "addDetails" : "lucid, nightmare, forced loop, rising stress, depression, walking, stumbling, reaching, grey, white",
+      "allTags" : "None",
       "color" : "Grey",
       "date" : "2021-07-01T05:00:00.000Z",
       "dreamType" : "Recurring",
@@ -447,6 +493,7 @@
     "-MdZxoFjQOPbdE9OwPwu" : {
       "action" : "Training",
       "addDetails" : "we were in an abandoned university building in some kind of campus, a blanket and these stone walls and this open dirt path, we were going to get something (don't remember what) and bring it back, like some kind of training exercise",
+      "allTags" : "None",
       "color" : "Blue",
       "date" : "2021-07-03T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -462,6 +509,7 @@
     "-Mdbwml73m1lWt9ht-q2" : {
       "action" : "Floating",
       "addDetails" : "",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-04-06T05:00:00.000Z",
       "dreamType" : "Bliss",
@@ -477,6 +525,7 @@
     "-Mdc-Epqo8mYXmXpN4bP" : {
       "action" : "Walking",
       "addDetails" : "n/a",
+      "allTags" : "None",
       "color" : "Orange",
       "date" : "2021-02-09T06:00:00.000Z",
       "dreamType" : "False Awakening",
@@ -492,6 +541,7 @@
     "-Mdc2sGPlsxCrm7QqVdO" : {
       "action" : "Walking",
       "addDetails" : "Nightmare, Stress, Fear, Apprehension, i've had this dream about half a dozen times in my life.",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-03-06T06:00:00.000Z",
       "dreamType" : "Recurring",
@@ -507,6 +557,7 @@
     "-MddDk4ep3iX8R0OhXST" : {
       "action" : "Talking",
       "addDetails" : "The metal bulk work, third class Titanic, I was just interacting with people who would never have been together.",
+      "allTags" : "None",
       "color" : "Grey",
       "date" : "2021-04-14T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -522,6 +573,7 @@
     "-MddILJR5GSEfRfB2NFF" : {
       "action" : "Watching",
       "addDetails" : "Panicked, terrified, Car, gun, my front window, Sitting and watching, Yellow, brown",
+      "allTags" : "None",
       "color" : "Yellow",
       "date" : "2021-01-15T06:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -537,6 +589,7 @@
     "-MddKArOfgimU2nPPEpZ" : {
       "action" : "Falling",
       "addDetails" : "Running, Jumping High, Floating, slowly falling",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-04-10T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -552,6 +605,7 @@
     "-MddPeDabUVpYoWDD_3x" : {
       "action" : "Climbing",
       "addDetails" : "Flying Demon Fortress",
+      "allTags" : "None",
       "color" : "Gold",
       "date" : "2021-05-07T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -567,6 +621,7 @@
     "-MddxOeX5djFsR-BevKk" : {
       "action" : "Naked",
       "addDetails" : "Downtown La Plata Missouri",
+      "allTags" : "None",
       "color" : "White",
       "date" : "2021-07-06T05:00:00.000Z",
       "dreamType" : "Recurring",
@@ -582,6 +637,7 @@
     "-Mde-PvLCYB2PnPaKFZY" : {
       "action" : "Searching",
       "addDetails" : "Building Lots of floors, differnet types of people, strangers, in public, need to go to bathroom, can't find bathroom, all taken",
+      "allTags" : "None",
       "color" : "Black",
       "date" : "2021-07-02T05:00:00.000Z",
       "dreamType" : "Frustrating",
@@ -597,6 +653,7 @@
     "-Mdrba61ds_5Q-Fxnu6D" : {
       "action" : "Standing",
       "addDetails" : "on the edge of a body of water, walking standing looking, stone gray",
+      "allTags" : "None",
       "color" : "Grey",
       "date" : "2021-06-12T05:00:00.000Z",
       "dreamType" : "Epic",
@@ -612,6 +669,7 @@
     "-Mdrg4UY7U3RKQvzZkI0" : {
       "action" : "Walking",
       "addDetails" : " A floating canoe. No one was holding the oars but they were rowing themselves. Inside the canoe, Red, Green was a little man who looked like a real-life version of Tweetledee/Tweetledum from 'Alice in Wonderland',In a fairytale forest,",
+      "allTags" : "None",
       "color" : "Red",
       "date" : "2020-12-29T06:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -627,6 +685,7 @@
     "-MdrjtlrwO6SCyDH2cXz" : {
       "action" : "Typing",
       "addDetails" : "At the old NSS building in 2018, A very mean looking projector, Coding or trying to, Red lines under all of my code!",
+      "allTags" : "None",
       "color" : "Red",
       "date" : "2021-07-07T05:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -641,7 +700,8 @@
     },
     "-Mdrl2ZveEUhoxhhspA7" : {
       "action" : "Swimming",
-      "addDetails" : "Grandmothers house, Pool and Shark and a Gated , ",
+      "addDetails" : "Grandmothers house, Pool and Shark and a Gated",
+      "allTags" : "None",
       "color" : "Blue",
       "date" : "2020-10-27T05:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -657,6 +717,7 @@
     "-Mdrpe207iMlJGKczT22" : {
       "action" : "Exiting",
       "addDetails" : "Large, multi-level Mall, So many shops, filled with so many items and obstacles, Trying to find the exit",
+      "allTags" : "None",
       "color" : "None",
       "date" : "2021-07-07T05:00:00.000Z",
       "dreamType" : "Stress",
@@ -672,6 +733,7 @@
     "-MdtJytwTxDSiYrQiRWg" : {
       "action" : "Running",
       "addDetails" : "n/a",
+      "allTags" : "None",
       "color" : "Green",
       "date" : "2021-02-19T06:00:00.000Z",
       "dreamType" : "Lucid",
@@ -686,7 +748,8 @@
     },
     "-MdtMpBEJNgwIUeEGJp0" : {
       "action" : "None",
-      "addDetails" : "My father who died in 1992, ",
+      "addDetails" : "My father who died in 1992",
+      "allTags" : "None",
       "color" : "None",
       "date" : "2021-04-14T05:00:00.000Z",
       "dreamType" : "Lucid",
@@ -701,7 +764,8 @@
     },
     "-MdtSlEWHt6me0ZDdjRY" : {
       "action" : "Looting",
-      "addDetails" : "Hopeless, Scared,Outside, Store like Walmart, Woods, shopping cart, abandoned church, Looting, No certain colorRunning, ",
+      "addDetails" : "Hopeless, Scared,Outside, Store like Walmart, Woods, shopping cart, abandoned church, Looting, No certain colorRunning",
+      "allTags" : "None",
       "color" : "None",
       "date" : "2020-11-03T06:00:00.000Z",
       "dreamType" : "Nightmare",
@@ -717,6 +781,7 @@
     "-MdtV0QdkoaepsFjP7pm" : {
       "action" : "Walking",
       "addDetails" : "Depends on the year, I've been having this sort of dream for most of my life, stores, restaurants, elevators, usually walking around the mall",
+      "allTags" : "None",
       "color" : "None",
       "date" : "2020-08-12T05:00:00.000Z",
       "dreamType" : "Recurring",
@@ -732,6 +797,7 @@
     "-MdtYvYpg-a3ySbaXJ-o" : {
       "action" : "Balancing",
       "addDetails" : "climbing a staircase of office chairs suspended in the sky, scared, anxious, confused, no one, alone, empty space, sky, office chairs, swivel chair, black chair, staircase,climbing, balancing, falling, black, blue",
+      "allTags" : "None",
       "color" : "Black",
       "date" : "2021-02-12T06:00:00.000Z",
       "dreamType" : "Stress",
@@ -742,6 +808,22 @@
       "object" : "Chair",
       "people" : "only yourself",
       "place" : "Space",
+      "realization" : "n/a"
+    },
+    "-MeBA0gB2BdakVpS19kA" : {
+      "action" : "Chased",
+      "addDetails" : "There were twins, they may have been ghosts?",
+      "allTags" : "Blood",
+      "color" : "Red",
+      "date" : "2021-07-10T05:00:00.000Z",
+      "dreamType" : "Frustrating",
+      "emotion" : "Terrified",
+      "entry" : "I dreamt I was isolated at a hotel in Colorado, I was hoping to cure my writer's block. My husband, Jon and our two sons were there. One of my sons becomes plagued with psychic premonitions. As my writing deteriorates my sons visions become more disturbing. I start to discover the hotel we are staying at has dark secrets and I begin to unravel into a homicidal maniac, hell-bent on terrorizing my family.\n",
+      "firebaseKey" : "-MeBA0gB2BdakVpS19kA",
+      "name" : "The Shimmering",
+      "object" : "Axe",
+      "people" : "Jack, Wendy and Danny",
+      "place" : "Hotel",
       "realization" : "n/a"
     }
   }

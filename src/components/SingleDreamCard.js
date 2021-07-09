@@ -12,12 +12,13 @@ import {
 } from 'reactstrap';
 import DreamForm from './DreamForm';
 import { deleteDream } from '../helpers/data/DreamData';
-import Objects from '../helpers/data/Objects';
-import Emotions from '../helpers/data/Emotions';
-import Colors from '../helpers/data/Colors';
-import Places from '../helpers/data/Places';
 import Actions from '../helpers/data/Actions';
+import AllTags from '../helpers/data/AllTags';
+import Colors from '../helpers/data/Colors';
 import DreamType from '../helpers/data/DreamType';
+import Emotions from '../helpers/data/Emotions';
+import Objects from '../helpers/data/Objects';
+import Places from '../helpers/data/Places';
 
 export default function SingleDreamCard({ dream }) {
   const [editing, setEditing] = useState(false);
@@ -81,10 +82,16 @@ export default function SingleDreamCard({ dream }) {
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion.toLowerCase()} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action.toLowerCase()} during your dream it might indicate {Actions[singleDream.action]}</CardText>
           <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color.toLowerCase()} symbolizes {Colors[singleDream.color]}</CardText>
+
+          <CardText><h6>Additional Tags</h6></CardText>
+          <CardText><h6>{singleDream.allTags}</h6>You added an addtional tag to your dream. {singleDream.allTags} represents {AllTags[singleDream.allTags]}</CardText>
+
           <CardText><h6>Additional Details</h6></CardText>
-          <CardText>{singleDream.realization}</CardText>
-          <CardText><h6>Post Interpretation Realizations</h6></CardText>
           <CardText>{singleDream.addDetails}</CardText>
+
+          <CardText><h6>Post Interpretation Realizations</h6></CardText>
+          <CardText>{singleDream.realization}</CardText>
+
         </CardBody>
       </Card>
       <div className="mt-3">
@@ -103,6 +110,7 @@ export default function SingleDreamCard({ dream }) {
             action={singleDream.action}
             object={singleDream.object}
             color={singleDream.color}
+            allTags={singleDream.allTags}
             addDetails={singleDream.addDetails}
             realization={singleDream.realization}
             setEditing={setEditing}
