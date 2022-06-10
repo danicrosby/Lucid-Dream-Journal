@@ -20,7 +20,7 @@ function Dreams({ user }) {
           <Fab className="add-dream-btn" size="small" color="dark"><AddIcon style={{ color: 'purple' }} /></Fab>
         </Link>
       </center>
-      <div className="dream-card-container">
+      <div className="dream-bank-container">
         {dreams.map((dreamInfo) => (
           <DreamCard
             key={dreamInfo.firebaseKey}
