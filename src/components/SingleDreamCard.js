@@ -47,8 +47,8 @@ export default function SingleDreamCard({ dream }) {
         <CardHeader className="header">
           <span>{singleDream.name}</span>
           <div className="edit-icons">
-          <span><Button className="material-icons button" onClick={() => handleClick('edit')}>edit</Button></span>
-          <span><Button className="material-icons button" onClick={() => handleClick('delete')}>delete</Button></span>
+          <span><Button className="material-icons button edit-btn" onClick={() => handleClick('edit')}>edit</Button></span>
+          <span><Button className="material-icons button delete-btn" onClick={() => handleClick('delete')}>delete</Button></span>
           <span><a href="/dreams"><Button className="material-icons submit-btn">done</Button></a></span>
           </div>
         </CardHeader>

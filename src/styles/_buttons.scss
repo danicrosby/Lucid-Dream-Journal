@@ -54,9 +54,7 @@ a {
 }
 
 .form-submit-btn {
-  background-color: rgb(102, 161, 102);
-  width: 4em;
-  height: 4em;
+  background-color: green;
 }
 
 .button {
@@ -68,6 +66,14 @@ a {
   height: 2em;
   background-color: rgb(146, 145, 145);;
   opacity: .7;
+}
+
+.edit-btn {
+  background-color: blue;
+}
+
+.delete-btn {
+  background-color: red;
 }
 
 .edit-icons {
