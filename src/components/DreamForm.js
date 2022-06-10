@@ -717,7 +717,7 @@ const DreamForm = ({
               id='realization'
               value={dream.realization}
               type='textarea'
-              placeholder='Post Inpterpretation Realizations . . .'
+              placeholder='Realizations . . .'
               onChange={handleInputChange} />
           </FormGroup>
         </CardBody>
