@@ -96,7 +96,6 @@ const DreamForm = ({
       <Form id='form' autoComplete='off' onSubmit={handleSubmit}>
         <CardHeader className="header">
           <span>{formTitle}</span>
-          <span><Button className="material-icons submit-btn" type='submit'>done</Button></span>
         </CardHeader>
         <CardBody className="form-body">
 
@@ -720,6 +719,8 @@ const DreamForm = ({
               placeholder='Realizations . . .'
               onChange={handleInputChange} />
           </FormGroup>
+          <center><Button>Submit</Button></center>
+
         </CardBody>
       </Form>
     </Card>
