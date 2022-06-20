@@ -384,6 +384,7 @@ const DreamForm = ({
               <option>Shark</option>
               <option>Ship</option>
               <option>Shopping Cart</option>
+              <option>Snake</option>
               <option>Skateboard</option>
               <option>Stairs</option>
               <option>Staircase</option>
@@ -665,6 +666,7 @@ const DreamForm = ({
               <option>Running</option>
               <option>Searching</option>
               <option>Shopping</option>
+              <option>Snake</option>
               <option>Skating</option>
               <option>Sleeping</option>
               <option>Standing</option>
