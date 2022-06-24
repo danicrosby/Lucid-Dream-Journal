@@ -31,6 +31,7 @@ const DreamForm = ({
   action,
   color,
   allTags,
+  allTags2,
   addDetails,
   realization,
   setEditing,
@@ -48,6 +49,7 @@ const DreamForm = ({
     action: action || '',
     color: color || '',
     allTags: allTags || '',
+    allTags2: allTags2 || '',
     addDetails: addDetails || '',
     realization: realization || '',
     firebaseKey: firebaseKey || null
@@ -84,6 +86,8 @@ const DreamForm = ({
         place: '',
         object: '',
         color: '',
+        allTags: '',
+        allTags2: '',
         addDetails: '',
         realization: '',
         firebaseKey: null
@@ -375,10 +379,12 @@ const DreamForm = ({
               <option>Ocean</option>
               <option>Path</option>
               <option>Projector</option>
+              <option>Rainbow</option>
               <option>Raptor</option>
               <option>Road</option>
               <option>Rock</option>
               <option>Rocks</option>
+              <option>Rockstar</option>
               <option>River</option>
               <option>Robot</option>
               <option>Shark</option>
@@ -400,6 +406,7 @@ const DreamForm = ({
               <option>Trail</option>
               <option>Tsumani</option>
               <option>Turkey</option>
+              <option>Turtle</option>
               <option>Underwear</option>
               <option>Wall</option>
               <option>Water</option>
@@ -450,6 +457,7 @@ const DreamForm = ({
               <option>Swimming</option>
               <option>Sweating</option>
               <option>Sweat</option>
+              <option>Surfing</option>
               <option>Talking</option>
               <option>Training</option>
               <option>Typing</option>
@@ -499,7 +507,7 @@ const DreamForm = ({
               value={dream.allTags}
               type="select"
               onChange={handleInputChange}>
-               <option>Additonal Tags</option>
+              <option>Anything Else?</option>
               <option>None</option>
               <option>Abyss</option>
               <option>Afterlife</option>
@@ -614,9 +622,11 @@ const DreamForm = ({
               <option>Ocean</option>
               <option>Path</option>
               <option>Projector</option>
+              <option>Rainbow</option>
               <option>Raptor</option>
               <option>Road</option>
               <option>Rock</option>
+              <option>Rockstar</option>
               <option>Rocks</option>
               <option>River</option>
               <option>Robot</option>
@@ -629,6 +639,7 @@ const DreamForm = ({
               <option>Stone</option>
               <option>Store</option>
               <option>Sun</option>
+              <option>Surfboard</option>
               <option>Teacher</option>
               <option>Teeth</option>
               <option>Toilet</option>
@@ -682,6 +693,222 @@ const DreamForm = ({
               <option>Staircase</option>
               <option>Store</option>
               <option>Sun</option>
+              <option>Surfing</option>
+              <option>Surfboard</option>
+              <option>Talking</option>
+              <option>Training</option>
+              <option>Typing</option>
+              <option>Titanic</option>
+              <option>Trail</option>
+              <option>Urinating</option>
+              <option>Underwater</option>
+              <option>University</option>
+              <option>Void</option>
+              <option>Waiting</option>
+              <option>Walking</option>
+              <option>Watching</option>
+              <option>White</option>
+              <option>Yellow</option>
+              <option>Looting</option>
+            </Input>
+          </FormGroup>
+
+          <FormGroup>
+            <Input
+              className="input-text"
+              name='allTags2'
+              id='allTags2'
+              value={dream.allTags2}
+              type="select"
+              onChange={handleInputChange}>
+              <option>Anything Else?</option>
+              <option>None</option>
+              <option>Abyss</option>
+              <option>Afterlife</option>
+              <option>Airplane</option>
+              <option>Alcohol</option>
+              <option>Alligator</option>
+              <option>Alien</option>
+              <option>Ambulance</option>
+              <option>Angel</option>
+              <option>Animal</option>
+              <option>Apocalypse</option>
+              <option>Aquarium</option>
+              <option>Arcade</option>
+              <option>Abyss</option>
+              <option>Amusement Park</option>
+              <option>Amber</option>
+              <option>Axe</option>
+              <option>Backyard</option>
+              <option>Balloon</option>
+              <option>Bathroom</option>
+              <option>Bed</option>
+              <option>Beach</option>
+              <option>Blanket</option>
+              <option>Blood</option>
+              <option>Backyard</option>
+              <option>Bathroom</option>
+              <option>Bathtub</option>
+              <option>Beach</option>
+              <option>Bus</option>
+              <option>Building</option>
+              <option>Bird</option>
+              <option>Bridge</option>
+              <option>Building</option>
+              <option>Bus</option>
+              <option>Buzzer</option>
+              <option>Beige</option>
+              <option>Black</option>
+              <option>Blue</option>
+              <option>Brown</option>
+              <option>Balancing</option>
+              <option>Going To The Bathroom</option>
+              <option>Bitten</option>
+              <option>Breathless</option>
+              <option>Chased</option>
+              <option>Climbing</option>
+              <option>Campus</option>
+              <option>Canoe</option>
+              <option>Car</option>
+              <option>Casket</option>
+              <option>Chair</option>
+              <option>Church</option>
+              <option>Classmates</option>
+              <option>Computer</option>
+              <option>Campus</option>
+              <option>Church</option>
+              <option>Classroom</option>
+              <option>College</option>
+              <option>Darkness</option>
+              <option>Desk</option>
+              <option>Dinosaur</option>
+              <option>Dirt</option>
+              <option>Door</option>
+              <option>Digging</option>
+              <option>Driving</option>
+              <option>Escaping</option>
+              <option>Exiting</option>
+              <option>Elevator</option>
+              <option>Eyes</option>
+              <option>Exam</option>
+              <option>Elevator</option>
+              <option>Forest</option>
+              <option>Fortress</option>
+              <option>Fire</option>
+              <option>Forest</option>
+              <option>Fortress</option>
+              <option>Falling</option>
+              <option>Floating</option>
+              <option>Flying</option>
+              <option>Fighting</option>
+              <option>Floresent</option>
+              <option>Fosphorescent</option>
+              <option>Gold</option>
+              <option>Grey</option>
+              <option>Green</option>
+              <option>Ghost</option>
+              <option>Graduation</option>
+              <option>Grass</option>
+              <option>Gun</option>
+              <option>Game Show</option>
+              <option>Hiking</option>
+              <option>Hills</option>
+              <option>Home</option>
+              <option>House</option>
+              <option>Hut</option>
+              <option>Hallway</option>
+              <option>Hair</option>
+              <option>Horse</option>
+              <option>Hills</option>
+              <option>Homework</option>
+              <option>Hotel</option>
+              <option>House</option>
+              <option>Hut</option>
+              <option>Ledge</option>
+              <option>Library</option>
+              <option>Machine</option>
+              <option>Mall</option>
+              <option>Maze</option>
+              <option>Monolith</option>
+              <option>Mountain</option>
+              <option>Numbers</option>
+              <option>Obstacle</option>
+              <option>Ocean</option>
+              <option>Path</option>
+              <option>Projector</option>
+              <option>Rainbow</option>
+              <option>Raptor</option>
+              <option>Road</option>
+              <option>Rock</option>
+              <option>Rockstar</option>
+              <option>Rocks</option>
+              <option>River</option>
+              <option>Robot</option>
+              <option>Shark</option>
+              <option>Ship</option>
+              <option>Shopping Cart</option>
+              <option>Skateboard</option>
+              <option>Stairs</option>
+              <option>Staircase</option>
+              <option>Stone</option>
+              <option>Store</option>
+              <option>Sun</option>
+              <option>Surfboard</option>
+              <option>Teacher</option>
+              <option>Teeth</option>
+              <option>Toilet</option>
+              <option>Tiger</option>
+              <option>Titanic</option>
+              <option>Tooth</option>
+              <option>Trail</option>
+              <option>Tsumani</option>
+              <option>Turkey</option>
+              <option>Underwear</option>
+              <option>Wall</option>
+              <option>Water</option>
+              <option>Window</option>
+              <option>Woods</option>
+              <option>Ledge</option>
+              <option>Mall</option>
+              <option>Mountain</option>
+              <option>Multicolor</option>
+              <option>Neon</option>
+              <option>Naked</option>
+              <option>Obstacle Course</option>
+              <option>Ocean</option>
+              <option>Outside</option>
+              <option>Out Of Breath</option>
+              <option>Orange</option>
+              <option>Purple</option>
+              <option>Panicking</option>
+              <option>Playing</option>
+              <option>Pink</option>
+              <option>Post-Apocalypse</option>
+              <option>River</option>
+              <option>Red</option>
+              <option>Road</option>
+              <option>Reaching</option>
+              <option>Running</option>
+              <option>Searching</option>
+              <option>Shopping</option>
+              <option>Snake</option>
+              <option>Skating</option>
+              <option>Sleeping</option>
+              <option>Standing</option>
+              <option>Stumbling</option>
+              <option>Swimming</option>
+              <option>Sweating</option>
+              <option>Sweat</option>
+              <option>Salon</option>
+              <option>Ship</option>
+              <option>Skatepark</option>
+              <option>Space</option>
+              <option>Stairs</option>
+              <option>Staircase</option>
+              <option>Store</option>
+              <option>Sun</option>
+              <option>Surfing</option>
+              <option>Surfboard</option>
               <option>Talking</option>
               <option>Training</option>
               <option>Typing</option>
@@ -745,6 +972,7 @@ DreamForm.propTypes = {
   action: PropTypes.string,
   color: PropTypes.string,
   allTags: PropTypes.string,
+  allTags2: PropTypes.string,
   addDetails: PropTypes.string,
   realization: PropTypes.string,
   firebaseKey: PropTypes.string,

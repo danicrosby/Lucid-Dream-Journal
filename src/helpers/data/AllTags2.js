@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-const AllTags = {
+const AllTags2 = {
   None: 'no other info remembered',
   Abyss: 'the depths of your subconscious. You are afraid and/or uncertain as to what you will discover about yourself and about your hidden feelings and fears. The abyss may also represent your primal fears and feelings of "falling into a pit of despair". Perhaps you are in a state of depression or wallowing in your negative feelings. Alternatively, the dream could denote your lack of spirituality.',
   'Amusement Park': 'you need to set some time for more relaxation and enjoyment in your life. The rides, booths and elements in the amusement park are an expression of some aspect of yourself or some area in your life. Look up the symbolism of specific rides for more details. Alternatively, the dream indicates that you are too easily distracted lately. To dream that the amusement park is empty or abandoned suggests that you need to open yourself to more fun and adventure. To dream that the rides at the amusement park are breaking down means that something in your life is not going as expected. To dream that the amusement park is closed suggests that you are denying yourself your time for fun and leisure. You need a break.',
@@ -151,4 +151,4 @@ const AllTags = {
   Yellow: 'both positive and negative connotations. If the dream is a pleasant one, then the color yellow is symbolic of intellect, energy, agility, happiness, harmony, and wisdom. On the other hand, if the dream is an unpleasant one, then the color represents deceit, disgrace, betrayal, cowardice and sickness. You have a fear or an inability to make a decision or to take action. Your desire to please others is at the risk of sacrificing your own needs and happiness. As a result, you are experiencing many setbacks.',
 };
 
-export default AllTags;
+export default AllTags2;

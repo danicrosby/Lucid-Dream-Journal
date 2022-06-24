@@ -57,7 +57,7 @@ export default function SingleDreamCard({ dream }) {
           <CardText className="intro">
             Hello, Dani. It looks like you had a {singleDream.dreamType.toLowerCase()} dream
             on {format(new Date(singleDream.date), 'MMMM dd, yyyy', { locale: enGB })}, that made you feel {singleDream.emotion.toLowerCase()}.
-            You dreamt of {singleDream.people}, the setting was {singleDream.place.toLowerCase()}.
+            You dreamt of {singleDream.people}, the setting was in a {singleDream.place.toLowerCase()}.
             You remembered a few objects, more specifically a {singleDream.object.toLowerCase()}.
             The overall abmience of this {singleDream.dreamType.toLowerCase()} dream was {singleDream.color.toLowerCase()}.
             Does this sound accurate?
@@ -81,10 +81,10 @@ export default function SingleDreamCard({ dream }) {
           <CardText><h6>{singleDream.place}</h6>To dream of a {singleDream.place.toLowerCase()} indicates {Places[singleDream.place]}</CardText>
           <CardText><h6>{singleDream.emotion}</h6>To feel {singleDream.emotion.toLowerCase()} during your dream indicates {Emotions[singleDream.emotion]}</CardText>
           <CardText><h6>{singleDream.action}</h6>If you are {singleDream.action.toLowerCase()} during your dream it might indicate {Actions[singleDream.action]}</CardText>
-          <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color.toLowerCase()} symbolizes {Colors[singleDream.color]}</CardText>
-
+          <CardText><h6>{singleDream.color}</h6>To dream of the color {singleDream.color.toLowerCase()} symbolizes {Colors[singleDream.color]}</CardText> <br></br>
           <CardText><h6>Additional Tags</h6></CardText>
           <CardText><h6>{singleDream.allTags}</h6>You added an addtional tag to your dream. {singleDream.allTags} represents {AllTags[singleDream.allTags]}</CardText>
+          <CardText><h6>{singleDream.allTags2}</h6>You added an addtional tag to your dream. {singleDream.allTags2} represents {AllTags[singleDream.allTags2]}</CardText>
 
           <CardText><h6>Additional Details</h6></CardText>
           <CardText>{singleDream.addDetails}</CardText>
@@ -111,6 +111,7 @@ export default function SingleDreamCard({ dream }) {
             object={singleDream.object}
             color={singleDream.color}
             allTags={singleDream.allTags}
+            allTags2={singleDream.allTags2}
             addDetails={singleDream.addDetails}
             realization={singleDream.realization}
             setEditing={setEditing}
